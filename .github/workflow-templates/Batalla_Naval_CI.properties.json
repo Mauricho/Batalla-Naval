@@ -1,0 +1,13 @@
+{
+    "name": "Batalla Naval Workflow",
+    "description": "Batalla Naval CI starter workflow.",
+    "iconName": "example-icon",
+    "categories": [
+        "Go"
+    ],
+    "filePatterns": [
+        "package.json$",
+        "^Dockerfile",
+        ".*\\.md$"
+    ]
+}
