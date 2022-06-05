@@ -23,9 +23,58 @@ public class jugador {
     public jugador(){
         for (int i=0; i<this.tamanio;i++){
             for (int j=0; j<this.tamanio;i++){
-                
+                this.Tablero[i][j]=false;
             }
         }
+    }
+    
+
+    public List<Barco> getFlota() {
+        return flota;
+    }
+
+    public void setFlota(List<Barco> flota) {
+        this.flota = flota;
+    }
+
+    public int getDestructores() {
+        return destructores;
+    }
+
+    public void setDestructores(int destructores) {
+        this.destructores = destructores;
+    }
+
+    public int getCruceros() {
+        return cruceros;
+    }
+
+    public void setCruceros(int cruceros) {
+        this.cruceros = cruceros;
+    }
+
+    public int getCanioneros() {
+        return canioneros;
+    }
+
+    public void setCanioneros(int canioneros) {
+        this.canioneros = canioneros;
+    }
+
+    public int getSubmarinos() {
+        return submarinos;
+    }
+
+    public void setSubmarinos(int submarinos) {
+        this.submarinos = submarinos;
+    }
+
+    public boolean getTablero(int row, int col) {
+        return Tablero[row][col];
+    }
+
+    public void setTablero(boolean[][] Tablero) {
+        this.Tablero = Tablero;
     }
     
 }
