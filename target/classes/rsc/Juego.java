@@ -6,6 +6,6 @@ public class Juego {
     }
     public static int Sumar(int x){
         return x+x;
-
+        
     }
 }
