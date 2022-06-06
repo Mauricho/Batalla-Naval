@@ -12,8 +12,10 @@ import javax.swing.JOptionPane;
  * @author f_acu
  */
 public class Tablero extends javax.swing.JFrame {
-    
-    //private jugador player = new jugador();
+
+    private jugador player = new jugador();
+    private jugador enemigo = new jugador();
+
     /**
      * Creates new form Tablero
      */
@@ -21,8 +23,26 @@ public class Tablero extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
     }
-    
-    private jugador player=new jugador();
+
+    /**
+     * Generar posiciones aleatorias.
+     * Al llamar al metodo este me devuelve un array que contiene dos numeros,
+     * cada uno puede ir entre 0 y 10. [row][column]
+     */
+    public int[1][2] posAleatorias()
+    {
+        int aleatorio1 = 0, aleatorio2 = 0;
+        int [][] pos = new int[1][2]; //Par de coordenadas (x,y)
+
+        aleatorio1 = (int) (math.random() * 10); // Numeros aleatorios entre 0 y 10
+        aleatorio2 = (int) (math.random() * 10);
+
+        pos[0][0] = aleatorio1; //Coordenada x
+        pos[0][1] = aleatorio2; //Coordenada y
+
+        return pos;
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
