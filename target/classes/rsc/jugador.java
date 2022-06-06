@@ -22,12 +22,17 @@ public class jugador {
     
     public jugador(){
         for (int i=0; i<this.tamanio;i++){
-            for (int j=0; j<this.tamanio;i++){
+            for (int j=0; j<this.tamanio;j++){
                 this.Tablero[i][j]=false;
             }
         }
     }
     
+    public void disparo(int row, int col){
+        if(this.Tablero[row][col]){
+            
+        }
+    }
 
     public List<Barco> getFlota() {
         return flota;

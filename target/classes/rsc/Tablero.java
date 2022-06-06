@@ -12,14 +12,17 @@ import javax.swing.JOptionPane;
  * @author f_acu
  */
 public class Tablero extends javax.swing.JFrame {
-
+    
+    //private jugador player = new jugador();
     /**
      * Creates new form Tablero
      */
     public Tablero() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
-
+    
+    private jugador player=new jugador();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -35,7 +38,6 @@ public class Tablero extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
-        jLabel103 = new javax.swing.JLabel();
         jButton101 = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
         jLabel104 = new javax.swing.JLabel();
@@ -284,7 +286,6 @@ public class Tablero extends javax.swing.JFrame {
         jPanel128 = new javax.swing.JPanel();
         jPanel129 = new javax.swing.JPanel();
         jLabel123 = new javax.swing.JLabel();
-        jButton102 = new javax.swing.JButton();
         jPanel130 = new javax.swing.JPanel();
         jLabel124 = new javax.swing.JLabel();
         jPanel131 = new javax.swing.JPanel();
@@ -308,25 +309,15 @@ public class Tablero extends javax.swing.JFrame {
         jPanel140 = new javax.swing.JPanel();
         jLabel134 = new javax.swing.JLabel();
         jPanel141 = new javax.swing.JPanel();
-        jButton103 = new javax.swing.JButton();
         jPanel142 = new javax.swing.JPanel();
-        jButton104 = new javax.swing.JButton();
         jPanel143 = new javax.swing.JPanel();
-        jButton105 = new javax.swing.JButton();
         jPanel144 = new javax.swing.JPanel();
-        jButton106 = new javax.swing.JButton();
         jPanel145 = new javax.swing.JPanel();
-        jButton107 = new javax.swing.JButton();
         jPanel146 = new javax.swing.JPanel();
-        jButton108 = new javax.swing.JButton();
         jPanel147 = new javax.swing.JPanel();
-        jButton109 = new javax.swing.JButton();
         jPanel148 = new javax.swing.JPanel();
-        jButton110 = new javax.swing.JButton();
         jPanel149 = new javax.swing.JPanel();
-        jButton111 = new javax.swing.JButton();
         jPanel150 = new javax.swing.JPanel();
-        jButton112 = new javax.swing.JButton();
         jPanel151 = new javax.swing.JPanel();
         jLabel135 = new javax.swing.JLabel();
         jPanel152 = new javax.swing.JPanel();
@@ -546,7 +537,6 @@ public class Tablero extends javax.swing.JFrame {
         jPanel4.setLayout(new java.awt.GridLayout(11, 11, 2, 2));
 
         jPanel6.setLayout(new java.awt.BorderLayout());
-        jPanel6.add(jLabel103, java.awt.BorderLayout.CENTER);
 
         jButton101.setText("Salir");
         jButton101.addActionListener(new java.awt.event.ActionListener() {
@@ -554,7 +544,7 @@ public class Tablero extends javax.swing.JFrame {
                 jButton101ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton101, java.awt.BorderLayout.PAGE_START);
+        jPanel6.add(jButton101, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel6);
 
@@ -648,70 +638,81 @@ public class Tablero extends javax.swing.JFrame {
 
         jPanel18.setLayout(new java.awt.BorderLayout());
 
-        jButton1.setText("jButton1");
+        jButton1.setToolTipText("");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel18.add(jButton1, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel18);
 
         jPanel19.setLayout(new java.awt.BorderLayout());
 
-        jButton2.setText("jButton2");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel19.add(jButton2, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel19);
 
         jPanel20.setLayout(new java.awt.BorderLayout());
 
-        jButton3.setText("jButton3");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel20.add(jButton3, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel20);
 
         jPanel21.setLayout(new java.awt.BorderLayout());
 
-        jButton4.setText("jButton4");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel21.add(jButton4, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel21);
 
         jPanel22.setLayout(new java.awt.BorderLayout());
 
-        jButton5.setText("jButton5");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel22.add(jButton5, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel22);
 
         jPanel23.setLayout(new java.awt.BorderLayout());
-
-        jButton6.setText("jButton6");
         jPanel23.add(jButton6, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel23);
 
         jPanel24.setLayout(new java.awt.BorderLayout());
-
-        jButton7.setText("jButton7");
         jPanel24.add(jButton7, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel24);
 
         jPanel25.setLayout(new java.awt.BorderLayout());
-
-        jButton8.setText("jButton8");
         jPanel25.add(jButton8, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel25);
 
         jPanel26.setLayout(new java.awt.BorderLayout());
-
-        jButton9.setText("jButton9");
         jPanel26.add(jButton9, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel26);
 
         jPanel27.setLayout(new java.awt.BorderLayout());
-
-        jButton10.setText("jButton10");
         jPanel27.add(jButton10, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel27);
@@ -725,72 +726,52 @@ public class Tablero extends javax.swing.JFrame {
         jPanel4.add(jPanel28);
 
         jPanel29.setLayout(new java.awt.BorderLayout());
-
-        jButton11.setText("jButton11");
         jPanel29.add(jButton11, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel29);
 
         jPanel30.setLayout(new java.awt.BorderLayout());
-
-        jButton13.setText("jButton13");
         jPanel30.add(jButton13, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel30);
 
         jPanel31.setLayout(new java.awt.BorderLayout());
-
-        jButton14.setText("jButton14");
         jPanel31.add(jButton14, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel31);
 
         jPanel32.setLayout(new java.awt.BorderLayout());
-
-        jButton15.setText("jButton15");
         jPanel32.add(jButton15, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel32);
 
         jPanel33.setLayout(new java.awt.BorderLayout());
-
-        jButton12.setText("jButton12");
         jPanel33.add(jButton12, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel33);
 
         jPanel34.setLayout(new java.awt.BorderLayout());
-
-        jButton16.setText("jButton16");
         jPanel34.add(jButton16, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel34);
 
         jPanel35.setLayout(new java.awt.BorderLayout());
-
-        jButton17.setText("jButton17");
         jPanel35.add(jButton17, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel35);
 
         jPanel36.setLayout(new java.awt.BorderLayout());
-
-        jButton18.setText("jButton18");
         jPanel36.add(jButton18, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel36);
 
         jPanel37.setLayout(new java.awt.BorderLayout());
-
-        jButton19.setText("jButton19");
         jPanel37.add(jButton19, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel37);
 
         jPanel38.setLayout(new java.awt.BorderLayout());
-
-        jButton20.setText("jButton20");
-        jPanel38.add(jButton20, java.awt.BorderLayout.LINE_END);
+        jPanel38.add(jButton20, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel38);
 
@@ -803,71 +784,57 @@ public class Tablero extends javax.swing.JFrame {
         jPanel4.add(jPanel39);
 
         jPanel40.setLayout(new java.awt.BorderLayout());
-
-        jButton21.setText("jButton21");
         jPanel40.add(jButton21, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel40);
 
         jPanel41.setLayout(new java.awt.BorderLayout());
-
-        jButton22.setText("jButton22");
         jPanel41.add(jButton22, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel41);
 
         jPanel42.setLayout(new java.awt.BorderLayout());
-
-        jButton23.setText("jButton23");
         jPanel42.add(jButton23, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel42);
 
         jPanel43.setLayout(new java.awt.BorderLayout());
-
-        jButton24.setText("jButton24");
         jPanel43.add(jButton24, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel43);
 
         jPanel44.setLayout(new java.awt.BorderLayout());
-
-        jButton25.setText("jButton25");
         jPanel44.add(jButton25, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel44);
 
         jPanel45.setLayout(new java.awt.BorderLayout());
-
-        jButton26.setText("jButton26");
         jPanel45.add(jButton26, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel45);
 
         jPanel46.setLayout(new java.awt.BorderLayout());
-
-        jButton27.setText("jButton27");
         jPanel46.add(jButton27, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel46);
 
         jPanel47.setLayout(new java.awt.BorderLayout());
-
-        jButton28.setText("jButton28");
         jPanel47.add(jButton28, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel47);
 
         jPanel48.setLayout(new java.awt.BorderLayout());
-
-        jButton29.setText("jButton29");
         jPanel48.add(jButton29, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel48);
 
         jPanel49.setLayout(new java.awt.BorderLayout());
 
-        jButton31.setText("jButton30");
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
         jPanel49.add(jButton31, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel49);
@@ -881,71 +848,51 @@ public class Tablero extends javax.swing.JFrame {
         jPanel4.add(jPanel50);
 
         jPanel51.setLayout(new java.awt.BorderLayout());
-
-        jButton32.setText("jButton30");
         jPanel51.add(jButton32, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel51);
 
         jPanel52.setLayout(new java.awt.BorderLayout());
-
-        jButton33.setText("jButton30");
         jPanel52.add(jButton33, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel52);
 
         jPanel53.setLayout(new java.awt.BorderLayout());
-
-        jButton34.setText("jButton30");
         jPanel53.add(jButton34, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel53);
 
         jPanel54.setLayout(new java.awt.BorderLayout());
-
-        jButton35.setText("jButton30");
         jPanel54.add(jButton35, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel54);
 
         jPanel55.setLayout(new java.awt.BorderLayout());
-
-        jButton37.setText("jButton30");
         jPanel55.add(jButton37, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel55);
 
         jPanel56.setLayout(new java.awt.BorderLayout());
-
-        jButton36.setText("jButton30");
         jPanel56.add(jButton36, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel56);
 
         jPanel57.setLayout(new java.awt.BorderLayout());
-
-        jButton38.setText("jButton30");
         jPanel57.add(jButton38, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel57);
 
         jPanel58.setLayout(new java.awt.BorderLayout());
-
-        jButton39.setText("jButton30");
         jPanel58.add(jButton39, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel58);
 
         jPanel59.setLayout(new java.awt.BorderLayout());
-
-        jButton40.setText("jButton30");
         jPanel59.add(jButton40, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel59);
 
         jPanel60.setLayout(new java.awt.BorderLayout());
-
-        jButton41.setText("jButton30");
         jPanel60.add(jButton41, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel60);
@@ -959,71 +906,51 @@ public class Tablero extends javax.swing.JFrame {
         jPanel4.add(jPanel61);
 
         jPanel62.setLayout(new java.awt.BorderLayout());
-
-        jButton42.setText("jButton30");
         jPanel62.add(jButton42, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel62);
 
         jPanel63.setLayout(new java.awt.BorderLayout());
-
-        jButton43.setText("jButton30");
         jPanel63.add(jButton43, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel63);
 
         jPanel64.setLayout(new java.awt.BorderLayout());
-
-        jButton44.setText("jButton30");
         jPanel64.add(jButton44, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel64);
 
         jPanel65.setLayout(new java.awt.BorderLayout());
-
-        jButton45.setText("jButton30");
         jPanel65.add(jButton45, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel65);
 
         jPanel66.setLayout(new java.awt.BorderLayout());
-
-        jButton46.setText("jButton30");
         jPanel66.add(jButton46, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel66);
 
         jPanel67.setLayout(new java.awt.BorderLayout());
-
-        jButton47.setText("jButton30");
         jPanel67.add(jButton47, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel67);
 
         jPanel68.setLayout(new java.awt.BorderLayout());
-
-        jButton48.setText("jButton30");
         jPanel68.add(jButton48, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel68);
 
         jPanel69.setLayout(new java.awt.BorderLayout());
-
-        jButton49.setText("jButton30");
         jPanel69.add(jButton49, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel69);
 
         jPanel70.setLayout(new java.awt.BorderLayout());
-
-        jButton50.setText("jButton30");
         jPanel70.add(jButton50, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel70);
 
         jPanel71.setLayout(new java.awt.BorderLayout());
-
-        jButton51.setText("jButton30");
         jPanel71.add(jButton51, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel71);
@@ -1037,71 +964,51 @@ public class Tablero extends javax.swing.JFrame {
         jPanel4.add(jPanel72);
 
         jPanel73.setLayout(new java.awt.BorderLayout());
-
-        jButton52.setText("jButton30");
         jPanel73.add(jButton52, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel73);
 
         jPanel74.setLayout(new java.awt.BorderLayout());
-
-        jButton53.setText("jButton30");
         jPanel74.add(jButton53, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel74);
 
         jPanel75.setLayout(new java.awt.BorderLayout());
-
-        jButton54.setText("jButton30");
         jPanel75.add(jButton54, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel75);
 
         jPanel76.setLayout(new java.awt.BorderLayout());
-
-        jButton56.setText("jButton30");
         jPanel76.add(jButton56, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel76);
 
         jPanel77.setLayout(new java.awt.BorderLayout());
-
-        jButton57.setText("jButton30");
         jPanel77.add(jButton57, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel77);
 
         jPanel78.setLayout(new java.awt.BorderLayout());
-
-        jButton30.setText("jButton30");
         jPanel78.add(jButton30, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel78);
 
         jPanel79.setLayout(new java.awt.BorderLayout());
-
-        jButton58.setText("jButton30");
         jPanel79.add(jButton58, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel79);
 
         jPanel80.setLayout(new java.awt.BorderLayout());
-
-        jButton59.setText("jButton30");
         jPanel80.add(jButton59, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel80);
 
         jPanel81.setLayout(new java.awt.BorderLayout());
-
-        jButton60.setText("jButton30");
         jPanel81.add(jButton60, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel81);
 
         jPanel82.setLayout(new java.awt.BorderLayout());
-
-        jButton61.setText("jButton30");
         jPanel82.add(jButton61, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel82);
@@ -1115,71 +1022,51 @@ public class Tablero extends javax.swing.JFrame {
         jPanel4.add(jPanel83);
 
         jPanel84.setLayout(new java.awt.BorderLayout());
-
-        jButton62.setText("jButton30");
         jPanel84.add(jButton62, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel84);
 
         jPanel85.setLayout(new java.awt.BorderLayout());
-
-        jButton63.setText("jButton30");
         jPanel85.add(jButton63, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel85);
 
         jPanel86.setLayout(new java.awt.BorderLayout());
-
-        jButton64.setText("jButton30");
         jPanel86.add(jButton64, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel86);
 
         jPanel87.setLayout(new java.awt.BorderLayout());
-
-        jButton65.setText("jButton30");
         jPanel87.add(jButton65, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel87);
 
         jPanel88.setLayout(new java.awt.BorderLayout());
-
-        jButton67.setText("jButton30");
         jPanel88.add(jButton67, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel88);
 
         jPanel89.setLayout(new java.awt.BorderLayout());
-
-        jButton66.setText("jButton30");
         jPanel89.add(jButton66, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel89);
 
         jPanel90.setLayout(new java.awt.BorderLayout());
-
-        jButton68.setText("jButton30");
         jPanel90.add(jButton68, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel90);
 
         jPanel91.setLayout(new java.awt.BorderLayout());
-
-        jButton69.setText("jButton30");
         jPanel91.add(jButton69, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel91);
 
         jPanel92.setLayout(new java.awt.BorderLayout());
-
-        jButton70.setText("jButton30");
         jPanel92.add(jButton70, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel92);
 
         jPanel93.setLayout(new java.awt.BorderLayout());
-
-        jButton71.setText("jButton30");
         jPanel93.add(jButton71, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel93);
@@ -1193,71 +1080,51 @@ public class Tablero extends javax.swing.JFrame {
         jPanel4.add(jPanel94);
 
         jPanel95.setLayout(new java.awt.BorderLayout());
-
-        jButton72.setText("jButton30");
         jPanel95.add(jButton72, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel95);
 
         jPanel96.setLayout(new java.awt.BorderLayout());
-
-        jButton73.setText("jButton30");
         jPanel96.add(jButton73, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel96);
 
         jPanel97.setLayout(new java.awt.BorderLayout());
-
-        jButton74.setText("jButton30");
         jPanel97.add(jButton74, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel97);
 
         jPanel98.setLayout(new java.awt.BorderLayout());
-
-        jButton75.setText("jButton30");
         jPanel98.add(jButton75, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel98);
 
         jPanel99.setLayout(new java.awt.BorderLayout());
-
-        jButton76.setText("jButton30");
         jPanel99.add(jButton76, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel99);
 
         jPanel100.setLayout(new java.awt.BorderLayout());
-
-        jButton77.setText("jButton30");
         jPanel100.add(jButton77, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel100);
 
         jPanel101.setLayout(new java.awt.BorderLayout());
-
-        jButton78.setText("jButton30");
         jPanel101.add(jButton78, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel101);
 
         jPanel102.setLayout(new java.awt.BorderLayout());
-
-        jButton79.setText("jButton30");
         jPanel102.add(jButton79, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel102);
 
         jPanel103.setLayout(new java.awt.BorderLayout());
-
-        jButton80.setText("jButton30");
         jPanel103.add(jButton80, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel103);
 
         jPanel104.setLayout(new java.awt.BorderLayout());
-
-        jButton81.setText("jButton30");
         jPanel104.add(jButton81, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel104);
@@ -1271,71 +1138,51 @@ public class Tablero extends javax.swing.JFrame {
         jPanel4.add(jPanel105);
 
         jPanel106.setLayout(new java.awt.BorderLayout());
-
-        jButton82.setText("jButton30");
         jPanel106.add(jButton82, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel106);
 
         jPanel107.setLayout(new java.awt.BorderLayout());
-
-        jButton83.setText("jButton30");
         jPanel107.add(jButton83, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel107);
 
         jPanel108.setLayout(new java.awt.BorderLayout());
-
-        jButton84.setText("jButton30");
         jPanel108.add(jButton84, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel108);
 
         jPanel109.setLayout(new java.awt.BorderLayout());
-
-        jButton85.setText("jButton30");
         jPanel109.add(jButton85, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel109);
 
         jPanel110.setLayout(new java.awt.BorderLayout());
-
-        jButton86.setText("jButton30");
         jPanel110.add(jButton86, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel110);
 
         jPanel111.setLayout(new java.awt.BorderLayout());
-
-        jButton87.setText("jButton30");
         jPanel111.add(jButton87, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel111);
 
         jPanel112.setLayout(new java.awt.BorderLayout());
-
-        jButton88.setText("jButton30");
         jPanel112.add(jButton88, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel112);
 
         jPanel113.setLayout(new java.awt.BorderLayout());
-
-        jButton89.setText("jButton30");
         jPanel113.add(jButton89, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel113);
 
         jPanel114.setLayout(new java.awt.BorderLayout());
-
-        jButton90.setText("jButton30");
         jPanel114.add(jButton90, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel114);
 
         jPanel115.setLayout(new java.awt.BorderLayout());
-
-        jButton91.setText("jButton30");
         jPanel115.add(jButton91, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel115);
@@ -1349,71 +1196,57 @@ public class Tablero extends javax.swing.JFrame {
         jPanel4.add(jPanel116);
 
         jPanel117.setLayout(new java.awt.BorderLayout());
-
-        jButton92.setText("jButton30");
         jPanel117.add(jButton92, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel117);
 
         jPanel118.setLayout(new java.awt.BorderLayout());
-
-        jButton93.setText("jButton30");
         jPanel118.add(jButton93, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel118);
 
         jPanel119.setLayout(new java.awt.BorderLayout());
 
-        jButton94.setText("jButton30");
+        jButton94.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton94ActionPerformed(evt);
+            }
+        });
         jPanel119.add(jButton94, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel119);
 
         jPanel120.setLayout(new java.awt.BorderLayout());
-
-        jButton95.setText("jButton30");
         jPanel120.add(jButton95, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel120);
 
         jPanel121.setLayout(new java.awt.BorderLayout());
-
-        jButton96.setText("jButton30");
         jPanel121.add(jButton96, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel121);
 
         jPanel122.setLayout(new java.awt.BorderLayout());
-
-        jButton97.setText("jButton30");
         jPanel122.add(jButton97, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel122);
 
         jPanel123.setLayout(new java.awt.BorderLayout());
-
-        jButton98.setText("jButton30");
         jPanel123.add(jButton98, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel123);
 
         jPanel124.setLayout(new java.awt.BorderLayout());
-
-        jButton99.setText("jButton30");
         jPanel124.add(jButton99, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel124);
 
         jPanel125.setLayout(new java.awt.BorderLayout());
-
-        jButton100.setText("jButton30");
         jPanel125.add(jButton100, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel125);
 
         jPanel126.setLayout(new java.awt.BorderLayout());
-
-        jButton55.setText("jButton30");
         jPanel126.add(jButton55, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel126);
@@ -1427,14 +1260,6 @@ public class Tablero extends javax.swing.JFrame {
 
         jPanel129.setLayout(new java.awt.BorderLayout());
         jPanel129.add(jLabel123, java.awt.BorderLayout.CENTER);
-
-        jButton102.setText("Salir");
-        jButton102.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton102ActionPerformed(evt);
-            }
-        });
-        jPanel129.add(jButton102, java.awt.BorderLayout.PAGE_START);
 
         jPanel128.add(jPanel129);
 
@@ -1527,73 +1352,33 @@ public class Tablero extends javax.swing.JFrame {
         jPanel128.add(jPanel140);
 
         jPanel141.setLayout(new java.awt.BorderLayout());
-
-        jButton103.setText("jButton1");
-        jPanel141.add(jButton103, java.awt.BorderLayout.CENTER);
-
         jPanel128.add(jPanel141);
 
         jPanel142.setLayout(new java.awt.BorderLayout());
-
-        jButton104.setText("jButton2");
-        jPanel142.add(jButton104, java.awt.BorderLayout.CENTER);
-
         jPanel128.add(jPanel142);
 
         jPanel143.setLayout(new java.awt.BorderLayout());
-
-        jButton105.setText("jButton3");
-        jPanel143.add(jButton105, java.awt.BorderLayout.CENTER);
-
         jPanel128.add(jPanel143);
 
         jPanel144.setLayout(new java.awt.BorderLayout());
-
-        jButton106.setText("jButton4");
-        jPanel144.add(jButton106, java.awt.BorderLayout.CENTER);
-
         jPanel128.add(jPanel144);
 
         jPanel145.setLayout(new java.awt.BorderLayout());
-
-        jButton107.setText("jButton5");
-        jPanel145.add(jButton107, java.awt.BorderLayout.CENTER);
-
         jPanel128.add(jPanel145);
 
         jPanel146.setLayout(new java.awt.BorderLayout());
-
-        jButton108.setText("jButton6");
-        jPanel146.add(jButton108, java.awt.BorderLayout.CENTER);
-
         jPanel128.add(jPanel146);
 
         jPanel147.setLayout(new java.awt.BorderLayout());
-
-        jButton109.setText("jButton7");
-        jPanel147.add(jButton109, java.awt.BorderLayout.CENTER);
-
         jPanel128.add(jPanel147);
 
         jPanel148.setLayout(new java.awt.BorderLayout());
-
-        jButton110.setText("jButton8");
-        jPanel148.add(jButton110, java.awt.BorderLayout.CENTER);
-
         jPanel128.add(jPanel148);
 
         jPanel149.setLayout(new java.awt.BorderLayout());
-
-        jButton111.setText("jButton9");
-        jPanel149.add(jButton111, java.awt.BorderLayout.CENTER);
-
         jPanel128.add(jPanel149);
 
         jPanel150.setLayout(new java.awt.BorderLayout());
-
-        jButton112.setText("jButton10");
-        jPanel150.add(jButton112, java.awt.BorderLayout.CENTER);
-
         jPanel128.add(jPanel150);
 
         jPanel151.setLayout(new java.awt.BorderLayout());
@@ -2311,11 +2096,11 @@ public class Tablero extends javax.swing.JFrame {
         );
         jPanel127Layout.setVerticalGroup(
             jPanel127Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 274, Short.MAX_VALUE)
+            .addGap(0, 282, Short.MAX_VALUE)
             .addGroup(jPanel127Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel127Layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(jPanel128, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel128, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
                     .addContainerGap()))
         );
 
@@ -2336,8 +2121,8 @@ public class Tablero extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel127, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel127, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -2380,9 +2165,38 @@ public class Tablero extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton101ActionPerformed
 
-    private void jButton102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton102ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton102ActionPerformed
+        player.disparo(0, 1);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton94ActionPerformed
+    
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        player.disparo(9, 3);
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        player.disparo(0, 0);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        player.disparo(0, 2);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        player.disparo(0, 3);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        player.disparo(0, 4);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2424,18 +2238,7 @@ public class Tablero extends javax.swing.JFrame {
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton100;
     private javax.swing.JButton jButton101;
-    private javax.swing.JButton jButton102;
-    private javax.swing.JButton jButton103;
-    private javax.swing.JButton jButton104;
-    private javax.swing.JButton jButton105;
-    private javax.swing.JButton jButton106;
-    private javax.swing.JButton jButton107;
-    private javax.swing.JButton jButton108;
-    private javax.swing.JButton jButton109;
     private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton110;
-    private javax.swing.JButton jButton111;
-    private javax.swing.JButton jButton112;
     private javax.swing.JButton jButton113;
     private javax.swing.JButton jButton114;
     private javax.swing.JButton jButton115;
@@ -2624,7 +2427,6 @@ public class Tablero extends javax.swing.JFrame {
     private javax.swing.JButton jButton99;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel102;
-    private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel104;
     private javax.swing.JLabel jLabel105;
     private javax.swing.JLabel jLabel106;
