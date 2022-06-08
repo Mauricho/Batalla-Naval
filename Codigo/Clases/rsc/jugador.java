@@ -16,7 +16,7 @@ public class jugador {
     private int cruceros=0;
     private int canioneros=0;
     private int submarinos=0;
-    public static final int tamanio=10;
+    private static final int tamanio=10;
     
     private boolean Tablero[][]= new boolean[tamanio][tamanio];
     
