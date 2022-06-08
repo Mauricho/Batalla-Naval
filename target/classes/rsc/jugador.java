@@ -18,20 +18,13 @@ public class jugador {
     private int submarinos=0;
     private static final int tamanio=10;
     
-    private boolean Tablero[][]= new boolean[tamanio][tamanio];
     
     public jugador(){
-        for (int i=0; i<this.tamanio;i++){
-            for (int j=0; j<this.tamanio;j++){
-                this.Tablero[i][j]=false;
-            }
-        }
+       
     }
     
     public void disparo(int row, int col){
-        if(this.Tablero[row][col]){
-            
-        }
+       
     }
 
     public List<Barco> getFlota() {

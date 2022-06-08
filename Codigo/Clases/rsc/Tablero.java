@@ -6,6 +6,7 @@ package rsc;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import rsc.jugador;
 
 /**
  *
@@ -17,12 +18,21 @@ public class Tablero extends javax.swing.JFrame {
     /**
      * Creates new form Tablero
      */
+    private jugador player;
+    private jugador enemigo;
+    
     public Tablero() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
     
-    private jugador player=new jugador();
+    public Tablero(jugador p1, jugador enemigo){
+        initComponents();
+        this.setLocationRelativeTo(null);
+        this.player=p1;
+        this.enemigo=enemigo;
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -2181,6 +2191,7 @@ public class Tablero extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         player.disparo(0, 0);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

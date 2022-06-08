@@ -4,6 +4,7 @@
  */
 package rsc;
 
+import rsc.screens.Tablero;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
