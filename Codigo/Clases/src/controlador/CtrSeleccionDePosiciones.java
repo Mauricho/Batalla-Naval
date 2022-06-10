@@ -10,18 +10,41 @@ import src.modelo.Modelo;
  *
  * @author f_acu
  */
-public class CtrPausa implements Controlador {
+public class CtrSeleccionDePosiciones implements Controlador {
 
     private Modelo modelo;
 
-    public CtrPausa() {
+    public CtrSeleccionDePosiciones() {
         modelo = Modelo.getInstance();
     }
 
     @Override
-    public void juegoNormal() {
-        // TODO Auto-generated method stub
+    public void posicionar(int x,int y) {
+        modelo.posicionar(x,y);
+    }
 
+    public void seleccionarFragata(){
+        modelo.getFragata();
+    }
+
+    public void seleccionarDestructor(){
+        modelo.getDestructor();
+    }
+
+    public void seleccionarSubmarino(){
+        modelo.getSubmarino();
+    }
+
+    public void seleccionarAcorazado(){
+        modelo.getAcorazado();
+    }
+
+    public void confirmarPosicion(){
+        modelo.confirmar();
+    }
+
+    public void cancelarPosicion(){
+        modelo.cancelar();
     }
 
     @Override

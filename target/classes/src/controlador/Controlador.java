@@ -10,8 +10,6 @@ package src.controlador;
  */
 public interface Controlador {
 
-    void juegoNormal();
-
     void juegoLuck();
 
     void salir();
@@ -21,4 +19,18 @@ public interface Controlador {
     void teclaPresionada(String l);
 
     void iniciar();
+
+    void seleccionarSubmarino();
+
+    void seleccionarFragata();
+
+    void confirmarPosicion();
+
+    void seleccionarAcorazado();
+    
+    void posicionar(int i, int i1);
+
+    void cancelarPosicion();
+
+    void seleccionarDestructor();
 }

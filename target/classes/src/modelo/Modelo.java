@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 import src.BatallaNaval;
+import src.jugador;
 import src.vista.Vista;
 
 /**
@@ -18,15 +19,18 @@ import src.vista.Vista;
 public class Modelo {
 
     private static Modelo modelo = null;
-    private InformacionDelJuego informacionDelJuego;
+    //private InformacionDelJuego informacionDelJuego;
     private TreeMap<Integer, String> top10;
     private TreeMap<Integer, ArrayList<String>> palabrasJuegoNormal;
     private ArrayList<String> palabrasJuegoRelax;
+
     private Vista vistaActual;
     private Vista vistaAdicional;
     private Vista vistatercera;
+    private Vista vistaSeleccionDePosicion;
+
     private BatallaNaval juegoActual;
-    private Lector lectorActual;
+    private boolean disponible;
     private int flag = -1;
     private int puntaje;
 
@@ -38,44 +42,54 @@ public class Modelo {
     }
 
     private Modelo() {
-        informacionDelJuego = new InformacionDelJuego();
+        //informacionDelJuego = new InformacionDelJuego();
         vistaActual = null;
         vistaAdicional = null;
         vistatercera = null;
+        vistaSeleccionDePosicion = null;
+
         juegoActual = null;
-        lectorActual = null;
         top10 = new TreeMap<Integer, String>();
         palabrasJuegoNormal = new TreeMap<Integer, ArrayList<String>>();
         palabrasJuegoRelax = new ArrayList<String>();
+        disponible=false;
     }
 
-    public void leerArchivos() {
-        try {
-            lectorActual = (Lector) new ArchivoTop10();
-            lectorActual.leerArchivo();
-        } catch (IOException e) {
-
+    public void posicionar(int x, int y){
+        if(jugador.espacioDisponible(x,y)){
+            disponible=true;
         }
-
-        setTop10(lectorActual.getLecturaMap());
-        lectorActual = null;
-
-        try {
-            lectorActual = (Lector) new ArchivoPalabrasJuegoNormal();
-            lectorActual.leerArchivo();
-        } catch (IOException e) {
-
+        else{
+            disponible=false;
         }
-        setPalabrasJuegoNormal(lectorActual.getLecturaMap_I_Array());
-        lectorActual = null;
-        try {
-            lectorActual = (Lector) new ArchivoPalabrasJuegoRelax();
-            lectorActual.leerArchivo();
-        } catch (IOException e) {
+    }
 
+    public void confirmar(){
+        if(disponible){
+            jugador.setBarcoSeleccionado();
+            disponible=false;
         }
+    }
 
-        setPalabrasJuegoRelax(lectorActual.getLecturaArrayList());
+    public void cancelar(){
+        disponible=false;
+        jugador.devolverBarco();
+    }
+
+    public void getFragata(){
+        jugador.getFragata();
+    }
+
+    public void getDestructor(){
+        jugador.getDestructor();
+    }
+
+    public void getSubmarino(){
+        jugador.getSubmarino();
+    }
+
+    public void getAcorazado(){
+        jugador.getAcorazado();
     }
 
     public void setPalabrasJuegoNormal(TreeMap<Integer, ArrayList<String>> lecturaMap_I_Array) {
