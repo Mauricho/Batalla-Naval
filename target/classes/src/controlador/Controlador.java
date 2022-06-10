@@ -18,7 +18,5 @@ public interface Controlador {
 
     void cerrarVentana();
 
-    void teclaPresionada(String l);
-
     void iniciar();
 }

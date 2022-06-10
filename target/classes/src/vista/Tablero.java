@@ -4,33 +4,27 @@
  */
 package src.vista;
 
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.util.ArrayList;
-import java.util.TreeMap;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import src.Observador;
-import src.controlador.Controlador;
+import src.controlador.CtrJuegoNormal;
 import src.jugador;
 
 /**
  *
  * @author f_acu
  */
-public class Tablero extends javax.swing.JFrame implements Vista, Observador, KeyListener {
+public class Tablero extends javax.swing.JFrame implements Vista {
 
     //private jugador player = new jugador();
     /**
      * Creates new form Tablero
      */
-    private static Controlador controlador;
-    private Sujeto sujeto;
-    private int i = 0;
+    private static CtrJuegoNormal control;
 
     public Tablero() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.control=new CtrJuegoNormal();
     }
 
     private jugador player = new jugador();
@@ -2210,63 +2204,9 @@ public class Tablero extends javax.swing.JFrame implements Vista, Observador, Ke
         player.disparo(0, 4);
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tablero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tablero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tablero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tablero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Tablero().setVisible(true);
-            }
-        });
-    }
-
-    @Override
-    public void keyPressed(KeyEvent e) {
-    }
-
-    @Override
-    public void keyReleased(KeyEvent e) {
-    }
-
-    @Override
-    public void keyTyped(KeyEvent e) {
-        controlador.teclaPresionada(Character.toString(e.getKeyChar()));
-    }
-
-    @Override
-    public void actualizar(int nivel, int puntaje, int vidas, ArrayList<String> letrasErroneas, int tiempo,
-            TreeMap<Integer, String> letrasAdivinadas, int palabrasAdivinadas) {
-        setNivel(nivel);
-        setPuntaje(puntaje);
-        setTiempo(tiempo);
-        setLetraErronea(letrasErroneas);
-        setVida(vidas);
-        setPalabra(letrasAdivinadas);
+    public void lugarDisparado(int x, int y){
+        control.generarDisparoJugador(x, y);
+        control.generarDisparoEnemigo();
     }
 
     @Override

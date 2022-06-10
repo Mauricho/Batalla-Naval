@@ -20,17 +20,8 @@ public class CtrMenuPrincipal implements Controlador {
     }
 
     public void juegoNormal() {
+        //modelo.selectTab(1);
         modelo.iniciarJuegoNormal();
-
-    }
-
-    public void juegoRelax() {
-        modelo.inciarJuegoRelax();
-
-    }
-
-    public void verTop10() {
-        modelo.verTop10();
     }
 
     public void salir() {
