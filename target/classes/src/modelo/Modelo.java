@@ -9,8 +9,10 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 import src.BatallaNaval;
+import src.InformacionDelJuego;
 import src.jugador;
 import src.vista.Vista;
+import src.vista.VistaSeleccionDePosiciones;
 
 /**
  *
@@ -19,7 +21,7 @@ import src.vista.Vista;
 public class Modelo {
 
     private static Modelo modelo = null;
-    //private InformacionDelJuego informacionDelJuego;
+    private InformacionDelJuego informacionDelJuego;
     private TreeMap<Integer, String> top10;
     private TreeMap<Integer, ArrayList<String>> palabrasJuegoNormal;
     private ArrayList<String> palabrasJuegoRelax;
@@ -42,7 +44,7 @@ public class Modelo {
     }
 
     private Modelo() {
-        //informacionDelJuego = new InformacionDelJuego();
+        informacionDelJuego = new InformacionDelJuego();
         vistaActual = null;
         vistaAdicional = null;
         vistatercera = null;
@@ -54,6 +56,8 @@ public class Modelo {
         palabrasJuegoRelax = new ArrayList<String>();
         disponible=false;
     }
+
+
 
     public void posicionar(int x, int y){
         if(jugador.espacioDisponible(x,y)){
@@ -144,7 +148,7 @@ public class Modelo {
     public void iniciarJuegoNormal() {
         flag = 1;
         vistaActual.hacerVisible(false);
-        vistaActual = new VistaJuegoNormal(informacionDelJuego);
+        vistaActual = new VistaSeleccionDePosiciones(informacionDelJuego);
         vistaActual.hacerVisible(true);
     }
 

@@ -33,4 +33,6 @@ public interface Controlador {
     void cancelarPosicion();
 
     void seleccionarDestructor();
+
+    void juegoNormal();
 }

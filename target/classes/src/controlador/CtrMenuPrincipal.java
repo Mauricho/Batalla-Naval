@@ -53,6 +53,41 @@ public class CtrMenuPrincipal implements Controlador {
     }
 
     @Override
+    public void seleccionarSubmarino() {
+
+    }
+
+    @Override
+    public void seleccionarFragata() {
+
+    }
+
+    @Override
+    public void confirmarPosicion() {
+
+    }
+
+    @Override
+    public void seleccionarAcorazado() {
+
+    }
+
+    @Override
+    public void posicionar(int i, int j) {
+
+    }
+
+    @Override
+    public void cancelarPosicion() {
+
+    }
+
+    @Override
+    public void seleccionarDestructor() {
+
+    }
+
+    @Override
     public void juegoLuck() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
