@@ -19,6 +19,18 @@ public class CtrJuegoLuck implements Controlador {
         this.modelo = Modelo.getInstance();
     }
 
+    public boolean generarDisparoJugador(int x, int y){
+        boolean succes;
+        succes=modelo.dispararPosicion(x, y);
+        return succes;
+    }
+    
+    public boolean generarDisparoEnemigo(){
+        boolean succes=false;
+        succes=modelo.dispararPosicionE();//aca tiene que ir el codigo de disparo aleatorio
+        return succes;
+    }
+    
     @Override
     public void juegoNormal() {
     }

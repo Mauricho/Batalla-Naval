@@ -12,7 +12,7 @@ import src.vista.Vista;
 import src.vista.VistaJuegoGanado;
 import src.vista.VistaJuegoPerdido;
 import src.vista.VistaMenuPrincipal;
-import src.vista.VistaPausa;
+//import src.vista.VistaPausa;
 
 /**
  *
@@ -25,7 +25,6 @@ public class Modelo {
     private Vista vistaActual;
     private Vista vistaAdicional;
     private Vista vistatercera;
-    private BatallaNaval juegoActual;
     private int flag = -1;
 
     public static Modelo getInstance() {
