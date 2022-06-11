@@ -35,4 +35,6 @@ public interface Controlador {
     void seleccionarDestructor();
 
     void juegoNormal();
+
+    void girar();
 }

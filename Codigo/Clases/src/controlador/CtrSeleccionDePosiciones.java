@@ -23,9 +23,7 @@ public class CtrSeleccionDePosiciones implements Controlador {
         modelo.posicionar(x,y);
     }
 
-    public void seleccionarFragata(){
-        modelo.getFragata();
-    }
+    public void seleccionarFragata(){modelo.getFragata();}
 
     public void seleccionarDestructor(){
         modelo.getDestructor();
@@ -47,29 +45,28 @@ public class CtrSeleccionDePosiciones implements Controlador {
         modelo.cancelar();
     }
 
+    public void girar(){modelo.girar();}
+
     @Override
     public void salir() {
         // TODO Auto-generated method stub
-
     }
 
     @Override
     public void cerrarVentana() {
         modelo.cerrarPausa();
-
     }
 
-    public void teclaPresionada(String l) {
-
-    }
+    public void teclaPresionada(String l) {}
 
     @Override
-    public void iniciar() {
-
-    }
+    public void iniciar() {}
 
     @Override
     public void juegoLuck() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+    @Override
+    public void juegoNormal() {}
 }

@@ -189,5 +189,7 @@ public class jugador {
         }
         bajarFlag();
     }
+
+    public static void girarBarcos(){}
     
 }

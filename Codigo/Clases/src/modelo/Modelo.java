@@ -80,6 +80,10 @@ public class Modelo {
         jugador.devolverBarco();
     }
 
+    public void girar(){
+        jugador.girarBarcos();
+    }
+
     public void getFragata(){
         jugador.getFragata();
     }
