@@ -8,12 +8,12 @@ package src.vista;
  *
  * @author f_acu
  */
-public class VistajuegoPerdido extends javax.swing.JFrame implements Vista {
+public class VistaJuegoPerdido extends javax.swing.JFrame implements Vista {
 
     /**
      * Creates new form VistajuegoPerdido
      */
-    public VistajuegoPerdido() {
+    public VistaJuegoPerdido() {
         initComponents();
     }
 

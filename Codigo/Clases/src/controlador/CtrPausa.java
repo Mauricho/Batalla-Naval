@@ -32,7 +32,7 @@ public class CtrPausa implements Controlador {
 
     @Override
     public void cerrarVentana() {
-        modelo.cerrarPausa();
+       // modelo.cerrarPausa();
 
     }
 

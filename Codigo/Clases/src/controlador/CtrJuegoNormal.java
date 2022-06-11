@@ -18,13 +18,17 @@ public class CtrJuegoNormal implements Controlador {
         super();
         this.modelo = Modelo.getInstance();
     }
-
-    public void verEstadisticas() {
-        modelo.verEstaditicas();
+    
+    public boolean generarDisparoJugador(int x, int y){
+        boolean succes;
+        succes=modelo.dispararPosicion(x, y);
+        return succes;
     }
-
-    public void teclaPresionada(String l) {
-        modelo.ingresoDeLetra(l);
+    
+    public boolean generarDisparoEnemigo(){
+        boolean succes=false;
+        succes=modelo.dispararPosicionE();//aca tiene que ir el codigo de disparo aleatorio
+        return succes;
     }
 
     @Override
@@ -46,6 +50,5 @@ public class CtrJuegoNormal implements Controlador {
 
     @Override
     public void juegoLuck() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

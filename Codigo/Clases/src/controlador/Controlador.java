@@ -9,7 +9,7 @@ package src.controlador;
  * @author f_acu
  */
 public interface Controlador {
-
+    
     void juegoNormal();
 
     void juegoLuck();
@@ -17,8 +17,6 @@ public interface Controlador {
     void salir();
 
     void cerrarVentana();
-
-    void teclaPresionada(String l);
 
     void iniciar();
 }

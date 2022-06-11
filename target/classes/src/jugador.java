@@ -11,7 +11,7 @@ import java.util.List;
  * @author f_acu
  */
 public class jugador {
-    private List<Barco> flota;
+    private Barco[] flota;
     private int destructores=0;
     private int cruceros=0;
     private int canioneros=0;
@@ -26,19 +26,30 @@ public class jugador {
                 this.Tablero[i][j]=false;
             }
         }
+        flota= new Barco[10];
     }
     
-    public void disparo(int row, int col){
-        if(this.Tablero[row][col]){
-            
+    public boolean disparo(int row, int col){
+        boolean resultado=false;
+        for(int i=0; i<flota.length;i++){
+            /*if (flota[i].){
+                
+            }
+*/
         }
+        return resultado;
     }
-
-    public List<Barco> getFlota() {
+    
+    public boolean disparoE(){
+        boolean resultado=false;
+        //hay que implementar
+        return resultado;
+    }
+    public Barco[] getFlota() {
         return flota;
     }
 
-    public void setFlota(List<Barco> flota) {
+    public void setFlota(Barco[] flota) {
         this.flota = flota;
     }
 
