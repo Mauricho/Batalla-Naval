@@ -183,13 +183,18 @@ public class jugador {
 
     public static void setBarcoSeleccionado(){
         int y;
+        Barco aux = barcoauxiliar;
         for (int x: barcoauxiliar.getCasilleros().keySet()) {
             y = barcoauxiliar.getCasilleros().get(x);
             TableroJugador[x][y]=true;
         }
+        flota.add(aux);
+        barcoauxiliar=null;
         bajarFlag();
     }
 
-    public static void girarBarcos(){}
+    public static void girarBarcos(){
+        barcoauxiliar.girar();
+    }
     
 }
