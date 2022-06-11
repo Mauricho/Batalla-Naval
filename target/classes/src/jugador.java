@@ -39,7 +39,12 @@ public class jugador {
         }
         return resultado;
     }
-
+    
+    public boolean disparoE(){
+        boolean resultado=false;
+        //hay que implementar
+        return resultado;
+    }
     public Barco[] getFlota() {
         return flota;
     }

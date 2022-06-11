@@ -104,7 +104,7 @@ public class Modelo {
     public void cerrarVentanaJuegoGanado() {
         iniciarVistaMenuPrincipal();
     }
-
+/*
     public void cerrarPausa() {
         iniciarVistaMenuPrincipal();
     }
@@ -113,7 +113,7 @@ public class Modelo {
         vistatercera = (Vista) new VistaPausa();
         vistatercera.hacerVisible(true);
     }
-
+*/
     public void verJuegoPerdido() {
         vistatercera = (Vista) new VistaJuegoPerdido();
         vistatercera.hacerVisible(true);
@@ -149,10 +149,6 @@ public class Modelo {
         modelo = null;
     }
 
-    public void setInformacionDeJuego() {
-//        informacionDelJuego.actualizar();
-    }
-
     public BatallaNaval getJuegoActual() {
         return juegoActual;
     }
@@ -166,4 +162,18 @@ public class Modelo {
         result=this.informacionDelJuego.disparo(x, y);
         return result;
     }
+
+    public boolean dispararPosicionE() {
+        boolean result;
+        result=this.informacionDelJuego.disparoE();
+        return result;
+    }
+
+    public void iniciarSeleccionDePosiciones(int tipo) {
+        vistaActual.hacerVisible(false);
+        vistaActual = new SeleccionDePosiciones(tipo);
+        vistaActual.hacerVisible(true);
+    }
+    
+    
 }

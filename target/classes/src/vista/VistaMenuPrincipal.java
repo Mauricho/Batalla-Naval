@@ -114,7 +114,7 @@ public class VistaMenuPrincipal extends javax.swing.JFrame implements Vista {
 
     private void botonNormalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonNormalActionPerformed
         // TODO add your handling code here:
-        control.juegoNormal();
+        control.SeleccionDPosiciones(1);
     }//GEN-LAST:event_botonNormalActionPerformed
 
     private void botonSalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalidaActionPerformed

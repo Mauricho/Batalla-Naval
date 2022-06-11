@@ -27,7 +27,7 @@ public class CtrJuegoNormal implements Controlador {
     
     public boolean generarDisparoEnemigo(){
         boolean succes=false;
-        //aca tiene que ir el codigo de disparo aleatorio
+        succes=modelo.dispararPosicionE();//aca tiene que ir el codigo de disparo aleatorio
         return succes;
     }
 

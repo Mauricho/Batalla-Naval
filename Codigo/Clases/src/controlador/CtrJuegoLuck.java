@@ -31,15 +31,6 @@ public class CtrJuegoLuck implements Controlador {
     public void cerrarVentana() {
     }
 
-    public void verEstadisticas() {
-        modelo.verEstaditicas();
-    }
-
-    @Override
-    public void teclaPresionada(String l) {
-        modelo.ingresoDeLetra(l);
-    }
-
     @Override
     public void iniciar() {
         modelo.iniciar();
@@ -48,6 +39,6 @@ public class CtrJuegoLuck implements Controlador {
 
     @Override
     public void juegoLuck() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
     }
 }

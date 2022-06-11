@@ -68,97 +68,97 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel17 = new javax.swing.JPanel();
         jLabel115 = new javax.swing.JLabel();
         jPanel18 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        x0y0 = new javax.swing.JButton();
         jPanel19 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
+        x0y1 = new javax.swing.JButton();
         jPanel20 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
+        x0y2 = new javax.swing.JButton();
         jPanel21 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
+        x0x3 = new javax.swing.JButton();
         jPanel22 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
+        x0x4 = new javax.swing.JButton();
         jPanel23 = new javax.swing.JPanel();
-        jButton6 = new javax.swing.JButton();
+        x0x5 = new javax.swing.JButton();
         jPanel24 = new javax.swing.JPanel();
-        jButton7 = new javax.swing.JButton();
+        x0x6 = new javax.swing.JButton();
         jPanel25 = new javax.swing.JPanel();
-        jButton8 = new javax.swing.JButton();
+        x0x7 = new javax.swing.JButton();
         jPanel26 = new javax.swing.JPanel();
-        jButton9 = new javax.swing.JButton();
+        x0x8 = new javax.swing.JButton();
         jPanel27 = new javax.swing.JPanel();
-        jButton10 = new javax.swing.JButton();
+        x0x9 = new javax.swing.JButton();
         jPanel28 = new javax.swing.JPanel();
         jLabel114 = new javax.swing.JLabel();
         jPanel29 = new javax.swing.JPanel();
-        jButton11 = new javax.swing.JButton();
+        x1x0 = new javax.swing.JButton();
         jPanel30 = new javax.swing.JPanel();
-        jButton13 = new javax.swing.JButton();
+        x1y1 = new javax.swing.JButton();
         jPanel31 = new javax.swing.JPanel();
-        jButton14 = new javax.swing.JButton();
+        x1y2 = new javax.swing.JButton();
         jPanel32 = new javax.swing.JPanel();
-        jButton15 = new javax.swing.JButton();
+        x1y3 = new javax.swing.JButton();
         jPanel33 = new javax.swing.JPanel();
-        jButton12 = new javax.swing.JButton();
+        x1y4 = new javax.swing.JButton();
         jPanel34 = new javax.swing.JPanel();
-        jButton16 = new javax.swing.JButton();
+        x1y5 = new javax.swing.JButton();
         jPanel35 = new javax.swing.JPanel();
-        jButton17 = new javax.swing.JButton();
+        x1y6 = new javax.swing.JButton();
         jPanel36 = new javax.swing.JPanel();
-        jButton18 = new javax.swing.JButton();
+        x1y7 = new javax.swing.JButton();
         jPanel37 = new javax.swing.JPanel();
-        jButton19 = new javax.swing.JButton();
+        x1y8 = new javax.swing.JButton();
         jPanel38 = new javax.swing.JPanel();
-        jButton20 = new javax.swing.JButton();
+        x1y9 = new javax.swing.JButton();
         jPanel39 = new javax.swing.JPanel();
         jLabel116 = new javax.swing.JLabel();
         jPanel40 = new javax.swing.JPanel();
-        jButton21 = new javax.swing.JButton();
+        x2y0 = new javax.swing.JButton();
         jPanel41 = new javax.swing.JPanel();
-        jButton22 = new javax.swing.JButton();
+        x2y1 = new javax.swing.JButton();
         jPanel42 = new javax.swing.JPanel();
-        jButton23 = new javax.swing.JButton();
+        x2y2 = new javax.swing.JButton();
         jPanel43 = new javax.swing.JPanel();
-        jButton24 = new javax.swing.JButton();
+        x2y3 = new javax.swing.JButton();
         jPanel44 = new javax.swing.JPanel();
-        jButton25 = new javax.swing.JButton();
+        x2y4 = new javax.swing.JButton();
         jPanel45 = new javax.swing.JPanel();
-        jButton26 = new javax.swing.JButton();
+        x2y5 = new javax.swing.JButton();
         jPanel46 = new javax.swing.JPanel();
-        jButton27 = new javax.swing.JButton();
+        x2y6 = new javax.swing.JButton();
         jPanel47 = new javax.swing.JPanel();
-        jButton28 = new javax.swing.JButton();
+        x2y7 = new javax.swing.JButton();
         jPanel48 = new javax.swing.JPanel();
-        jButton29 = new javax.swing.JButton();
+        x2y8 = new javax.swing.JButton();
         jPanel49 = new javax.swing.JPanel();
-        jButton31 = new javax.swing.JButton();
+        x2y9 = new javax.swing.JButton();
         jPanel50 = new javax.swing.JPanel();
         jLabel117 = new javax.swing.JLabel();
         jPanel51 = new javax.swing.JPanel();
-        jButton32 = new javax.swing.JButton();
+        x3y0 = new javax.swing.JButton();
         jPanel52 = new javax.swing.JPanel();
-        jButton33 = new javax.swing.JButton();
+        x3y1 = new javax.swing.JButton();
         jPanel53 = new javax.swing.JPanel();
-        jButton34 = new javax.swing.JButton();
+        x3y2 = new javax.swing.JButton();
         jPanel54 = new javax.swing.JPanel();
-        jButton35 = new javax.swing.JButton();
+        x3y3 = new javax.swing.JButton();
         jPanel55 = new javax.swing.JPanel();
-        jButton37 = new javax.swing.JButton();
+        x3y4 = new javax.swing.JButton();
         jPanel56 = new javax.swing.JPanel();
-        jButton36 = new javax.swing.JButton();
+        x3y5 = new javax.swing.JButton();
         jPanel57 = new javax.swing.JPanel();
-        jButton38 = new javax.swing.JButton();
+        x3y6 = new javax.swing.JButton();
         jPanel58 = new javax.swing.JPanel();
-        jButton39 = new javax.swing.JButton();
+        x3y7 = new javax.swing.JButton();
         jPanel59 = new javax.swing.JPanel();
-        jButton40 = new javax.swing.JButton();
+        x3y8 = new javax.swing.JButton();
         jPanel60 = new javax.swing.JPanel();
-        jButton41 = new javax.swing.JButton();
+        x3y9 = new javax.swing.JButton();
         jPanel61 = new javax.swing.JPanel();
         jLabel118 = new javax.swing.JLabel();
         jPanel62 = new javax.swing.JPanel();
-        jButton42 = new javax.swing.JButton();
+        x4y0 = new javax.swing.JButton();
         jPanel63 = new javax.swing.JPanel();
-        jButton43 = new javax.swing.JButton();
+        x4y1 = new javax.swing.JButton();
         jPanel64 = new javax.swing.JPanel();
         jButton44 = new javax.swing.JButton();
         jPanel65 = new javax.swing.JPanel();
@@ -529,7 +529,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel1.setLayout(new java.awt.BorderLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Batalla Naval");
         jPanel1.add(jLabel1, java.awt.BorderLayout.PAGE_START);
@@ -644,82 +643,112 @@ public class Tablero extends javax.swing.JFrame implements Vista {
 
         jPanel18.setLayout(new java.awt.BorderLayout());
 
-        jButton1.setToolTipText("");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        x0y0.setToolTipText("");
+        x0y0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                x0y0ActionPerformed(evt);
             }
         });
-        jPanel18.add(jButton1, java.awt.BorderLayout.CENTER);
+        jPanel18.add(x0y0, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel18);
 
         jPanel19.setLayout(new java.awt.BorderLayout());
 
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        x0y1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                x0y1ActionPerformed(evt);
             }
         });
-        jPanel19.add(jButton2, java.awt.BorderLayout.CENTER);
+        jPanel19.add(x0y1, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel19);
 
         jPanel20.setLayout(new java.awt.BorderLayout());
 
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        x0y2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                x0y2ActionPerformed(evt);
             }
         });
-        jPanel20.add(jButton3, java.awt.BorderLayout.CENTER);
+        jPanel20.add(x0y2, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel20);
 
         jPanel21.setLayout(new java.awt.BorderLayout());
 
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        x0x3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                x0x3ActionPerformed(evt);
             }
         });
-        jPanel21.add(jButton4, java.awt.BorderLayout.CENTER);
+        jPanel21.add(x0x3, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel21);
 
         jPanel22.setLayout(new java.awt.BorderLayout());
 
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        x0x4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                x0x4ActionPerformed(evt);
             }
         });
-        jPanel22.add(jButton5, java.awt.BorderLayout.CENTER);
+        jPanel22.add(x0x4, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel22);
 
         jPanel23.setLayout(new java.awt.BorderLayout());
-        jPanel23.add(jButton6, java.awt.BorderLayout.CENTER);
+
+        x0x5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x0x5ActionPerformed(evt);
+            }
+        });
+        jPanel23.add(x0x5, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel23);
 
         jPanel24.setLayout(new java.awt.BorderLayout());
-        jPanel24.add(jButton7, java.awt.BorderLayout.CENTER);
+
+        x0x6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x0x6ActionPerformed(evt);
+            }
+        });
+        jPanel24.add(x0x6, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel24);
 
         jPanel25.setLayout(new java.awt.BorderLayout());
-        jPanel25.add(jButton8, java.awt.BorderLayout.CENTER);
+
+        x0x7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x0x7ActionPerformed(evt);
+            }
+        });
+        jPanel25.add(x0x7, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel25);
 
         jPanel26.setLayout(new java.awt.BorderLayout());
-        jPanel26.add(jButton9, java.awt.BorderLayout.CENTER);
+
+        x0x8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x0x8ActionPerformed(evt);
+            }
+        });
+        jPanel26.add(x0x8, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel26);
 
         jPanel27.setLayout(new java.awt.BorderLayout());
-        jPanel27.add(jButton10, java.awt.BorderLayout.CENTER);
+
+        x0x9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x0x9ActionPerformed(evt);
+            }
+        });
+        jPanel27.add(x0x9, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel27);
 
@@ -732,52 +761,112 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel4.add(jPanel28);
 
         jPanel29.setLayout(new java.awt.BorderLayout());
-        jPanel29.add(jButton11, java.awt.BorderLayout.CENTER);
+
+        x1x0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x1x0ActionPerformed(evt);
+            }
+        });
+        jPanel29.add(x1x0, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel29);
 
         jPanel30.setLayout(new java.awt.BorderLayout());
-        jPanel30.add(jButton13, java.awt.BorderLayout.CENTER);
+
+        x1y1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x1y1ActionPerformed(evt);
+            }
+        });
+        jPanel30.add(x1y1, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel30);
 
         jPanel31.setLayout(new java.awt.BorderLayout());
-        jPanel31.add(jButton14, java.awt.BorderLayout.CENTER);
+
+        x1y2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x1y2ActionPerformed(evt);
+            }
+        });
+        jPanel31.add(x1y2, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel31);
 
         jPanel32.setLayout(new java.awt.BorderLayout());
-        jPanel32.add(jButton15, java.awt.BorderLayout.CENTER);
+
+        x1y3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x1y3ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(x1y3, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel32);
 
         jPanel33.setLayout(new java.awt.BorderLayout());
-        jPanel33.add(jButton12, java.awt.BorderLayout.CENTER);
+
+        x1y4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x1y4ActionPerformed(evt);
+            }
+        });
+        jPanel33.add(x1y4, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel33);
 
         jPanel34.setLayout(new java.awt.BorderLayout());
-        jPanel34.add(jButton16, java.awt.BorderLayout.CENTER);
+
+        x1y5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x1y5ActionPerformed(evt);
+            }
+        });
+        jPanel34.add(x1y5, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel34);
 
         jPanel35.setLayout(new java.awt.BorderLayout());
-        jPanel35.add(jButton17, java.awt.BorderLayout.CENTER);
+
+        x1y6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x1y6ActionPerformed(evt);
+            }
+        });
+        jPanel35.add(x1y6, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel35);
 
         jPanel36.setLayout(new java.awt.BorderLayout());
-        jPanel36.add(jButton18, java.awt.BorderLayout.CENTER);
+
+        x1y7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x1y7ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(x1y7, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel36);
 
         jPanel37.setLayout(new java.awt.BorderLayout());
-        jPanel37.add(jButton19, java.awt.BorderLayout.CENTER);
+
+        x1y8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x1y8ActionPerformed(evt);
+            }
+        });
+        jPanel37.add(x1y8, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel37);
 
         jPanel38.setLayout(new java.awt.BorderLayout());
-        jPanel38.add(jButton20, java.awt.BorderLayout.CENTER);
+
+        x1y9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x1y9ActionPerformed(evt);
+            }
+        });
+        jPanel38.add(x1y9, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel38);
 
@@ -790,58 +879,112 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel4.add(jPanel39);
 
         jPanel40.setLayout(new java.awt.BorderLayout());
-        jPanel40.add(jButton21, java.awt.BorderLayout.CENTER);
+
+        x2y0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x2y0ActionPerformed(evt);
+            }
+        });
+        jPanel40.add(x2y0, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel40);
 
         jPanel41.setLayout(new java.awt.BorderLayout());
-        jPanel41.add(jButton22, java.awt.BorderLayout.CENTER);
+
+        x2y1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x2y1ActionPerformed(evt);
+            }
+        });
+        jPanel41.add(x2y1, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel41);
 
         jPanel42.setLayout(new java.awt.BorderLayout());
-        jPanel42.add(jButton23, java.awt.BorderLayout.CENTER);
+
+        x2y2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x2y2ActionPerformed(evt);
+            }
+        });
+        jPanel42.add(x2y2, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel42);
 
         jPanel43.setLayout(new java.awt.BorderLayout());
-        jPanel43.add(jButton24, java.awt.BorderLayout.CENTER);
+
+        x2y3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x2y3ActionPerformed(evt);
+            }
+        });
+        jPanel43.add(x2y3, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel43);
 
         jPanel44.setLayout(new java.awt.BorderLayout());
-        jPanel44.add(jButton25, java.awt.BorderLayout.CENTER);
+
+        x2y4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x2y4ActionPerformed(evt);
+            }
+        });
+        jPanel44.add(x2y4, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel44);
 
         jPanel45.setLayout(new java.awt.BorderLayout());
-        jPanel45.add(jButton26, java.awt.BorderLayout.CENTER);
+
+        x2y5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x2y5ActionPerformed(evt);
+            }
+        });
+        jPanel45.add(x2y5, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel45);
 
         jPanel46.setLayout(new java.awt.BorderLayout());
-        jPanel46.add(jButton27, java.awt.BorderLayout.CENTER);
+
+        x2y6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x2y6ActionPerformed(evt);
+            }
+        });
+        jPanel46.add(x2y6, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel46);
 
         jPanel47.setLayout(new java.awt.BorderLayout());
-        jPanel47.add(jButton28, java.awt.BorderLayout.CENTER);
+
+        x2y7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x2y7ActionPerformed(evt);
+            }
+        });
+        jPanel47.add(x2y7, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel47);
 
         jPanel48.setLayout(new java.awt.BorderLayout());
-        jPanel48.add(jButton29, java.awt.BorderLayout.CENTER);
+
+        x2y8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x2y8ActionPerformed(evt);
+            }
+        });
+        jPanel48.add(x2y8, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel48);
 
         jPanel49.setLayout(new java.awt.BorderLayout());
 
-        jButton31.addActionListener(new java.awt.event.ActionListener() {
+        x2y9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton31ActionPerformed(evt);
+                x2y9ActionPerformed(evt);
             }
         });
-        jPanel49.add(jButton31, java.awt.BorderLayout.CENTER);
+        jPanel49.add(x2y9, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel49);
 
@@ -854,52 +997,112 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel4.add(jPanel50);
 
         jPanel51.setLayout(new java.awt.BorderLayout());
-        jPanel51.add(jButton32, java.awt.BorderLayout.CENTER);
+
+        x3y0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x3y0ActionPerformed(evt);
+            }
+        });
+        jPanel51.add(x3y0, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel51);
 
         jPanel52.setLayout(new java.awt.BorderLayout());
-        jPanel52.add(jButton33, java.awt.BorderLayout.CENTER);
+
+        x3y1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x3y1ActionPerformed(evt);
+            }
+        });
+        jPanel52.add(x3y1, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel52);
 
         jPanel53.setLayout(new java.awt.BorderLayout());
-        jPanel53.add(jButton34, java.awt.BorderLayout.CENTER);
+
+        x3y2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x3y2ActionPerformed(evt);
+            }
+        });
+        jPanel53.add(x3y2, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel53);
 
         jPanel54.setLayout(new java.awt.BorderLayout());
-        jPanel54.add(jButton35, java.awt.BorderLayout.CENTER);
+
+        x3y3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x3y3ActionPerformed(evt);
+            }
+        });
+        jPanel54.add(x3y3, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel54);
 
         jPanel55.setLayout(new java.awt.BorderLayout());
-        jPanel55.add(jButton37, java.awt.BorderLayout.CENTER);
+
+        x3y4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x3y4ActionPerformed(evt);
+            }
+        });
+        jPanel55.add(x3y4, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel55);
 
         jPanel56.setLayout(new java.awt.BorderLayout());
-        jPanel56.add(jButton36, java.awt.BorderLayout.CENTER);
+
+        x3y5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x3y5ActionPerformed(evt);
+            }
+        });
+        jPanel56.add(x3y5, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel56);
 
         jPanel57.setLayout(new java.awt.BorderLayout());
-        jPanel57.add(jButton38, java.awt.BorderLayout.CENTER);
+
+        x3y6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x3y6ActionPerformed(evt);
+            }
+        });
+        jPanel57.add(x3y6, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel57);
 
         jPanel58.setLayout(new java.awt.BorderLayout());
-        jPanel58.add(jButton39, java.awt.BorderLayout.CENTER);
+
+        x3y7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x3y7ActionPerformed(evt);
+            }
+        });
+        jPanel58.add(x3y7, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel58);
 
         jPanel59.setLayout(new java.awt.BorderLayout());
-        jPanel59.add(jButton40, java.awt.BorderLayout.CENTER);
+
+        x3y8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x3y8ActionPerformed(evt);
+            }
+        });
+        jPanel59.add(x3y8, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel59);
 
         jPanel60.setLayout(new java.awt.BorderLayout());
-        jPanel60.add(jButton41, java.awt.BorderLayout.CENTER);
+
+        x3y9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x3y9ActionPerformed(evt);
+            }
+        });
+        jPanel60.add(x3y9, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel60);
 
@@ -912,51 +1115,111 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel4.add(jPanel61);
 
         jPanel62.setLayout(new java.awt.BorderLayout());
-        jPanel62.add(jButton42, java.awt.BorderLayout.CENTER);
+
+        x4y0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x4y0ActionPerformed(evt);
+            }
+        });
+        jPanel62.add(x4y0, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel62);
 
         jPanel63.setLayout(new java.awt.BorderLayout());
-        jPanel63.add(jButton43, java.awt.BorderLayout.CENTER);
+
+        x4y1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x4y1ActionPerformed(evt);
+            }
+        });
+        jPanel63.add(x4y1, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel63);
 
         jPanel64.setLayout(new java.awt.BorderLayout());
+
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
         jPanel64.add(jButton44, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel64);
 
         jPanel65.setLayout(new java.awt.BorderLayout());
+
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton45ActionPerformed(evt);
+            }
+        });
         jPanel65.add(jButton45, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel65);
 
         jPanel66.setLayout(new java.awt.BorderLayout());
+
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton46ActionPerformed(evt);
+            }
+        });
         jPanel66.add(jButton46, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel66);
 
         jPanel67.setLayout(new java.awt.BorderLayout());
+
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton47ActionPerformed(evt);
+            }
+        });
         jPanel67.add(jButton47, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel67);
 
         jPanel68.setLayout(new java.awt.BorderLayout());
+
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48ActionPerformed(evt);
+            }
+        });
         jPanel68.add(jButton48, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel68);
 
         jPanel69.setLayout(new java.awt.BorderLayout());
+
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49ActionPerformed(evt);
+            }
+        });
         jPanel69.add(jButton49, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel69);
 
         jPanel70.setLayout(new java.awt.BorderLayout());
+
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50ActionPerformed(evt);
+            }
+        });
         jPanel70.add(jButton50, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel70);
 
         jPanel71.setLayout(new java.awt.BorderLayout());
+
+        jButton51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton51ActionPerformed(evt);
+            }
+        });
         jPanel71.add(jButton51, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel71);
@@ -970,51 +1233,111 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel4.add(jPanel72);
 
         jPanel73.setLayout(new java.awt.BorderLayout());
+
+        jButton52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton52ActionPerformed(evt);
+            }
+        });
         jPanel73.add(jButton52, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel73);
 
         jPanel74.setLayout(new java.awt.BorderLayout());
+
+        jButton53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton53ActionPerformed(evt);
+            }
+        });
         jPanel74.add(jButton53, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel74);
 
         jPanel75.setLayout(new java.awt.BorderLayout());
+
+        jButton54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton54ActionPerformed(evt);
+            }
+        });
         jPanel75.add(jButton54, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel75);
 
         jPanel76.setLayout(new java.awt.BorderLayout());
+
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton56ActionPerformed(evt);
+            }
+        });
         jPanel76.add(jButton56, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel76);
 
         jPanel77.setLayout(new java.awt.BorderLayout());
+
+        jButton57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton57ActionPerformed(evt);
+            }
+        });
         jPanel77.add(jButton57, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel77);
 
         jPanel78.setLayout(new java.awt.BorderLayout());
+
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
         jPanel78.add(jButton30, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel78);
 
         jPanel79.setLayout(new java.awt.BorderLayout());
+
+        jButton58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton58ActionPerformed(evt);
+            }
+        });
         jPanel79.add(jButton58, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel79);
 
         jPanel80.setLayout(new java.awt.BorderLayout());
+
+        jButton59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton59ActionPerformed(evt);
+            }
+        });
         jPanel80.add(jButton59, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel80);
 
         jPanel81.setLayout(new java.awt.BorderLayout());
+
+        jButton60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton60ActionPerformed(evt);
+            }
+        });
         jPanel81.add(jButton60, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel81);
 
         jPanel82.setLayout(new java.awt.BorderLayout());
+
+        jButton61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton61ActionPerformed(evt);
+            }
+        });
         jPanel82.add(jButton61, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel82);
@@ -1028,51 +1351,111 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel4.add(jPanel83);
 
         jPanel84.setLayout(new java.awt.BorderLayout());
+
+        jButton62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton62ActionPerformed(evt);
+            }
+        });
         jPanel84.add(jButton62, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel84);
 
         jPanel85.setLayout(new java.awt.BorderLayout());
+
+        jButton63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton63ActionPerformed(evt);
+            }
+        });
         jPanel85.add(jButton63, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel85);
 
         jPanel86.setLayout(new java.awt.BorderLayout());
+
+        jButton64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton64ActionPerformed(evt);
+            }
+        });
         jPanel86.add(jButton64, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel86);
 
         jPanel87.setLayout(new java.awt.BorderLayout());
+
+        jButton65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton65ActionPerformed(evt);
+            }
+        });
         jPanel87.add(jButton65, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel87);
 
         jPanel88.setLayout(new java.awt.BorderLayout());
+
+        jButton67.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton67ActionPerformed(evt);
+            }
+        });
         jPanel88.add(jButton67, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel88);
 
         jPanel89.setLayout(new java.awt.BorderLayout());
+
+        jButton66.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton66ActionPerformed(evt);
+            }
+        });
         jPanel89.add(jButton66, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel89);
 
         jPanel90.setLayout(new java.awt.BorderLayout());
+
+        jButton68.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton68ActionPerformed(evt);
+            }
+        });
         jPanel90.add(jButton68, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel90);
 
         jPanel91.setLayout(new java.awt.BorderLayout());
+
+        jButton69.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton69ActionPerformed(evt);
+            }
+        });
         jPanel91.add(jButton69, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel91);
 
         jPanel92.setLayout(new java.awt.BorderLayout());
+
+        jButton70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton70ActionPerformed(evt);
+            }
+        });
         jPanel92.add(jButton70, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel92);
 
         jPanel93.setLayout(new java.awt.BorderLayout());
+
+        jButton71.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton71ActionPerformed(evt);
+            }
+        });
         jPanel93.add(jButton71, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel93);
@@ -1086,51 +1469,111 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel4.add(jPanel94);
 
         jPanel95.setLayout(new java.awt.BorderLayout());
+
+        jButton72.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton72ActionPerformed(evt);
+            }
+        });
         jPanel95.add(jButton72, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel95);
 
         jPanel96.setLayout(new java.awt.BorderLayout());
+
+        jButton73.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton73ActionPerformed(evt);
+            }
+        });
         jPanel96.add(jButton73, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel96);
 
         jPanel97.setLayout(new java.awt.BorderLayout());
+
+        jButton74.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton74ActionPerformed(evt);
+            }
+        });
         jPanel97.add(jButton74, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel97);
 
         jPanel98.setLayout(new java.awt.BorderLayout());
+
+        jButton75.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton75ActionPerformed(evt);
+            }
+        });
         jPanel98.add(jButton75, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel98);
 
         jPanel99.setLayout(new java.awt.BorderLayout());
+
+        jButton76.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton76ActionPerformed(evt);
+            }
+        });
         jPanel99.add(jButton76, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel99);
 
         jPanel100.setLayout(new java.awt.BorderLayout());
+
+        jButton77.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton77ActionPerformed(evt);
+            }
+        });
         jPanel100.add(jButton77, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel100);
 
         jPanel101.setLayout(new java.awt.BorderLayout());
+
+        jButton78.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton78ActionPerformed(evt);
+            }
+        });
         jPanel101.add(jButton78, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel101);
 
         jPanel102.setLayout(new java.awt.BorderLayout());
+
+        jButton79.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton79ActionPerformed(evt);
+            }
+        });
         jPanel102.add(jButton79, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel102);
 
         jPanel103.setLayout(new java.awt.BorderLayout());
+
+        jButton80.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton80ActionPerformed(evt);
+            }
+        });
         jPanel103.add(jButton80, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel103);
 
         jPanel104.setLayout(new java.awt.BorderLayout());
+
+        jButton81.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton81ActionPerformed(evt);
+            }
+        });
         jPanel104.add(jButton81, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel104);
@@ -1144,51 +1587,111 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel4.add(jPanel105);
 
         jPanel106.setLayout(new java.awt.BorderLayout());
+
+        jButton82.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton82ActionPerformed(evt);
+            }
+        });
         jPanel106.add(jButton82, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel106);
 
         jPanel107.setLayout(new java.awt.BorderLayout());
+
+        jButton83.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton83ActionPerformed(evt);
+            }
+        });
         jPanel107.add(jButton83, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel107);
 
         jPanel108.setLayout(new java.awt.BorderLayout());
+
+        jButton84.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton84ActionPerformed(evt);
+            }
+        });
         jPanel108.add(jButton84, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel108);
 
         jPanel109.setLayout(new java.awt.BorderLayout());
+
+        jButton85.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton85ActionPerformed(evt);
+            }
+        });
         jPanel109.add(jButton85, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel109);
 
         jPanel110.setLayout(new java.awt.BorderLayout());
+
+        jButton86.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton86ActionPerformed(evt);
+            }
+        });
         jPanel110.add(jButton86, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel110);
 
         jPanel111.setLayout(new java.awt.BorderLayout());
+
+        jButton87.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton87ActionPerformed(evt);
+            }
+        });
         jPanel111.add(jButton87, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel111);
 
         jPanel112.setLayout(new java.awt.BorderLayout());
+
+        jButton88.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton88ActionPerformed(evt);
+            }
+        });
         jPanel112.add(jButton88, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel112);
 
         jPanel113.setLayout(new java.awt.BorderLayout());
+
+        jButton89.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton89ActionPerformed(evt);
+            }
+        });
         jPanel113.add(jButton89, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel113);
 
         jPanel114.setLayout(new java.awt.BorderLayout());
+
+        jButton90.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton90ActionPerformed(evt);
+            }
+        });
         jPanel114.add(jButton90, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel114);
 
         jPanel115.setLayout(new java.awt.BorderLayout());
+
+        jButton91.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton91ActionPerformed(evt);
+            }
+        });
         jPanel115.add(jButton91, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel115);
@@ -1202,11 +1705,23 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel4.add(jPanel116);
 
         jPanel117.setLayout(new java.awt.BorderLayout());
+
+        jButton92.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton92ActionPerformed(evt);
+            }
+        });
         jPanel117.add(jButton92, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel117);
 
         jPanel118.setLayout(new java.awt.BorderLayout());
+
+        jButton93.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton93ActionPerformed(evt);
+            }
+        });
         jPanel118.add(jButton93, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel118);
@@ -1223,36 +1738,78 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         jPanel4.add(jPanel119);
 
         jPanel120.setLayout(new java.awt.BorderLayout());
+
+        jButton95.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton95ActionPerformed(evt);
+            }
+        });
         jPanel120.add(jButton95, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel120);
 
         jPanel121.setLayout(new java.awt.BorderLayout());
+
+        jButton96.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton96ActionPerformed(evt);
+            }
+        });
         jPanel121.add(jButton96, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel121);
 
         jPanel122.setLayout(new java.awt.BorderLayout());
+
+        jButton97.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton97ActionPerformed(evt);
+            }
+        });
         jPanel122.add(jButton97, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel122);
 
         jPanel123.setLayout(new java.awt.BorderLayout());
+
+        jButton98.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton98ActionPerformed(evt);
+            }
+        });
         jPanel123.add(jButton98, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel123);
 
         jPanel124.setLayout(new java.awt.BorderLayout());
+
+        jButton99.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton99ActionPerformed(evt);
+            }
+        });
         jPanel124.add(jButton99, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel124);
 
         jPanel125.setLayout(new java.awt.BorderLayout());
+
+        jButton100.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton100ActionPerformed(evt);
+            }
+        });
         jPanel125.add(jButton100, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel125);
 
         jPanel126.setLayout(new java.awt.BorderLayout());
+
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton55ActionPerformed(evt);
+            }
+        });
         jPanel126.add(jButton55, java.awt.BorderLayout.CENTER);
 
         jPanel4.add(jPanel126);
@@ -2171,38 +2728,413 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         }
     }//GEN-LAST:event_jButton101ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void x0y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0y1ActionPerformed
         // TODO add your handling code here:
-        player.disparo(0, 1);
-    }//GEN-LAST:event_jButton2ActionPerformed
+        this.lugarDisparado(0, 1);
+    }//GEN-LAST:event_x0y1ActionPerformed
 
     private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
-        // TODO add your handling code here:
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton94ActionPerformed
 
-    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        player.disparo(9, 3);
-    }//GEN-LAST:event_jButton31ActionPerformed
+    private void x2y9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y9ActionPerformed
+        this.lugarDisparado(2, 9);
+    }//GEN-LAST:event_x2y9ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void x0y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0y0ActionPerformed
         // TODO add your handling code here:
-        player.disparo(0, 0);
-    }//GEN-LAST:event_jButton1ActionPerformed
+        this.lugarDisparado(0,0);
+    }//GEN-LAST:event_x0y0ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void x0y2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0y2ActionPerformed
         // TODO add your handling code here:
-        player.disparo(0, 2);
-    }//GEN-LAST:event_jButton3ActionPerformed
+        this.lugarDisparado(0, 2);
+    }//GEN-LAST:event_x0y2ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void x0x3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x3ActionPerformed
         // TODO add your handling code here:
-        player.disparo(0, 3);
-    }//GEN-LAST:event_jButton4ActionPerformed
+        this.lugarDisparado(0, 3);
+    }//GEN-LAST:event_x0x3ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void x0x4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x4ActionPerformed
         // TODO add your handling code here:
-        player.disparo(0, 4);
-    }//GEN-LAST:event_jButton5ActionPerformed
+        this.lugarDisparado(0, 4);
+    }//GEN-LAST:event_x0x4ActionPerformed
+
+    private void x0x5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x5ActionPerformed
+        // TODO add your handling code here:
+        this.lugarDisparado(0, 5);
+    }//GEN-LAST:event_x0x5ActionPerformed
+
+    private void x0x6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x6ActionPerformed
+        // TODO add your handling code here:
+        this.lugarDisparado(0, 6);
+    }//GEN-LAST:event_x0x6ActionPerformed
+
+    private void x0x7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x7ActionPerformed
+        this.lugarDisparado(0, 7);        // TODO add your handling code here:
+    }//GEN-LAST:event_x0x7ActionPerformed
+
+    private void x0x8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x8ActionPerformed
+        this.lugarDisparado(0, 8);        // TODO add your handling code here:
+    }//GEN-LAST:event_x0x8ActionPerformed
+
+    private void x0x9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x9ActionPerformed
+        // TODO add your handling code here:
+        this.lugarDisparado(0, 9);
+    }//GEN-LAST:event_x0x9ActionPerformed
+
+    private void x1x0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1x0ActionPerformed
+        this.lugarDisparado(1, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x1x0ActionPerformed
+
+    private void x1y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y1ActionPerformed
+        this.lugarDisparado(1, 1);        // TODO add your handling code here:
+    }//GEN-LAST:event_x1y1ActionPerformed
+
+    private void x1y2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y2ActionPerformed
+        this.lugarDisparado(1, 2);        // TODO add your handling code here:
+    }//GEN-LAST:event_x1y2ActionPerformed
+
+    private void x1y3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y3ActionPerformed
+        this.lugarDisparado(1, 3);        // TODO add your handling code here:
+    }//GEN-LAST:event_x1y3ActionPerformed
+
+    private void x1y4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y4ActionPerformed
+        this.lugarDisparado(1, 4);        // TODO add your handling code here:
+    }//GEN-LAST:event_x1y4ActionPerformed
+
+    private void x1y5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y5ActionPerformed
+        this.lugarDisparado(1, 5);        // TODO add your handling code here:
+    }//GEN-LAST:event_x1y5ActionPerformed
+
+    private void x1y6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y6ActionPerformed
+        this.lugarDisparado(1, 6);        // TODO add your handling code here:
+    }//GEN-LAST:event_x1y6ActionPerformed
+
+    private void x1y7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y7ActionPerformed
+        this.lugarDisparado(1, 7);        // TODO add your handling code here:
+    }//GEN-LAST:event_x1y7ActionPerformed
+
+    private void x1y8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y8ActionPerformed
+        this.lugarDisparado(1, 8);        // TODO add your handling code here:
+    }//GEN-LAST:event_x1y8ActionPerformed
+
+    private void x1y9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y9ActionPerformed
+        this.lugarDisparado(1, 9);        // TODO add your handling code here:
+    }//GEN-LAST:event_x1y9ActionPerformed
+
+    private void x2y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y0ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x2y0ActionPerformed
+
+    private void x2y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y1ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x2y1ActionPerformed
+
+    private void x2y2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y2ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x2y2ActionPerformed
+
+    private void x2y3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y3ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x2y3ActionPerformed
+
+    private void x2y4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y4ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x2y4ActionPerformed
+
+    private void x2y5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y5ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x2y5ActionPerformed
+
+    private void x2y6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y6ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x2y6ActionPerformed
+
+    private void x2y7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y7ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x2y7ActionPerformed
+
+    private void x2y8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y8ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x2y8ActionPerformed
+
+    private void x3y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y0ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x3y0ActionPerformed
+
+    private void x3y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y1ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x3y1ActionPerformed
+
+    private void x3y2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y2ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x3y2ActionPerformed
+
+    private void x3y3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y3ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x3y3ActionPerformed
+
+    private void x3y4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y4ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x3y4ActionPerformed
+
+    private void x3y5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y5ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x3y5ActionPerformed
+
+    private void x3y6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y6ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x3y6ActionPerformed
+
+    private void x3y7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y7ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x3y7ActionPerformed
+
+    private void x3y8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y8ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x3y8ActionPerformed
+
+    private void x3y9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y9ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x3y9ActionPerformed
+
+    private void x4y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x4y0ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x4y0ActionPerformed
+
+    private void x4y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x4y1ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_x4y1ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton46ActionPerformed
+
+    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton47ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton49ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton50ActionPerformed
+
+    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton51ActionPerformed
+
+    private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton52ActionPerformed
+
+    private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton53ActionPerformed
+
+    private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton54ActionPerformed
+
+    private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton56ActionPerformed
+
+    private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton57ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton58ActionPerformed
+
+    private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton59ActionPerformed
+
+    private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton60ActionPerformed
+
+    private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton61ActionPerformed
+
+    private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton62ActionPerformed
+
+    private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton63ActionPerformed
+
+    private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton64ActionPerformed
+
+    private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton65ActionPerformed
+
+    private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton67ActionPerformed
+
+    private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton66ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton66ActionPerformed
+
+    private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton68ActionPerformed
+
+    private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton69ActionPerformed
+
+    private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton70ActionPerformed
+
+    private void jButton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton71ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton71ActionPerformed
+
+    private void jButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton72ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton72ActionPerformed
+
+    private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton73ActionPerformed
+
+    private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton74ActionPerformed
+
+    private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton75ActionPerformed
+
+    private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton76ActionPerformed
+
+    private void jButton77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton77ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton77ActionPerformed
+
+    private void jButton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton78ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton78ActionPerformed
+
+    private void jButton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton79ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton79ActionPerformed
+
+    private void jButton80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton80ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton80ActionPerformed
+
+    private void jButton81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton81ActionPerformed
+
+    private void jButton82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton82ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton82ActionPerformed
+
+    private void jButton83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton83ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton83ActionPerformed
+
+    private void jButton84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton84ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton84ActionPerformed
+
+    private void jButton85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton85ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton85ActionPerformed
+
+    private void jButton86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton86ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton86ActionPerformed
+
+    private void jButton87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton87ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton87ActionPerformed
+
+    private void jButton88ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton88ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton88ActionPerformed
+
+    private void jButton89ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton89ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton89ActionPerformed
+
+    private void jButton90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton90ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton90ActionPerformed
+
+    private void jButton91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton91ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton91ActionPerformed
+
+    private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton92ActionPerformed
+
+    private void jButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton93ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton93ActionPerformed
+
+    private void jButton95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton95ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton95ActionPerformed
+
+    private void jButton96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton96ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton96ActionPerformed
+
+    private void jButton97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton97ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton97ActionPerformed
+
+    private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton98ActionPerformed
+
+    private void jButton99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton99ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton99ActionPerformed
+
+    private void jButton100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton100ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton100ActionPerformed
+
+    private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
+        this.lugarDisparado(2, 0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton55ActionPerformed
 
     public void lugarDisparado(int x, int y){
         control.generarDisparoJugador(x, y);
@@ -2215,11 +3147,8 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton100;
     private javax.swing.JButton jButton101;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton113;
     private javax.swing.JButton jButton114;
     private javax.swing.JButton jButton115;
@@ -2227,7 +3156,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton117;
     private javax.swing.JButton jButton118;
     private javax.swing.JButton jButton119;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton120;
     private javax.swing.JButton jButton121;
     private javax.swing.JButton jButton122;
@@ -2238,7 +3166,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton127;
     private javax.swing.JButton jButton128;
     private javax.swing.JButton jButton129;
-    private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton130;
     private javax.swing.JButton jButton131;
     private javax.swing.JButton jButton132;
@@ -2249,7 +3176,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton137;
     private javax.swing.JButton jButton138;
     private javax.swing.JButton jButton139;
-    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton140;
     private javax.swing.JButton jButton141;
     private javax.swing.JButton jButton142;
@@ -2260,7 +3186,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton147;
     private javax.swing.JButton jButton148;
     private javax.swing.JButton jButton149;
-    private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton150;
     private javax.swing.JButton jButton151;
     private javax.swing.JButton jButton152;
@@ -2271,7 +3196,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton157;
     private javax.swing.JButton jButton158;
     private javax.swing.JButton jButton159;
-    private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton160;
     private javax.swing.JButton jButton161;
     private javax.swing.JButton jButton162;
@@ -2282,7 +3206,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton167;
     private javax.swing.JButton jButton168;
     private javax.swing.JButton jButton169;
-    private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton170;
     private javax.swing.JButton jButton171;
     private javax.swing.JButton jButton172;
@@ -2293,7 +3216,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton177;
     private javax.swing.JButton jButton178;
     private javax.swing.JButton jButton179;
-    private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton180;
     private javax.swing.JButton jButton181;
     private javax.swing.JButton jButton182;
@@ -2304,7 +3226,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton187;
     private javax.swing.JButton jButton188;
     private javax.swing.JButton jButton189;
-    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton190;
     private javax.swing.JButton jButton191;
     private javax.swing.JButton jButton192;
@@ -2315,43 +3236,16 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton197;
     private javax.swing.JButton jButton198;
     private javax.swing.JButton jButton199;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton200;
     private javax.swing.JButton jButton201;
     private javax.swing.JButton jButton202;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton31;
-    private javax.swing.JButton jButton32;
-    private javax.swing.JButton jButton33;
-    private javax.swing.JButton jButton34;
-    private javax.swing.JButton jButton35;
-    private javax.swing.JButton jButton36;
-    private javax.swing.JButton jButton37;
-    private javax.swing.JButton jButton38;
-    private javax.swing.JButton jButton39;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton40;
-    private javax.swing.JButton jButton41;
-    private javax.swing.JButton jButton42;
-    private javax.swing.JButton jButton43;
     private javax.swing.JButton jButton44;
     private javax.swing.JButton jButton45;
     private javax.swing.JButton jButton46;
     private javax.swing.JButton jButton47;
     private javax.swing.JButton jButton48;
     private javax.swing.JButton jButton49;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton50;
     private javax.swing.JButton jButton51;
     private javax.swing.JButton jButton52;
@@ -2362,7 +3256,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton57;
     private javax.swing.JButton jButton58;
     private javax.swing.JButton jButton59;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton60;
     private javax.swing.JButton jButton61;
     private javax.swing.JButton jButton62;
@@ -2373,7 +3266,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton67;
     private javax.swing.JButton jButton68;
     private javax.swing.JButton jButton69;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton70;
     private javax.swing.JButton jButton71;
     private javax.swing.JButton jButton72;
@@ -2384,7 +3276,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton77;
     private javax.swing.JButton jButton78;
     private javax.swing.JButton jButton79;
-    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton80;
     private javax.swing.JButton jButton81;
     private javax.swing.JButton jButton82;
@@ -2395,7 +3286,6 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JButton jButton87;
     private javax.swing.JButton jButton88;
     private javax.swing.JButton jButton89;
-    private javax.swing.JButton jButton9;
     private javax.swing.JButton jButton90;
     private javax.swing.JButton jButton91;
     private javax.swing.JButton jButton92;
@@ -2699,6 +3589,48 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JPanel jPanel99;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JButton x0x3;
+    private javax.swing.JButton x0x4;
+    private javax.swing.JButton x0x5;
+    private javax.swing.JButton x0x6;
+    private javax.swing.JButton x0x7;
+    private javax.swing.JButton x0x8;
+    private javax.swing.JButton x0x9;
+    private javax.swing.JButton x0y0;
+    private javax.swing.JButton x0y1;
+    private javax.swing.JButton x0y2;
+    private javax.swing.JButton x1x0;
+    private javax.swing.JButton x1y1;
+    private javax.swing.JButton x1y2;
+    private javax.swing.JButton x1y3;
+    private javax.swing.JButton x1y4;
+    private javax.swing.JButton x1y5;
+    private javax.swing.JButton x1y6;
+    private javax.swing.JButton x1y7;
+    private javax.swing.JButton x1y8;
+    private javax.swing.JButton x1y9;
+    private javax.swing.JButton x2y0;
+    private javax.swing.JButton x2y1;
+    private javax.swing.JButton x2y2;
+    private javax.swing.JButton x2y3;
+    private javax.swing.JButton x2y4;
+    private javax.swing.JButton x2y5;
+    private javax.swing.JButton x2y6;
+    private javax.swing.JButton x2y7;
+    private javax.swing.JButton x2y8;
+    private javax.swing.JButton x2y9;
+    private javax.swing.JButton x3y0;
+    private javax.swing.JButton x3y1;
+    private javax.swing.JButton x3y2;
+    private javax.swing.JButton x3y3;
+    private javax.swing.JButton x3y4;
+    private javax.swing.JButton x3y5;
+    private javax.swing.JButton x3y6;
+    private javax.swing.JButton x3y7;
+    private javax.swing.JButton x3y8;
+    private javax.swing.JButton x3y9;
+    private javax.swing.JButton x4y0;
+    private javax.swing.JButton x4y1;
     // End of variables declaration//GEN-END:variables
 
 }

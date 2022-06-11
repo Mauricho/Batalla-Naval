@@ -19,11 +19,6 @@ public class CtrMenuPrincipal implements Controlador {
         this.modelo = Modelo.getInstance();
     }
 
-    public void juegoNormal() {
-        //modelo.selectTab(1);
-        modelo.iniciarJuegoNormal();
-    }
-
     public void salir() {
         modelo.salirJuego();
     }
@@ -31,10 +26,6 @@ public class CtrMenuPrincipal implements Controlador {
     @Override
     public void cerrarVentana() {
         // TODO Auto-generated method stub
-
-    }
-
-    public void teclaPresionada(String l) {
 
     }
 
@@ -46,5 +37,14 @@ public class CtrMenuPrincipal implements Controlador {
     @Override
     public void juegoLuck() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void SeleccionDPosiciones(int tipo) {
+        modelo.iniciarSeleccionDePosiciones(tipo);
+    }
+
+    @Override
+    public void juegoNormal() {
+        
     }
 }

@@ -6,25 +6,26 @@ package src.vista;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import src.controlador.CtrSeleccionDePosiciones;
 import src.jugador;
 
 /**
  *
  * @author f_acu
  */
-public class SeleccionDePosiciones extends javax.swing.JFrame {
+public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
 
     /**
      * Creates new form SeleccionDePosiciones
      */
     private int flag;
+    private CtrSeleccionDePosiciones control;
     public SeleccionDePosiciones(int tipo) {
         initComponents();
         this.setLocationRelativeTo(null);
         this.flag=tipo;
+        this.control = new CtrSeleccionDePosiciones();
     }
-    
-    private jugador player=new jugador();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -283,17 +284,16 @@ public class SeleccionDePosiciones extends javax.swing.JFrame {
         jButton55 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jButton102 = new javax.swing.JButton();
-        jButton103 = new javax.swing.JButton();
-        jButton104 = new javax.swing.JButton();
-        jButton105 = new javax.swing.JButton();
         jButton106 = new javax.swing.JButton();
-        jButton107 = new javax.swing.JButton();
-        jButton108 = new javax.swing.JButton();
-        jButton109 = new javax.swing.JButton();
-        jButton110 = new javax.swing.JButton();
-        jButton111 = new javax.swing.JButton();
-        jPanel127 = new javax.swing.JPanel();
-        jButton112 = new javax.swing.JButton();
+        jButton103 = new javax.swing.JButton();
+        jButton105 = new javax.swing.JButton();
+        jPanel128 = new javax.swing.JPanel();
+        jPanel129 = new javax.swing.JPanel();
+        jButton113 = new javax.swing.JButton();
+        jPanel130 = new javax.swing.JPanel();
+        jButton114 = new javax.swing.JButton();
+        jPanel131 = new javax.swing.JPanel();
+        jButton115 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -1037,7 +1037,7 @@ public class SeleccionDePosiciones extends javax.swing.JFrame {
 
         jPanel3.add(jPanel126);
 
-        jPanel5.setLayout(new java.awt.GridLayout(10, 0));
+        jPanel5.setLayout(new java.awt.GridLayout(2, 2, 2, 2));
 
         jButton102.setText("Destructor");
         jButton102.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1048,6 +1048,7 @@ public class SeleccionDePosiciones extends javax.swing.JFrame {
             }
         });
         jPanel5.add(jButton102);
+        jPanel5.add(jButton106);
 
         jButton103.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1055,40 +1056,40 @@ public class SeleccionDePosiciones extends javax.swing.JFrame {
             }
         });
         jPanel5.add(jButton103);
-        jPanel5.add(jButton104);
 
         jButton105.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel5.add(jButton105);
-        jPanel5.add(jButton106);
-        jPanel5.add(jButton107);
-        jPanel5.add(jButton108);
-        jPanel5.add(jButton109);
-        jPanel5.add(jButton110);
-        jPanel5.add(jButton111);
 
-        jButton112.setText("Terminar");
-        jButton112.addActionListener(new java.awt.event.ActionListener() {
+        jPanel128.setLayout(new java.awt.GridLayout(1, 2, 10, 10));
+
+        jPanel129.setLayout(new java.awt.BorderLayout());
+
+        jButton113.setText("Cancelar");
+        jButton113.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton112ActionPerformed(evt);
+                jButton113ActionPerformed(evt);
             }
         });
+        jPanel129.add(jButton113, java.awt.BorderLayout.CENTER);
 
-        javax.swing.GroupLayout jPanel127Layout = new javax.swing.GroupLayout(jPanel127);
-        jPanel127.setLayout(jPanel127Layout);
-        jPanel127Layout.setHorizontalGroup(
-            jPanel127Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel127Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton112, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(7, Short.MAX_VALUE))
-        );
-        jPanel127Layout.setVerticalGroup(
-            jPanel127Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel127Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton112, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(61, Short.MAX_VALUE))
-        );
+        jPanel128.add(jPanel129);
+
+        jPanel130.setLayout(new java.awt.BorderLayout());
+
+        jButton114.setText("Confirmar");
+        jPanel130.add(jButton114, java.awt.BorderLayout.CENTER);
+
+        jPanel128.add(jPanel130);
+
+        jPanel131.setLayout(new java.awt.BorderLayout());
+
+        jButton115.setText("Terminar");
+        jButton115.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton115ActionPerformed(evt);
+            }
+        });
+        jPanel131.add(jButton115, java.awt.BorderLayout.CENTER);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -1098,9 +1099,10 @@ public class SeleccionDePosiciones extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel127, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel128, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel131, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -1108,11 +1110,14 @@ public class SeleccionDePosiciones extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 540, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jPanel127, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 540, Short.MAX_VALUE))
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel128, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel131, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -1132,31 +1137,31 @@ public class SeleccionDePosiciones extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        player.disparo(0, 0);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        player.disparo(0, 1);
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        player.disparo(0, 2);
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        player.disparo(0, 3);
+        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        player.disparo(0, 4);
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        player.disparo(9, 3);
+        
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
@@ -1171,11 +1176,15 @@ public class SeleccionDePosiciones extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton103ActionPerformed
 
-    private void jButton112ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton112ActionPerformed
-        Tablero t=new Tablero();
-        t.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_jButton112ActionPerformed
+    private void jButton113ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton113ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton113ActionPerformed
+
+    private void jButton115ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton115ActionPerformed
+        // TODO add your handling code here:
+        control.juegoNormal();
+    }//GEN-LAST:event_jButton115ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
@@ -1183,16 +1192,12 @@ public class SeleccionDePosiciones extends javax.swing.JFrame {
     private javax.swing.JButton jButton101;
     private javax.swing.JButton jButton102;
     private javax.swing.JButton jButton103;
-    private javax.swing.JButton jButton104;
     private javax.swing.JButton jButton105;
     private javax.swing.JButton jButton106;
-    private javax.swing.JButton jButton107;
-    private javax.swing.JButton jButton108;
-    private javax.swing.JButton jButton109;
     private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton110;
-    private javax.swing.JButton jButton111;
-    private javax.swing.JButton jButton112;
+    private javax.swing.JButton jButton113;
+    private javax.swing.JButton jButton114;
+    private javax.swing.JButton jButton115;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
@@ -1341,8 +1346,11 @@ public class SeleccionDePosiciones extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel124;
     private javax.swing.JPanel jPanel125;
     private javax.swing.JPanel jPanel126;
-    private javax.swing.JPanel jPanel127;
+    private javax.swing.JPanel jPanel128;
+    private javax.swing.JPanel jPanel129;
     private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel130;
+    private javax.swing.JPanel jPanel131;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
@@ -1438,4 +1446,9 @@ public class SeleccionDePosiciones extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel98;
     private javax.swing.JPanel jPanel99;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void hacerVisible(boolean b) {
+        setVisible(b);
+    }
 }

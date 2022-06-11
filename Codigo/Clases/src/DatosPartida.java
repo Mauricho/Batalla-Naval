@@ -29,4 +29,10 @@ public class DatosPartida{
         resultado=this.player.disparo(x, y);
         return resultado;
     }
+
+    public boolean disparoE() {
+        boolean resultado;
+        resultado=this.enemigo.disparoE();
+        return resultado;
+    }
 }
