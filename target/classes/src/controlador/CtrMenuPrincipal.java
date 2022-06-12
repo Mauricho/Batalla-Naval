@@ -35,6 +35,11 @@ public class CtrMenuPrincipal implements Controlador {
     }
 
     @Override
+    public void posicionar(int x, int y) {
+
+    }
+
+    @Override
     public void juegoLuck() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }

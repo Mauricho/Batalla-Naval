@@ -50,6 +50,11 @@ public class CtrJuegoLuck implements Controlador {
     }
 
     @Override
+    public void posicionar(int x, int y) {
+
+    }
+
+    @Override
     public void juegoLuck() {
     
     }

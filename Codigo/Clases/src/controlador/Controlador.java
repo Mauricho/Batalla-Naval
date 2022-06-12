@@ -19,4 +19,6 @@ public interface Controlador {
     void cerrarVentana();
 
     void iniciar();
+
+    void posicionar(int x, int y);
 }
