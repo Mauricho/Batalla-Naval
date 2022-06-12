@@ -32,6 +32,7 @@ public class Modelo {
     private Vista vistaSeleccionDePosicion;
 
     private BatallaNaval juegoActual;
+    private Lector lectorActual;
     private boolean disponible;
     private int flag = -1;
     private int puntaje;
@@ -51,12 +52,41 @@ public class Modelo {
         vistaSeleccionDePosicion = null;
 
         juegoActual = null;
+        lectorActual = null;
         top10 = new TreeMap<Integer, String>();
         palabrasJuegoNormal = new TreeMap<Integer, ArrayList<String>>();
         palabrasJuegoRelax = new ArrayList<String>();
         disponible=false;
     }
 
+    public void leerArchivos() {
+        try {
+            lectorActual = (Lector) new ArchivoTop10();
+            lectorActual.leerArchivo();
+        } catch (IOException e) {
+
+        }
+
+        setTop10(lectorActual.getLecturaMap());
+        lectorActual = null;
+
+        try {
+            lectorActual = (Lector) new ArchivoPalabrasJuegoNormal();
+            lectorActual.leerArchivo();
+        } catch (IOException e) {
+
+        }
+        setPalabrasJuegoNormal(lectorActual.getLecturaMap_I_Array());
+        lectorActual = null;
+        try {
+            lectorActual = (Lector) new ArchivoPalabrasJuegoRelax();
+            lectorActual.leerArchivo();
+        } catch (IOException e) {
+
+        }
+
+        setPalabrasJuegoRelax(lectorActual.getLecturaArrayList());
+    }
 
 
     public void posicionar(int x, int y){
@@ -152,6 +182,7 @@ public class Modelo {
     public void iniciarJuegoNormal() {
         flag = 1;
         vistaActual.hacerVisible(false);
+        vistaActual = new VistaJuegoNormal(informacionDelJuego);
         vistaActual = new VistaSeleccionDePosiciones(informacionDelJuego);
         vistaActual.hacerVisible(true);
     }

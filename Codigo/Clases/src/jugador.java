@@ -12,11 +12,16 @@ import java.util.List;
  * @author f_acu
  */
 public class jugador {
+    private List<Barco> flota;
+    private int destructores=0;
+    private int cruceros=0;
+    private int canioneros=0;
+    private int submarinos=0;
+
     private static List<Barco> fragatas;
-    private static List<Barco> destructores;
-    private static List<Barco> submarinos;
+    private static List<Barco> destructoress;
+    private static List<Barco> submarinoss;
     private static List<Barco> acorazados;
-    private static List<Barco> flota;
 
     private int cantFragatas=4; // Fragatas = 1 casillero
     private int cantDestructores=3; // Destructores = 2 casilleros
@@ -30,9 +35,14 @@ public class jugador {
     //Tablero para posicionar los barcos del jugador
     private static boolean[][] TableroJugador = new boolean[tamanio][tamanio];
     //Tablero para disparar
-    private static boolean[][] Tablero = new boolean[tamanio][tamanio];
+    private boolean[][] Tablero = new boolean[tamanio][tamanio];
     
     public jugador(){
+        for (int i=0; i<this.tamanio;i++){
+            for (int j=0; j<this.tamanio;j++){
+                this.Tablero[i][j]=false;
+            }
+        }
         cleanTablero();
         cleanTableroJugador();
         generarFlota();  //Aca se inicializan los barcos pero no se define aun su posicion
@@ -48,6 +58,54 @@ public class jugador {
         if(this.Tablero[row][col]){
             
         }
+    }
+
+    public List<Barco> getFlota() {
+        return flota;
+    }
+
+    public void setFlota(List<Barco> flota) {
+        this.flota = flota;
+    }
+
+    public int getDestructores() {
+        return destructores;
+    }
+
+    public void setDestructores(int destructores) {
+        this.destructores = destructores;
+    }
+
+    public int getCruceros() {
+        return cruceros;
+    }
+
+    public void setCruceros(int cruceros) {
+        this.cruceros = cruceros;
+    }
+
+    public int getCanioneros() {
+        return canioneros;
+    }
+
+    public void setCanioneros(int canioneros) {
+        this.canioneros = canioneros;
+    }
+
+    public int getSubmarinos() {
+        return submarinos;
+    }
+
+    public void setSubmarinos(int submarinos) {
+        this.submarinos = submarinos;
+    }
+
+    public boolean getTablero(int row, int col) {
+        return Tablero[row][col];
+    }
+
+    public void setTablero(boolean[][] Tablero) {
+        this.Tablero = Tablero;
     }
 
     private void cleanTablero(){
@@ -73,11 +131,11 @@ public class jugador {
         }
         for(int i=0;i<cantDestructores;i++){
             Destructor destructor = new Destructor();
-            destructores.add(destructor);
+            destructoress.add(destructor);
         }
         for(int i=0;i<cantSubmarinos;i++){
             Submarino submarino = new Submarino();
-            submarinos.add(submarino);
+            submarinoss.add(submarino);
         }
         for(int i=0;i<cantAcorazados;i++){
             Acorazado acorazado = new Acorazado();
@@ -87,15 +145,15 @@ public class jugador {
 
     public static void getSubmarino(){
         if(barcoauxiliar==null){
-            barcoauxiliar=(Submarino) submarinos.get(0);
-            submarinos.remove(0);
+            barcoauxiliar=(Submarino) submarinoss.get(0);
+            submarinoss.remove(0);
             levantarFlag(); // Me indica que el jugador tiene seleccionado un barco para posicionar
         }
         else{
             if(levantarFlag()){
                 devolverBarco();
-                barcoauxiliar=(Submarino) submarinos.get(0);
-                submarinos.remove(0);
+                barcoauxiliar=(Submarino) submarinoss.get(0);
+                submarinoss.remove(0);
             }
         }
     }
@@ -132,15 +190,15 @@ public class jugador {
 
     public static void getDestructor(){
         if(barcoauxiliar==null){
-            barcoauxiliar=(Destructor) destructores.get(0);
-            destructores.remove(0);
+            barcoauxiliar=(Destructor) destructoress.get(0);
+            destructoress.remove(0);
             levantarFlag(); // Me indica que el jugador tiene seleccionado un barco para posicionar
         }
         else{
             if(levantarFlag()){
                 devolverBarco();
-                barcoauxiliar=(Destructor) destructores.get(0);
-                destructores.remove(0);
+                barcoauxiliar=(Destructor) destructoress.get(0);
+                destructoress.remove(0);
             }
         }
     }
@@ -153,11 +211,11 @@ public class jugador {
                 barcoauxiliar=null;
             case "DESTRUCTOR":
                 Destructor destructor = new Destructor();
-                destructores.add(destructor);
+                destructoress.add(destructor);
                 barcoauxiliar=null;
             case "SUBMARINO":
                 Submarino submarino = new Submarino();
-                submarinos.add(submarino);
+                submarinoss.add(submarino);
                 barcoauxiliar=null;
             case "ACORAZADO":
                 Acorazado acorazado = new Acorazado();
@@ -188,7 +246,7 @@ public class jugador {
             y = barcoauxiliar.getCasilleros().get(x);
             TableroJugador[x][y]=true;
         }
-        flota.add(aux);
+        //flota.add(aux);
         barcoauxiliar=null;
         bajarFlag();
     }

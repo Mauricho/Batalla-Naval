@@ -2,6 +2,7 @@ package src;
 
 public class Destructor extends Barco{
     public Destructor() {
-        super(2,"DESTRUCTOR");
+        super(4,"DESTRUCTOR");
     }
 }
+// CAMBIAR A 2

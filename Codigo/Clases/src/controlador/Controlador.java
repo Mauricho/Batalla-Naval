@@ -10,6 +10,8 @@ package src.controlador;
  */
 public interface Controlador {
 
+    void juegoNormal();
+
     void juegoLuck();
 
     void salir();
@@ -33,8 +35,6 @@ public interface Controlador {
     void cancelarPosicion();
 
     void seleccionarDestructor();
-
-    void juegoNormal();
 
     void girar();
 }
