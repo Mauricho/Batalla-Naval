@@ -37,6 +37,11 @@ public class CtrJuegoNormal implements Controlador {
     }
 
     @Override
+    public void posicionar(int x, int y) {
+
+    }
+
+    @Override
     public void juegoNormal() {
     }
 

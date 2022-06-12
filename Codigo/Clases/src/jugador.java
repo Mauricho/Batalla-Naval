@@ -4,6 +4,7 @@
  */
 package src;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,10 +12,10 @@ import java.util.List;
  * @author f_acu
  */
 public class jugador {
-    private static List<Barco> fragatas;
-    private static List<Barco> destructores;
-    private static List<Barco> submarinos;
-    private static List<Barco> acorazados;
+    private static ArrayList<Barco> fragatas;
+    private static ArrayList<Barco> destructores;
+    private static ArrayList<Barco> submarinos;
+    private static ArrayList<Barco> acorazados;
     //private static List<Barco> flota;
 
     private final int cantFragatas=4; // Fragatas = 1 casillero
@@ -36,6 +37,10 @@ public class jugador {
     public jugador(){
         cleanTablero();
         cleanTableroJugador();
+        fragatas = new ArrayList<>(cantFragatas);
+        destructores = new ArrayList<>(cantDestructores);
+        submarinos = new ArrayList<>(cantSubmarinos);
+        acorazados = new ArrayList<>(cantAcorazados);
         generarFlota();  //Aca se inicializan los barcos pero no se define aun su posicion
         barcoauxiliar = null;
         flagSeleccion = false;
