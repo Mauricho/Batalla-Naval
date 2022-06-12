@@ -50,17 +50,23 @@ public class CtrPausa implements Controlador {
     @Override
     public void salir() {
         // TODO Auto-generated method stub
+
     }
 
     @Override
     public void cerrarVentana() {
         modelo.cerrarPausa();
+
     }
 
-    public void teclaPresionada(String l) {}
+    public void teclaPresionada(String l) {
+
+    }
 
     @Override
-    public void iniciar() {}
+    public void iniciar() {
+
+    }
 
     @Override
     public void juegoLuck() {
@@ -68,5 +74,7 @@ public class CtrPausa implements Controlador {
     }
 
     @Override
-    public void juegoNormal() {}
+    public void juegoNormal() {
+        // TODO Auto-generated method stub
+    }
 }
