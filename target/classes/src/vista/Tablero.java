@@ -3137,8 +3137,16 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     }//GEN-LAST:event_jButton55ActionPerformed
 
     public void lugarDisparado(int x, int y){
+        
         control.generarDisparoJugador(x, y);
+        if(!control.estadoJuego(2)){
+            control.partidaPerdida();
+        }
         control.generarDisparoEnemigo();
+        if(control.estadoJuego(1)){
+            control.partidaGanada();
+        }
+        
     }
 
     @Override

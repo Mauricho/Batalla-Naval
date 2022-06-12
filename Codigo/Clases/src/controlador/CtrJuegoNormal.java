@@ -31,6 +31,19 @@ public class CtrJuegoNormal implements Controlador {
         return succes;
     }
 
+    public boolean estadoJuego(int j){
+        boolean result;
+        result=modelo.estadoJuego(j);
+        return result;
+    }
+    
+    public void partidaGanada(){
+        
+    }
+    
+    public void partidaPerdida(){
+        
+    }
     @Override
     public void iniciar() {
         modelo.iniciar();
