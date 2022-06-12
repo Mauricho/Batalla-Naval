@@ -49,13 +49,13 @@ public abstract class Barco {
 
     public void setPosicion(int x, int y){
         cleanPosicion();
-        if(direccion){//HORIZONTAL
+        if(direccion){
             for(int i=0;i<tamanio;i++){
                 posicion[x][y + i] = 1;
                 casilleros.put(x,y+i);
             }
         }
-        else{//VERTICAL
+        else{
             for(int i=0;i<tamanio;i++) {
                 posicion[x + i][y] = 1;
                 casilleros.put(x+i,y);

@@ -1,33 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package src.controlador;
 
 import src.modelo.Modelo;
 
+/**
+ *
+ * @author f_acu
+ */
 public class CtrPausa implements Controlador{
 
     private Modelo modelo;
 
-    public CtrPausa(){
+    public CtrPausa() {
         modelo = Modelo.getInstance();
     }
 
     @Override
     public void juegoNormal() {
-
-    }
-
-    @Override
-    public void juegoLuck() {
-
+        // TODO Auto-generated method stub
     }
 
     @Override
     public void salir() {
-
+        // TODO Auto-generated method stub
     }
 
     @Override
     public void cerrarVentana() {
-
+        modelo.cerrarPausa();
     }
 
     @Override
@@ -38,6 +41,10 @@ public class CtrPausa implements Controlador{
     @Override
     public void iniciar() {
 
+    }
+
+    public void juegoLuck() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
