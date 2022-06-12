@@ -17,8 +17,11 @@ public class CtrPausa implements Controlador {
     public CtrPausa() {
         modelo = Modelo.getInstance();
     }
-
     @Override
+    public void juegoNormal() {
+        // TODO Auto-generated method stub
+    }
+
     public void posicionar(int x,int y) {
         modelo.posicionar(x,y);
     }
@@ -73,8 +76,5 @@ public class CtrPausa implements Controlador {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    @Override
-    public void juegoNormal() {
-        // TODO Auto-generated method stub
-    }
+
 }
