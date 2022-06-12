@@ -6,6 +6,7 @@ package src.modelo;
 
 import src.BatallaNaval;
 import src.DatosPartida;
+import src.jugador;
 import src.vista.SeleccionDePosiciones;
 import src.vista.Tablero;
 import src.vista.Vista;
@@ -26,6 +27,7 @@ public class Modelo {
     private Vista vistaAdicional;
     private Vista vistatercera;
     private int flag = -1;
+    private boolean disponible;
 
     public static Modelo getInstance() {
         if (modelo == null) {
@@ -39,7 +41,8 @@ public class Modelo {
         vistaActual = null;
         vistaAdicional = null;
         vistatercera = null;
-        juegoActual = null;
+        //juegoActual = null;
+        disponible=false;
     }
 
     /*    public void iniciar() {
@@ -148,9 +151,9 @@ public class Modelo {
         modelo = null;
     }
 
-    public BatallaNaval getJuegoActual() {
-        return juegoActual;
-    }
+    //public BatallaNaval getJuegoActual() {
+        //return juegoActual;
+    //}
 
     public Vista getVistaTercera() {
         return vistatercera;
@@ -173,6 +176,45 @@ public class Modelo {
         vistaActual = new SeleccionDePosiciones(tipo);
         vistaActual.hacerVisible(true);
     }
-    
-    
+
+    public void posicionar(int x, int y){
+        if(jugador.espacioDisponible(x,y)){
+            disponible=true;
+        }
+        else{
+            disponible=false;
+        }
+    }
+
+    public void confirmar(){
+        if(disponible){
+            jugador.setBarcoSeleccionado();
+            disponible=false;
+        }
+    }
+
+    public void cancelar(){
+        disponible=false;
+        jugador.devolverBarco();
+    }
+
+    public void girar(){
+        jugador.girar();
+    }
+
+    public void getFragata(){
+        jugador.getFragata();
+    }
+
+    public void getDestructor(){
+        jugador.getDestructor();
+    }
+
+    public void getSubmarino(){
+        jugador.getSubmarino();
+    }
+
+    public void getAcorazado(){
+        jugador.getAcorazado();
+    }
 }
