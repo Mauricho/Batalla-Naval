@@ -17,6 +17,7 @@ public class CtrPausa implements Controlador {
     public CtrPausa() {
         modelo = Modelo.getInstance();
     }
+
     @Override
     public void juegoNormal() {
         // TODO Auto-generated method stub

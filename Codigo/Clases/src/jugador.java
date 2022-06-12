@@ -29,6 +29,7 @@ public class jugador {
     private int cantAcorazados=1; // Acorazados = 4 casilleros
 
     public static final int tamanio=10;
+
     private static Barco barcoauxiliar;
     private static boolean flagSeleccion; // Indica si hay un barco seleccionado
 
