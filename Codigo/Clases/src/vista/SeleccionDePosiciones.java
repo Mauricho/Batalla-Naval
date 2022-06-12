@@ -14,7 +14,6 @@ import src.jugador;
  * @author f_acu
  */
 public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
-
     /**
      * Creates new form SeleccionDePosiciones
      */
@@ -324,7 +323,7 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
 
         jPanel6.setLayout(new java.awt.BorderLayout());
 
-        jButton101.setText("Salir");
+        jButton101.setText("Volver");
         jButton101.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton101ActionPerformed(evt);
@@ -479,26 +478,56 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel3.add(jPanel22);
 
         jPanel23.setLayout(new java.awt.BorderLayout());
+
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         jPanel23.add(jButton6, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel23);
 
         jPanel24.setLayout(new java.awt.BorderLayout());
+
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         jPanel24.add(jButton7, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel24);
 
         jPanel25.setLayout(new java.awt.BorderLayout());
+
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         jPanel25.add(jButton8, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel25);
 
         jPanel26.setLayout(new java.awt.BorderLayout());
+
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
         jPanel26.add(jButton9, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel26);
 
         jPanel27.setLayout(new java.awt.BorderLayout());
+
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
         jPanel27.add(jButton10, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel27);
@@ -512,51 +541,111 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel3.add(jPanel28);
 
         jPanel29.setLayout(new java.awt.BorderLayout());
+
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
         jPanel29.add(jButton11, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel29);
 
         jPanel30.setLayout(new java.awt.BorderLayout());
+
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
         jPanel30.add(jButton13, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel30);
 
         jPanel31.setLayout(new java.awt.BorderLayout());
+
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
         jPanel31.add(jButton14, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel31);
 
         jPanel32.setLayout(new java.awt.BorderLayout());
+
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
         jPanel32.add(jButton15, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel32);
 
         jPanel33.setLayout(new java.awt.BorderLayout());
+
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
         jPanel33.add(jButton12, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel33);
 
         jPanel34.setLayout(new java.awt.BorderLayout());
+
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
         jPanel34.add(jButton16, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel34);
 
         jPanel35.setLayout(new java.awt.BorderLayout());
+
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
         jPanel35.add(jButton17, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel35);
 
         jPanel36.setLayout(new java.awt.BorderLayout());
+
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
         jPanel36.add(jButton18, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel36);
 
         jPanel37.setLayout(new java.awt.BorderLayout());
+
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
         jPanel37.add(jButton19, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel37);
 
         jPanel38.setLayout(new java.awt.BorderLayout());
+
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
         jPanel38.add(jButton20, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel38);
@@ -570,46 +659,100 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel3.add(jPanel39);
 
         jPanel40.setLayout(new java.awt.BorderLayout());
+
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
         jPanel40.add(jButton21, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel40);
 
         jPanel41.setLayout(new java.awt.BorderLayout());
+
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
         jPanel41.add(jButton22, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel41);
 
         jPanel42.setLayout(new java.awt.BorderLayout());
+
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
         jPanel42.add(jButton23, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel42);
 
         jPanel43.setLayout(new java.awt.BorderLayout());
+
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
         jPanel43.add(jButton24, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel43);
 
         jPanel44.setLayout(new java.awt.BorderLayout());
+
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
         jPanel44.add(jButton25, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel44);
 
         jPanel45.setLayout(new java.awt.BorderLayout());
+
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
         jPanel45.add(jButton26, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel45);
 
         jPanel46.setLayout(new java.awt.BorderLayout());
+
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
         jPanel46.add(jButton27, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel46);
 
         jPanel47.setLayout(new java.awt.BorderLayout());
+
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
         jPanel47.add(jButton28, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel47);
 
         jPanel48.setLayout(new java.awt.BorderLayout());
+
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton29ActionPerformed(evt);
+            }
+        });
         jPanel48.add(jButton29, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel48);
@@ -634,51 +777,111 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel3.add(jPanel50);
 
         jPanel51.setLayout(new java.awt.BorderLayout());
+
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
         jPanel51.add(jButton32, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel51);
 
         jPanel52.setLayout(new java.awt.BorderLayout());
+
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton33ActionPerformed(evt);
+            }
+        });
         jPanel52.add(jButton33, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel52);
 
         jPanel53.setLayout(new java.awt.BorderLayout());
+
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton34ActionPerformed(evt);
+            }
+        });
         jPanel53.add(jButton34, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel53);
 
         jPanel54.setLayout(new java.awt.BorderLayout());
+
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
         jPanel54.add(jButton35, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel54);
 
         jPanel55.setLayout(new java.awt.BorderLayout());
+
+        jButton37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton37ActionPerformed(evt);
+            }
+        });
         jPanel55.add(jButton37, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel55);
 
         jPanel56.setLayout(new java.awt.BorderLayout());
+
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
         jPanel56.add(jButton36, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel56);
 
         jPanel57.setLayout(new java.awt.BorderLayout());
+
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton38ActionPerformed(evt);
+            }
+        });
         jPanel57.add(jButton38, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel57);
 
         jPanel58.setLayout(new java.awt.BorderLayout());
+
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
         jPanel58.add(jButton39, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel58);
 
         jPanel59.setLayout(new java.awt.BorderLayout());
+
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton40ActionPerformed(evt);
+            }
+        });
         jPanel59.add(jButton40, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel59);
 
         jPanel60.setLayout(new java.awt.BorderLayout());
+
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton41ActionPerformed(evt);
+            }
+        });
         jPanel60.add(jButton41, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel60);
@@ -692,51 +895,111 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel3.add(jPanel61);
 
         jPanel62.setLayout(new java.awt.BorderLayout());
+
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42ActionPerformed(evt);
+            }
+        });
         jPanel62.add(jButton42, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel62);
 
         jPanel63.setLayout(new java.awt.BorderLayout());
+
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
         jPanel63.add(jButton43, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel63);
 
         jPanel64.setLayout(new java.awt.BorderLayout());
+
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
         jPanel64.add(jButton44, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel64);
 
         jPanel65.setLayout(new java.awt.BorderLayout());
+
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton45ActionPerformed(evt);
+            }
+        });
         jPanel65.add(jButton45, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel65);
 
         jPanel66.setLayout(new java.awt.BorderLayout());
+
+        jButton46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton46ActionPerformed(evt);
+            }
+        });
         jPanel66.add(jButton46, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel66);
 
         jPanel67.setLayout(new java.awt.BorderLayout());
+
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton47ActionPerformed(evt);
+            }
+        });
         jPanel67.add(jButton47, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel67);
 
         jPanel68.setLayout(new java.awt.BorderLayout());
+
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48ActionPerformed(evt);
+            }
+        });
         jPanel68.add(jButton48, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel68);
 
         jPanel69.setLayout(new java.awt.BorderLayout());
+
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49ActionPerformed(evt);
+            }
+        });
         jPanel69.add(jButton49, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel69);
 
         jPanel70.setLayout(new java.awt.BorderLayout());
+
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50ActionPerformed(evt);
+            }
+        });
         jPanel70.add(jButton50, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel70);
 
         jPanel71.setLayout(new java.awt.BorderLayout());
+
+        jButton51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton51ActionPerformed(evt);
+            }
+        });
         jPanel71.add(jButton51, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel71);
@@ -750,51 +1013,111 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel3.add(jPanel72);
 
         jPanel73.setLayout(new java.awt.BorderLayout());
+
+        jButton52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton52ActionPerformed(evt);
+            }
+        });
         jPanel73.add(jButton52, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel73);
 
         jPanel74.setLayout(new java.awt.BorderLayout());
+
+        jButton53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton53ActionPerformed(evt);
+            }
+        });
         jPanel74.add(jButton53, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel74);
 
         jPanel75.setLayout(new java.awt.BorderLayout());
+
+        jButton54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton54ActionPerformed(evt);
+            }
+        });
         jPanel75.add(jButton54, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel75);
 
         jPanel76.setLayout(new java.awt.BorderLayout());
+
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton56ActionPerformed(evt);
+            }
+        });
         jPanel76.add(jButton56, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel76);
 
         jPanel77.setLayout(new java.awt.BorderLayout());
+
+        jButton57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton57ActionPerformed(evt);
+            }
+        });
         jPanel77.add(jButton57, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel77);
 
         jPanel78.setLayout(new java.awt.BorderLayout());
+
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
         jPanel78.add(jButton30, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel78);
 
         jPanel79.setLayout(new java.awt.BorderLayout());
+
+        jButton58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton58ActionPerformed(evt);
+            }
+        });
         jPanel79.add(jButton58, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel79);
 
         jPanel80.setLayout(new java.awt.BorderLayout());
+
+        jButton59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton59ActionPerformed(evt);
+            }
+        });
         jPanel80.add(jButton59, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel80);
 
         jPanel81.setLayout(new java.awt.BorderLayout());
+
+        jButton60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton60ActionPerformed(evt);
+            }
+        });
         jPanel81.add(jButton60, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel81);
 
         jPanel82.setLayout(new java.awt.BorderLayout());
+
+        jButton61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton61ActionPerformed(evt);
+            }
+        });
         jPanel82.add(jButton61, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel82);
@@ -808,51 +1131,111 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel3.add(jPanel83);
 
         jPanel84.setLayout(new java.awt.BorderLayout());
+
+        jButton62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton62ActionPerformed(evt);
+            }
+        });
         jPanel84.add(jButton62, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel84);
 
         jPanel85.setLayout(new java.awt.BorderLayout());
+
+        jButton63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton63ActionPerformed(evt);
+            }
+        });
         jPanel85.add(jButton63, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel85);
 
         jPanel86.setLayout(new java.awt.BorderLayout());
+
+        jButton64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton64ActionPerformed(evt);
+            }
+        });
         jPanel86.add(jButton64, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel86);
 
         jPanel87.setLayout(new java.awt.BorderLayout());
+
+        jButton65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton65ActionPerformed(evt);
+            }
+        });
         jPanel87.add(jButton65, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel87);
 
         jPanel88.setLayout(new java.awt.BorderLayout());
+
+        jButton67.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton67ActionPerformed(evt);
+            }
+        });
         jPanel88.add(jButton67, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel88);
 
         jPanel89.setLayout(new java.awt.BorderLayout());
+
+        jButton66.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton66ActionPerformed(evt);
+            }
+        });
         jPanel89.add(jButton66, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel89);
 
         jPanel90.setLayout(new java.awt.BorderLayout());
+
+        jButton68.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton68ActionPerformed(evt);
+            }
+        });
         jPanel90.add(jButton68, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel90);
 
         jPanel91.setLayout(new java.awt.BorderLayout());
+
+        jButton69.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton69ActionPerformed(evt);
+            }
+        });
         jPanel91.add(jButton69, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel91);
 
         jPanel92.setLayout(new java.awt.BorderLayout());
+
+        jButton70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton70ActionPerformed(evt);
+            }
+        });
         jPanel92.add(jButton70, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel92);
 
         jPanel93.setLayout(new java.awt.BorderLayout());
+
+        jButton71.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton71ActionPerformed(evt);
+            }
+        });
         jPanel93.add(jButton71, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel93);
@@ -866,51 +1249,111 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel3.add(jPanel94);
 
         jPanel95.setLayout(new java.awt.BorderLayout());
+
+        jButton72.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton72ActionPerformed(evt);
+            }
+        });
         jPanel95.add(jButton72, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel95);
 
         jPanel96.setLayout(new java.awt.BorderLayout());
+
+        jButton73.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton73ActionPerformed(evt);
+            }
+        });
         jPanel96.add(jButton73, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel96);
 
         jPanel97.setLayout(new java.awt.BorderLayout());
+
+        jButton74.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton74ActionPerformed(evt);
+            }
+        });
         jPanel97.add(jButton74, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel97);
 
         jPanel98.setLayout(new java.awt.BorderLayout());
+
+        jButton75.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton75ActionPerformed(evt);
+            }
+        });
         jPanel98.add(jButton75, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel98);
 
         jPanel99.setLayout(new java.awt.BorderLayout());
+
+        jButton76.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton76ActionPerformed(evt);
+            }
+        });
         jPanel99.add(jButton76, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel99);
 
         jPanel100.setLayout(new java.awt.BorderLayout());
+
+        jButton77.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton77ActionPerformed(evt);
+            }
+        });
         jPanel100.add(jButton77, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel100);
 
         jPanel101.setLayout(new java.awt.BorderLayout());
+
+        jButton78.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton78ActionPerformed(evt);
+            }
+        });
         jPanel101.add(jButton78, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel101);
 
         jPanel102.setLayout(new java.awt.BorderLayout());
+
+        jButton79.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton79ActionPerformed(evt);
+            }
+        });
         jPanel102.add(jButton79, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel102);
 
         jPanel103.setLayout(new java.awt.BorderLayout());
+
+        jButton80.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton80ActionPerformed(evt);
+            }
+        });
         jPanel103.add(jButton80, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel103);
 
         jPanel104.setLayout(new java.awt.BorderLayout());
+
+        jButton81.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton81ActionPerformed(evt);
+            }
+        });
         jPanel104.add(jButton81, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel104);
@@ -924,51 +1367,111 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel3.add(jPanel105);
 
         jPanel106.setLayout(new java.awt.BorderLayout());
+
+        jButton82.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton82ActionPerformed(evt);
+            }
+        });
         jPanel106.add(jButton82, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel106);
 
         jPanel107.setLayout(new java.awt.BorderLayout());
+
+        jButton83.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton83ActionPerformed(evt);
+            }
+        });
         jPanel107.add(jButton83, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel107);
 
         jPanel108.setLayout(new java.awt.BorderLayout());
+
+        jButton84.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton84ActionPerformed(evt);
+            }
+        });
         jPanel108.add(jButton84, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel108);
 
         jPanel109.setLayout(new java.awt.BorderLayout());
+
+        jButton85.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton85ActionPerformed(evt);
+            }
+        });
         jPanel109.add(jButton85, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel109);
 
         jPanel110.setLayout(new java.awt.BorderLayout());
+
+        jButton86.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton86ActionPerformed(evt);
+            }
+        });
         jPanel110.add(jButton86, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel110);
 
         jPanel111.setLayout(new java.awt.BorderLayout());
+
+        jButton87.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton87ActionPerformed(evt);
+            }
+        });
         jPanel111.add(jButton87, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel111);
 
         jPanel112.setLayout(new java.awt.BorderLayout());
+
+        jButton88.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton88ActionPerformed(evt);
+            }
+        });
         jPanel112.add(jButton88, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel112);
 
         jPanel113.setLayout(new java.awt.BorderLayout());
+
+        jButton89.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton89ActionPerformed(evt);
+            }
+        });
         jPanel113.add(jButton89, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel113);
 
         jPanel114.setLayout(new java.awt.BorderLayout());
+
+        jButton90.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton90ActionPerformed(evt);
+            }
+        });
         jPanel114.add(jButton90, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel114);
 
         jPanel115.setLayout(new java.awt.BorderLayout());
+
+        jButton91.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton91ActionPerformed(evt);
+            }
+        });
         jPanel115.add(jButton91, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel115);
@@ -982,11 +1485,23 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel3.add(jPanel116);
 
         jPanel117.setLayout(new java.awt.BorderLayout());
+
+        jButton92.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton92ActionPerformed(evt);
+            }
+        });
         jPanel117.add(jButton92, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel117);
 
         jPanel118.setLayout(new java.awt.BorderLayout());
+
+        jButton93.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton93ActionPerformed(evt);
+            }
+        });
         jPanel118.add(jButton93, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel118);
@@ -1003,36 +1518,78 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel3.add(jPanel119);
 
         jPanel120.setLayout(new java.awt.BorderLayout());
+
+        jButton95.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton95ActionPerformed(evt);
+            }
+        });
         jPanel120.add(jButton95, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel120);
 
         jPanel121.setLayout(new java.awt.BorderLayout());
+
+        jButton96.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton96ActionPerformed(evt);
+            }
+        });
         jPanel121.add(jButton96, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel121);
 
         jPanel122.setLayout(new java.awt.BorderLayout());
+
+        jButton97.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton97ActionPerformed(evt);
+            }
+        });
         jPanel122.add(jButton97, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel122);
 
         jPanel123.setLayout(new java.awt.BorderLayout());
+
+        jButton98.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton98ActionPerformed(evt);
+            }
+        });
         jPanel123.add(jButton98, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel123);
 
         jPanel124.setLayout(new java.awt.BorderLayout());
+
+        jButton99.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton99ActionPerformed(evt);
+            }
+        });
         jPanel124.add(jButton99, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel124);
 
         jPanel125.setLayout(new java.awt.BorderLayout());
+
+        jButton100.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton100ActionPerformed(evt);
+            }
+        });
         jPanel125.add(jButton100, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel125);
 
         jPanel126.setLayout(new java.awt.BorderLayout());
+
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton55ActionPerformed(evt);
+            }
+        });
         jPanel126.add(jButton55, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel126);
@@ -1048,8 +1605,11 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
             }
         });
         jPanel5.add(jButton102);
+
+        jButton106.setText("Fragata");
         jPanel5.add(jButton106);
 
+        jButton103.setText("Submarino");
         jButton103.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton103ActionPerformed(evt);
@@ -1057,6 +1617,7 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         });
         jPanel5.add(jButton103);
 
+        jButton105.setText("Acorazado");
         jButton105.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel5.add(jButton105);
 
@@ -1077,13 +1638,18 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel130.setLayout(new java.awt.BorderLayout());
 
         jButton114.setText("Confirmar");
+        jButton114.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton114ActionPerformed(evt);
+            }
+        });
         jPanel130.add(jButton114, java.awt.BorderLayout.CENTER);
 
         jPanel128.add(jPanel130);
 
         jPanel131.setLayout(new java.awt.BorderLayout());
 
-        jButton115.setText("Terminar");
+        jButton115.setText("Iniciar Partida");
         jButton115.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton115ActionPerformed(evt);
@@ -1136,36 +1702,36 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
     }//GEN-LAST:event_jButton101ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        
+        control.posicionar(0,0);
+    
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        control.posicionar(0,1);
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        control.posicionar(0,2);
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        control.posicionar(0,3);
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+        control.posicionar(0,4);
         
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        
+        control.posicionar(2,9);
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
-        // TODO add your handling code here:
+        control.posicionar(9,2);
     }//GEN-LAST:event_jButton94ActionPerformed
 
     private void jButton102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton102ActionPerformed
@@ -1177,13 +1743,389 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
     }//GEN-LAST:event_jButton103ActionPerformed
 
     private void jButton113ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton113ActionPerformed
-        // TODO add your handling code here:
+        control.cancelarPosicion();
     }//GEN-LAST:event_jButton113ActionPerformed
 
     private void jButton115ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton115ActionPerformed
         // TODO add your handling code here:
         control.juegoNormal();
     }//GEN-LAST:event_jButton115ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        control.posicionar(0,5);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        control.posicionar(0,6);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        control.posicionar(0,7);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        control.posicionar(0,8);
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        control.posicionar(0,9);
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        control.posicionar(1,0);
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        control.posicionar(1,1);
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        control.posicionar(1,2);
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        control.posicionar(1,3);
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        control.posicionar(1,4);
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        control.posicionar(1,5);
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        control.posicionar(1,6);
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        control.posicionar(1,7);
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        control.posicionar(1,8);
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        control.posicionar(1,9);
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        control.posicionar(2,0);
+    }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        control.posicionar(2,1);
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        control.posicionar(2,2);
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        control.posicionar(2,3);
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        control.posicionar(2,4);
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        control.posicionar(2,5);
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        control.posicionar(2,6);
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        control.posicionar(2,7);
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+        control.posicionar(2,8);
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        control.posicionar(3,0);
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        control.posicionar(3,1);
+    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        control.posicionar(3,2);
+    }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        control.posicionar(3,3);
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+        control.posicionar(3,4);
+    }//GEN-LAST:event_jButton37ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        control.posicionar(3,5);
+    }//GEN-LAST:event_jButton36ActionPerformed
+
+    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+        control.posicionar(3,6);
+    }//GEN-LAST:event_jButton38ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+        control.posicionar(3,7);
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+        control.posicionar(3,8);
+    }//GEN-LAST:event_jButton40ActionPerformed
+
+    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+        control.posicionar(3,9);
+    }//GEN-LAST:event_jButton41ActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+        control.posicionar(4,0);
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        control.posicionar(4,1);
+    }//GEN-LAST:event_jButton43ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        control.posicionar(4,2);
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+        control.posicionar(4,3);
+    }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+        control.posicionar(4,4);
+    }//GEN-LAST:event_jButton46ActionPerformed
+
+    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+        control.posicionar(4,5);
+    }//GEN-LAST:event_jButton47ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+        control.posicionar(4,6);
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        control.posicionar(4,7);
+    }//GEN-LAST:event_jButton49ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+        control.posicionar(4,8);
+    }//GEN-LAST:event_jButton50ActionPerformed
+
+    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
+        control.posicionar(4,9);
+    }//GEN-LAST:event_jButton51ActionPerformed
+
+    private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
+        control.posicionar(5,0);
+    }//GEN-LAST:event_jButton52ActionPerformed
+
+    private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
+        control.posicionar(5,1);
+    }//GEN-LAST:event_jButton53ActionPerformed
+
+    private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
+        control.posicionar(5,2);
+    }//GEN-LAST:event_jButton54ActionPerformed
+
+    private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
+        control.posicionar(5,3);
+    }//GEN-LAST:event_jButton56ActionPerformed
+
+    private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
+        control.posicionar(5,4);
+    }//GEN-LAST:event_jButton57ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        control.posicionar(5,5);
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
+        control.posicionar(5,6);
+    }//GEN-LAST:event_jButton58ActionPerformed
+
+    private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
+        control.posicionar(5,7);
+    }//GEN-LAST:event_jButton59ActionPerformed
+
+    private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
+        control.posicionar(5,8);
+    }//GEN-LAST:event_jButton60ActionPerformed
+
+    private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
+        control.posicionar(5,9);
+    }//GEN-LAST:event_jButton61ActionPerformed
+
+    private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
+        control.posicionar(6,0);
+    }//GEN-LAST:event_jButton62ActionPerformed
+
+    private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
+        control.posicionar(6,1);
+    }//GEN-LAST:event_jButton63ActionPerformed
+
+    private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
+        control.posicionar(6,2);
+    }//GEN-LAST:event_jButton64ActionPerformed
+
+    private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
+        control.posicionar(6,3);
+    }//GEN-LAST:event_jButton65ActionPerformed
+
+    private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
+        control.posicionar(6,4);
+    }//GEN-LAST:event_jButton67ActionPerformed
+
+    private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton66ActionPerformed
+        control.posicionar(6,5);
+    }//GEN-LAST:event_jButton66ActionPerformed
+
+    private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
+        control.posicionar(6,6);
+    }//GEN-LAST:event_jButton68ActionPerformed
+
+    private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
+        control.posicionar(6,7);
+    }//GEN-LAST:event_jButton69ActionPerformed
+
+    private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
+        control.posicionar(6,8);
+    }//GEN-LAST:event_jButton70ActionPerformed
+
+    private void jButton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton71ActionPerformed
+        control.posicionar(6,9);
+    }//GEN-LAST:event_jButton71ActionPerformed
+
+    private void jButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton72ActionPerformed
+        control.posicionar(7,0);
+    }//GEN-LAST:event_jButton72ActionPerformed
+
+    private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
+        control.posicionar(7,1);
+    }//GEN-LAST:event_jButton73ActionPerformed
+
+    private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
+        control.posicionar(7,2);
+    }//GEN-LAST:event_jButton74ActionPerformed
+
+    private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
+        control.posicionar(7,3);
+    }//GEN-LAST:event_jButton75ActionPerformed
+
+    private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
+        control.posicionar(7,4);
+    }//GEN-LAST:event_jButton76ActionPerformed
+
+    private void jButton77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton77ActionPerformed
+        control.posicionar(7,5);
+    }//GEN-LAST:event_jButton77ActionPerformed
+
+    private void jButton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton78ActionPerformed
+        control.posicionar(7,6);
+    }//GEN-LAST:event_jButton78ActionPerformed
+
+    private void jButton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton79ActionPerformed
+        control.posicionar(7,7);
+    }//GEN-LAST:event_jButton79ActionPerformed
+
+    private void jButton80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton80ActionPerformed
+        control.posicionar(7,8);
+    }//GEN-LAST:event_jButton80ActionPerformed
+
+    private void jButton81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81ActionPerformed
+        control.posicionar(7,9);
+    }//GEN-LAST:event_jButton81ActionPerformed
+
+    private void jButton82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton82ActionPerformed
+        control.posicionar(8,0);
+    }//GEN-LAST:event_jButton82ActionPerformed
+
+    private void jButton83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton83ActionPerformed
+        control.posicionar(8,1);
+    }//GEN-LAST:event_jButton83ActionPerformed
+
+    private void jButton84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton84ActionPerformed
+        control.posicionar(8,2);
+    }//GEN-LAST:event_jButton84ActionPerformed
+
+    private void jButton85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton85ActionPerformed
+        control.posicionar(8,3);
+    }//GEN-LAST:event_jButton85ActionPerformed
+
+    private void jButton86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton86ActionPerformed
+        control.posicionar(8,4);
+    }//GEN-LAST:event_jButton86ActionPerformed
+
+    private void jButton87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton87ActionPerformed
+        control.posicionar(8,5);
+    }//GEN-LAST:event_jButton87ActionPerformed
+
+    private void jButton88ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton88ActionPerformed
+        control.posicionar(8,6);
+    }//GEN-LAST:event_jButton88ActionPerformed
+
+    private void jButton89ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton89ActionPerformed
+        control.posicionar(8,7);
+    }//GEN-LAST:event_jButton89ActionPerformed
+
+    private void jButton90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton90ActionPerformed
+        control.posicionar(8,8);
+    }//GEN-LAST:event_jButton90ActionPerformed
+
+    private void jButton91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton91ActionPerformed
+        control.posicionar(8,9);
+    }//GEN-LAST:event_jButton91ActionPerformed
+
+    private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
+        control.posicionar(9,0);
+    }//GEN-LAST:event_jButton92ActionPerformed
+
+    private void jButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton93ActionPerformed
+        control.posicionar(9,1);
+    }//GEN-LAST:event_jButton93ActionPerformed
+
+    private void jButton95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton95ActionPerformed
+        control.posicionar(9,3);
+    }//GEN-LAST:event_jButton95ActionPerformed
+
+    private void jButton96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton96ActionPerformed
+        control.posicionar(9,4);
+    }//GEN-LAST:event_jButton96ActionPerformed
+
+    private void jButton97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton97ActionPerformed
+        control.posicionar(9,5);
+    }//GEN-LAST:event_jButton97ActionPerformed
+
+    private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
+        control.posicionar(9,6);
+    }//GEN-LAST:event_jButton98ActionPerformed
+
+    private void jButton99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton99ActionPerformed
+        control.posicionar(9,7);
+    }//GEN-LAST:event_jButton99ActionPerformed
+
+    private void jButton100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton100ActionPerformed
+        control.posicionar(9,8);
+    }//GEN-LAST:event_jButton100ActionPerformed
+
+    private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
+        control.posicionar(9,9);
+    }//GEN-LAST:event_jButton55ActionPerformed
+
+    private void jButton114ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton114ActionPerformed
+        control.confirmarPosicion();
+    }//GEN-LAST:event_jButton114ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
