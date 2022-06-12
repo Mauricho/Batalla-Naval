@@ -35,7 +35,7 @@ public class jugador {
     //Tablero para posicionar los barcos del jugador
     private static boolean[][] TableroJugador = new boolean[tamanio][tamanio];
     //Tablero para disparar
-    private boolean[][] Tablero = new boolean[tamanio][tamanio];
+    private boolean Tablero[][]= new boolean[tamanio][tamanio];
     
     public jugador(){
         for (int i=0; i<this.tamanio;i++){
