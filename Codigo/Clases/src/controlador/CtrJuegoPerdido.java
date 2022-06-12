@@ -17,7 +17,11 @@ public class CtrJuegoPerdido implements Controlador {
     public CtrJuegoPerdido() {
         this.modelo = Modelo.getInstance();
     }
-
+    
+    public void volverMenuPrincipal(){
+        modelo.iniciarVistaMenuPrincipal();
+    }
+    
     @Override
     public void juegoNormal() {
         // TODO Auto-generated method stub
@@ -27,7 +31,7 @@ public class CtrJuegoPerdido implements Controlador {
     @Override
     public void salir() {
         // TODO Auto-generated method stub
-
+        this.modelo.salirJuego();
     }
 
     @Override

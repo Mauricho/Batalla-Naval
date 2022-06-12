@@ -11,6 +11,7 @@ import src.vista.SeleccionDePosiciones;
 import src.vista.Tablero;
 import src.vista.Vista;
 import src.vista.VistaJuegoGanado;
+import src.vista.VistaJuegoPerdido;
 //import src.vista.VistaJuegoPerdido;
 import src.vista.VistaMenuPrincipal;
 //import src.vista.VistaPausa;
@@ -96,6 +97,7 @@ public class Modelo {
     public void iniciarJuegoNormal() {
         vistaActual.hacerVisible(false);
         vistaActual = new Tablero(/*informacionDelJuego*/);
+        informacionDelJuego = new DatosPartida();
         vistaActual.hacerVisible(true);
     }
 
@@ -116,10 +118,10 @@ public class Modelo {
         vistatercera.hacerVisible(true);
     }
 */
-    //public void verJuegoPerdido() {
-        //vistatercera = (Vista) new VistaJuegoPerdido();
-       // vistatercera.hacerVisible(true);
-    //}
+    public void verJuegoPerdido() {
+        vistatercera = (Vista) new VistaJuegoPerdido();
+        vistatercera.hacerVisible(true);
+    }
 
     public void verJuegoGanado() {
         vistatercera = (Vista) new VistaJuegoGanado();
@@ -196,6 +198,10 @@ public class Modelo {
     public void cancelar(){
         disponible=false;
         jugador.devolverBarco();
+    }
+    
+    public boolean estadoJuego(int j){
+        return this.informacionDelJuego.estadoJuego(j);
     }
 
     public void girar(){
