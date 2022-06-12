@@ -24,6 +24,7 @@ public class jugador {
     private final int cantAcorazados=1; // Acorazados = 4 casilleros
     private static Barco[] flota;
     private static int contador;
+    private int cantBarcos=0;
 
     public static final int tamanio=10;
 
@@ -236,7 +237,11 @@ public class jugador {
     public void setTablero(boolean[][] Tablero) {
         this.Tablero = Tablero;
     }
-
+    
+    public int barcosDisponibles(){
+        this.cantBarcos=this.cantAcorazados+this.cantDestructores+this.cantFragatas+this.cantSubmarinos;
+        return this.cantBarcos;
+    }
     public static boolean levantarFlag(){return flagSeleccion=true;}
 
     public static boolean bajarFlag(){return flagSeleccion=false;}

@@ -17,6 +17,10 @@ public class CtrJuegoGanado implements Controlador {
     public CtrJuegoGanado() {
         this.modelo = Modelo.getInstance();
     }
+    
+    public void volverMenuPrincipal(){
+        modelo.iniciarVistaMenuPrincipal();
+    }
 
     @Override
     public void cerrarVentana() {
@@ -33,7 +37,7 @@ public class CtrJuegoGanado implements Controlador {
     @Override
     public void salir() {
         // TODO Auto-generated method stub
-
+        this.modelo.salirJuego();
     }
 
     public void teclaPresionada(String l) {

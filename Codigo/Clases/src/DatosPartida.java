@@ -35,4 +35,22 @@ public class DatosPartida{
         resultado=this.enemigo.disparoE();
         return resultado;
     }
+    
+    public boolean estadoJuego(int j){
+        switch(j){
+            case 1:
+                if(this.player.barcosDisponibles()==0){
+                    return false;
+                }
+                break;
+            case 2:
+                if(this.enemigo.barcosDisponibles()==0){
+                    return false;
+                }
+                break;
+            default:
+                break;
+        }
+        return false;
+    }
 }

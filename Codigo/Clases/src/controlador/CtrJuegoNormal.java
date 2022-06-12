@@ -26,23 +26,19 @@ public class CtrJuegoNormal implements Controlador {
     }
     
     public boolean generarDisparoEnemigo(){
-        boolean succes=false;
-        succes=modelo.dispararPosicionE();//aca tiene que ir el codigo de disparo aleatorio
-        return succes;
+        return modelo.dispararPosicionE();//aca tiene que ir el codigo de disparo aleatorio
     }
 
     public boolean estadoJuego(int j){
-        boolean result;
-        result=modelo.estadoJuego(j);
-        return result;
+        return modelo.estadoJuego(j);
     }
     
     public void partidaGanada(){
-        
+        modelo.verJuegoGanado();
     }
     
     public void partidaPerdida(){
-        
+        modelo.verJuegoPerdido();
     }
     @Override
     public void iniciar() {
