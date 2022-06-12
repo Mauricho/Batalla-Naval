@@ -10,7 +10,7 @@ import src.modelo.Modelo;
  *
  * @author f_acu
  */
-public class CtrPausa implements Controlador{
+public class CtrPausa implements Controlador {
 
     private Modelo modelo;
 
@@ -19,9 +19,33 @@ public class CtrPausa implements Controlador{
     }
 
     @Override
-    public void juegoNormal() {
-        // TODO Auto-generated method stub
+    public void posicionar(int x,int y) {
+        modelo.posicionar(x,y);
     }
+
+    public void seleccionarFragata(){modelo.getFragata();}
+
+    public void seleccionarDestructor(){
+        modelo.getDestructor();
+    }
+
+    public void seleccionarSubmarino(){
+        modelo.getSubmarino();
+    }
+
+    public void seleccionarAcorazado(){
+        modelo.getAcorazado();
+    }
+
+    public void confirmarPosicion(){
+        modelo.confirmar();
+    }
+
+    public void cancelarPosicion(){
+        modelo.cancelar();
+    }
+
+    public void girar(){modelo.girar();}
 
     @Override
     public void salir() {
@@ -33,57 +57,16 @@ public class CtrPausa implements Controlador{
         modelo.cerrarPausa();
     }
 
-    @Override
-    public void teclaPresionada(String l) {
-
-    }
+    public void teclaPresionada(String l) {}
 
     @Override
-    public void iniciar() {
+    public void iniciar() {}
 
-    }
-
+    @Override
     public void juegoLuck() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public void seleccionarSubmarino() {
-
-    }
-
-    @Override
-    public void seleccionarFragata() {
-
-    }
-
-    @Override
-    public void confirmarPosicion() {
-
-    }
-
-    @Override
-    public void seleccionarAcorazado() {
-
-    }
-
-    @Override
-    public void posicionar(int i, int i1) {
-
-    }
-
-    @Override
-    public void cancelarPosicion() {
-
-    }
-
-    @Override
-    public void seleccionarDestructor() {
-
-    }
-
-    @Override
-    public void girar() {
-
-    }
+    public void juegoNormal() {}
 }

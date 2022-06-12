@@ -8,8 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import src.controlador.Controlador;
-import src.controlador.CtrSeleccionDePosiciones;
-import src.jugador;
+import src.controlador.CtrPausa;
 
 /**
  *
@@ -23,7 +22,7 @@ public class VistaSeleccionDePosiciones extends javax.swing.JFrame implements Vi
         initComponents();
         this.setLocationRelativeTo(null);
 
-        controlador = new CtrSeleccionDePosiciones();
+        controlador = new CtrPausa();
     }
 
     public void hacerVisible(boolean b){
