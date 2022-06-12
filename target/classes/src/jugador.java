@@ -12,10 +12,10 @@ import java.util.List;
  */
 public class jugador {
     private Barco[] flota;
-    private int destructores=0;
-    private int cruceros=0;
-    private int canioneros=0;
+    private int acorazado=0;
     private int submarinos=0;
+    private int destructores=0;
+    private int fragatas=0;
     public static final int tamanio=10;
     
     private boolean Tablero[][]= new boolean[tamanio][tamanio];
@@ -45,6 +45,7 @@ public class jugador {
         //hay que implementar
         return resultado;
     }
+
     public Barco[] getFlota() {
         return flota;
     }
@@ -53,28 +54,12 @@ public class jugador {
         this.flota = flota;
     }
 
-    public int getDestructores() {
-        return destructores;
+    public int getAcorazado() {
+        return acorazado;
     }
 
-    public void setDestructores(int destructores) {
-        this.destructores = destructores;
-    }
-
-    public int getCruceros() {
-        return cruceros;
-    }
-
-    public void setCruceros(int cruceros) {
-        this.cruceros = cruceros;
-    }
-
-    public int getCanioneros() {
-        return canioneros;
-    }
-
-    public void setCanioneros(int canioneros) {
-        this.canioneros = canioneros;
+    public void setAcorazado(int acorazado) {
+        this.acorazado = acorazado;
     }
 
     public int getSubmarinos() {
@@ -85,12 +70,28 @@ public class jugador {
         this.submarinos = submarinos;
     }
 
-    public boolean getTablero(int row, int col) {
-        return Tablero[row][col];
+    public int getDestructores() {
+        return destructores;
+    }
+
+    public void setDestructores(int destructores) {
+        this.destructores = destructores;
+    }
+
+    public int getFragatas() {
+        return fragatas;
+    }
+
+    public void setFragatas(int fragatas) {
+        this.fragatas = fragatas;
+    }
+
+    public boolean[][] getTablero() {
+        return Tablero;
     }
 
     public void setTablero(boolean[][] Tablero) {
         this.Tablero = Tablero;
     }
-    
+
 }
