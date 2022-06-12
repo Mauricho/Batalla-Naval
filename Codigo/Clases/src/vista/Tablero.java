@@ -2731,125 +2731,127 @@ public class Tablero extends javax.swing.JFrame implements Vista {
 
     private void x0y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0y1ActionPerformed
         // TODO add your handling code here:
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(0, 1);
         this.resultadoDisparo(result);
         this.revisarEstado();
     }//GEN-LAST:event_x0y1ActionPerformed
 
     private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
-        this.lugarDisparado(2, 0);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton94ActionPerformed
+        this.result = this.lugarDisparado(9, 2);
+        this.resultadoDisparo(result);
+        this.revisarEstado();    }//GEN-LAST:event_jButton94ActionPerformed
 
     private void x2y9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y9ActionPerformed
-        this.lugarDisparado(2, 9);
-    }//GEN-LAST:event_x2y9ActionPerformed
+        this.result = this.lugarDisparado(2, 9);
+        this.resultadoDisparo(result);
+        this.revisarEstado();    }//GEN-LAST:event_x2y9ActionPerformed
 
     private void x0y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0y0ActionPerformed
         // TODO add your handling code here:
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(0, 0);
         this.resultadoDisparo(result);
         this.revisarEstado();
     }//GEN-LAST:event_x0y0ActionPerformed
 
     private void x0y2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0y2ActionPerformed
         // TODO add your handling code here:
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(0, 2);
         this.resultadoDisparo(result);
         this.revisarEstado();
     }//GEN-LAST:event_x0y2ActionPerformed
 
     private void x0x3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x3ActionPerformed
         // TODO add your handling code here:
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(0, 3);
         this.resultadoDisparo(result);
         this.revisarEstado();
     }//GEN-LAST:event_x0x3ActionPerformed
 
     private void x0x4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x4ActionPerformed
         // TODO add your handling code here:
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(0, 4);
         this.resultadoDisparo(result);
         this.revisarEstado();
     }//GEN-LAST:event_x0x4ActionPerformed
 
     private void x0x5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x5ActionPerformed
         // TODO add your handling code here:
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(0, 5);
         this.resultadoDisparo(result);
         this.revisarEstado();
     }//GEN-LAST:event_x0x5ActionPerformed
 
     private void x0x6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x6ActionPerformed
         // TODO add your handling code here:
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(0, 6);
         this.resultadoDisparo(result);
         this.revisarEstado();
     }//GEN-LAST:event_x0x6ActionPerformed
 
     private void x0x7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x7ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(0, 7);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x0x7ActionPerformed
 
     private void x0x8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x8ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(0, 8);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x0x8ActionPerformed
 
     private void x0x9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x0x9ActionPerformed
         // TODO add your handling code here:
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(0, 9);
         this.resultadoDisparo(result);
         this.revisarEstado();
     }//GEN-LAST:event_x0x9ActionPerformed
 
     private void x1x0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1x0ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(1, 0);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x1x0ActionPerformed
 
     private void x1y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y1ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(1, 1);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x1y1ActionPerformed
 
     private void x1y2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y2ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(1, 2);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x1y2ActionPerformed
 
     private void x1y3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y3ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(1, 3);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x1y3ActionPerformed
 
     private void x1y4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y4ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(1, 4);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x1y4ActionPerformed
 
     private void x1y5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y5ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(1, 5);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x1y5ActionPerformed
 
     private void x1y6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y6ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(1, 6);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x1y6ActionPerformed
 
     private void x1y7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y7ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(1, 7);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x1y7ActionPerformed
 
     private void x1y8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y8ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(1, 8);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x1y8ActionPerformed
 
     private void x1y9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1y9ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(1, 9);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x1y9ActionPerformed
 
@@ -2859,388 +2861,388 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         this.revisarEstado();    }//GEN-LAST:event_x2y0ActionPerformed
 
     private void x2y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y1ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(2, 1);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x2y1ActionPerformed
 
     private void x2y2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y2ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(2, 2);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x2y2ActionPerformed
 
     private void x2y3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y3ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(2, 3);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x2y3ActionPerformed
 
     private void x2y4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y4ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(2, 4);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x2y4ActionPerformed
 
     private void x2y5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y5ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(2, 5);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x2y5ActionPerformed
 
     private void x2y6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y6ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(2, 6);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x2y6ActionPerformed
 
     private void x2y7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y7ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(2, 7);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x2y7ActionPerformed
 
     private void x2y8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x2y8ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(2, 8);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x2y8ActionPerformed
 
     private void x3y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y0ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(3, 0);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x3y0ActionPerformed
 
     private void x3y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y1ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(3, 1);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x3y1ActionPerformed
 
     private void x3y2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y2ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(3, 2);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x3y2ActionPerformed
 
     private void x3y3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y3ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(3, 3);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x3y3ActionPerformed
 
     private void x3y4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y4ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(3, 4);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x3y4ActionPerformed
 
     private void x3y5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y5ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(3, 5);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x3y5ActionPerformed
 
     private void x3y6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y6ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(3, 6);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x3y6ActionPerformed
 
     private void x3y7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y7ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(3, 7);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x3y7ActionPerformed
 
     private void x3y8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y8ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(3, 8);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x3y8ActionPerformed
 
     private void x3y9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3y9ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(3, 9);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x3y9ActionPerformed
 
     private void x4y0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x4y0ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(4, 0);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x4y0ActionPerformed
 
     private void x4y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x4y1ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(4, 1);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_x4y1ActionPerformed
 
     private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(4, 2);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton44ActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(4, 3);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton45ActionPerformed
 
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(4, 4);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton46ActionPerformed
 
     private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(4, 5);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton47ActionPerformed
 
     private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(4, 6);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton48ActionPerformed
 
     private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(4, 7);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton49ActionPerformed
 
     private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(4, 8);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton50ActionPerformed
 
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(4, 9);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton51ActionPerformed
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(5, 0);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton52ActionPerformed
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(5, 1);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton53ActionPerformed
 
     private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(5, 2);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton54ActionPerformed
 
     private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(5, 3);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton56ActionPerformed
 
     private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(5, 4);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton57ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(5, 5);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(5, 6);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton58ActionPerformed
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(5, 7);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton59ActionPerformed
 
     private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(5, 8);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton60ActionPerformed
 
     private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(5, 9);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton61ActionPerformed
 
     private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(6, 0);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton62ActionPerformed
 
     private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(6, 1);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton63ActionPerformed
 
     private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(6, 2);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton64ActionPerformed
 
     private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(6, 3);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton65ActionPerformed
 
     private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(6, 4);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton67ActionPerformed
 
     private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton66ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(6, 5);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton66ActionPerformed
 
     private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(6, 6);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton68ActionPerformed
 
     private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(6, 7);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton69ActionPerformed
 
     private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(6, 8);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton70ActionPerformed
 
     private void jButton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton71ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(6, 9);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton71ActionPerformed
 
     private void jButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton72ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(7, 0);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton72ActionPerformed
 
     private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(7, 1);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton73ActionPerformed
 
     private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(7, 2);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton74ActionPerformed
 
     private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(7, 3);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton75ActionPerformed
 
     private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(7, 4);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton76ActionPerformed
 
     private void jButton77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton77ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(7, 5);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton77ActionPerformed
 
     private void jButton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton78ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(7, 6);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton78ActionPerformed
 
     private void jButton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton79ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(7, 7);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton79ActionPerformed
 
     private void jButton80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton80ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(7, 8);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton80ActionPerformed
 
     private void jButton81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(7, 9);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton81ActionPerformed
 
     private void jButton82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton82ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(8, 0);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton82ActionPerformed
 
     private void jButton83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton83ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(8, 1);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton83ActionPerformed
 
     private void jButton84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton84ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(8, 2);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton84ActionPerformed
 
     private void jButton85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton85ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(8, 3);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton85ActionPerformed
 
     private void jButton86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton86ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(8, 4);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton86ActionPerformed
 
     private void jButton87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton87ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(8, 5);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton87ActionPerformed
 
     private void jButton88ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton88ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(8, 6);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton88ActionPerformed
 
     private void jButton89ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton89ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(8, 7);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton89ActionPerformed
 
     private void jButton90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton90ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(8, 8);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton90ActionPerformed
 
     private void jButton91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton91ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(8, 9);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton91ActionPerformed
 
     private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(9, 0);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton92ActionPerformed
 
     private void jButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton93ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(9, 1);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton93ActionPerformed
 
     private void jButton95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton95ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(9, 3);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton95ActionPerformed
 
     private void jButton96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton96ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(9, 4);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton96ActionPerformed
 
     private void jButton97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton97ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(9, 5);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton97ActionPerformed
 
     private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(9, 6);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton98ActionPerformed
 
     private void jButton99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton99ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(9, 7);
         this.resultadoDisparo(result);
         this.revisarEstado();
     }//GEN-LAST:event_jButton99ActionPerformed
 
     private void jButton100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton100ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(9, 8);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton100ActionPerformed
 
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
-        this.result = this.lugarDisparado(2, 0);
+        this.result = this.lugarDisparado(9, 9);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton55ActionPerformed
 
