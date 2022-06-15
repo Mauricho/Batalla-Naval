@@ -134,6 +134,12 @@ public class VistaJuegoGanado extends javax.swing.JFrame implements Vista{
 		// TODO Auto-generated method stub
 		setVisible(b);
 	}
+
+    @Override
+    public void cargarImagenes() {
+
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
