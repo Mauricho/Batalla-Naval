@@ -8,6 +8,6 @@ package src;
  *
  * @author f_acu
  */
-public class jugadorLuck {
+public class JuegoLuck {
     
 }
