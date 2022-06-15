@@ -3246,12 +3246,12 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton55ActionPerformed
 
-    public boolean lugarDisparado(int x, int y) {
+    private boolean lugarDisparado(int x, int y) {
         boolean resultado = control.generarDisparoJugador(x, y);
         return resultado;
     }
 
-    public void revisarEstado() {
+    private void revisarEstado() {
         if (!control.estadoJuego(2)) {
             control.partidaPerdida();
         }
@@ -3261,7 +3261,7 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         }
     }
 
-    public void resultadoDisparo(boolean res) {
+    private void resultadoDisparo(boolean res) {
 
     }
 
