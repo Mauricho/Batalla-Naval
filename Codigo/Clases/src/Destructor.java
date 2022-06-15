@@ -6,11 +6,11 @@ package src;
 
 public class Destructor extends Barco{
     public Destructor() {
-        super(4,"DESTRUCTOR");
+        super(2,"DESTRUCTOR");
     }
 
     public Destructor(boolean direccion){
-        super(4,"DESTRUCTOR");
+        super(2,"DESTRUCTOR");
         setDireccion(direccion);
     }
 }

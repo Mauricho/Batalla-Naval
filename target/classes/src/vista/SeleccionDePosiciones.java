@@ -2165,6 +2165,7 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
 
     private void jButton115ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton115ActionPerformed
         control.juegoNormal();
+        System.out.println(jugador.getCantBarcos());
     }//GEN-LAST:event_jButton115ActionPerformed
 
     private void jButton116ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton116ActionPerformed
