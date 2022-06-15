@@ -4,11 +4,11 @@ package src;
 import java.util.HashMap;
 
 public abstract class Barco {
-    private final int tamanio;
-    private final String nombre;
+    private int tamanio;
+    private String nombre;
     private int[][] posicion;
     private boolean direccion;  // true = HORIZONTAL ; false = VERTICAL
-    private static HashMap<Integer, Integer> casilleros;//<FILA , COLUMNA>
+    private HashMap<Integer, Integer> casilleros;//<FILA , COLUMNA>
 
     public Barco(int tamanio, String nombre){
         this.tamanio=tamanio;
@@ -20,6 +20,7 @@ public abstract class Barco {
     }
 
     private void cleanPosicion() {
+        casilleros.clear();
         for(int i=0;i<jugador.tamanio;i++){
             for(int j=0;j<jugador.tamanio;j++){
                 posicion[i][j]=0;

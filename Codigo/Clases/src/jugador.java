@@ -4,6 +4,9 @@
  */
 package src;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 /**
  *
  * @author f_acu
@@ -94,33 +97,47 @@ public class jugador {
 
     public static void devolverBarco(){
         barcoauxiliar = null;
+        System.out.println("Posicion cancelada");
     }
 
     public static boolean espacioDisponible(int x, int y){
-        if(barcoauxiliar!=null){
-            barcoauxiliar.setPosicion(x,y);
-            int j;
-            for (int i: barcoauxiliar.getCasilleros().keySet()){
-                j = barcoauxiliar.getCasilleros().get(i);
-                if(TableroJugador[i][j]){
-                    return false;
+        try{
+            if(barcoauxiliar!=null) {
+                barcoauxiliar.setPosicion(x, y);
+                int j;
+                for (int i : barcoauxiliar.getCasilleros().keySet()) {
+                    j = barcoauxiliar.getCasilleros().get(i);
+                    if (TableroJugador[i][j]) {
+                        System.out.println("Ya hay uno aqui mi rey");
+                        return false; // Si hay un barco en la posicion
+                    }
                 }
+                System.out.println(barcoauxiliar.getNombre()+ " ha sido ubicado desde la posicion: ("+x+","+y+")");
+                return true;
             }
+        }
+        catch (IndexOutOfBoundsException e){
+            System.out.println("No se puede mi rey");
+            return false;// Si esta fuera del tablero
+        }
+        finally {
             return true;
         }
-        return false;   // Si no hay barco seleccionado devuelve false
     }
 
     public static void setBarcoSeleccionado(){
-        int y;
-        for (int x: barcoauxiliar.getCasilleros().keySet()) {
-            y = barcoauxiliar.getCasilleros().get(x);
-            TableroJugador[x][y]=true;
+        if(barcoauxiliar!=null){
+            int y;
+            for (int x: barcoauxiliar.getCasilleros().keySet()) {
+                y = barcoauxiliar.getCasilleros().get(x);
+                TableroJugador[x][y]=true;
+            }
+            flota[cantBarcos]=barcoauxiliar;
+            cantBarcos++;
+            sumarBarco(barcoauxiliar);
+            barcoauxiliar=null;
+            System.out.println("Posicion confirmada");
         }
-        flota[cantBarcos]=barcoauxiliar;
-        cantBarcos++;
-        sumarBarco(barcoauxiliar);
-        barcoauxiliar=null;
     }
 
     public static void sumarBarco(Barco barco){
@@ -143,6 +160,7 @@ public class jugador {
             if(barcoauxiliar!=null){
                 barcoauxiliar.setDireccion(false);
             }
+            System.out.println("Barcos en vertical");
         }
         // Si esta VERTICAL cambialo a HORIZONTAL
         else{
@@ -150,6 +168,7 @@ public class jugador {
             if(barcoauxiliar!=null){
                 barcoauxiliar.setDireccion(true);
             }
+            System.out.println("Barcos en horizontal");
         }
     }
 
@@ -210,5 +229,73 @@ public class jugador {
         return this.cantBarcos;
     }
 
+    public static void generarFlotaAleatorio(){
+        /*
+        barcoauxiliar=new Fragata();
+        espacioDisponible(0,0);
+        setBarcoSeleccionado();
+        barcoauxiliar=new Fragata();
+        espacioDisponible(0,1);
+        setBarcoSeleccionado();
+        barcoauxiliar=new Fragata();
+        espacioDisponible(0,2);
+        setBarcoSeleccionado();
+        barcoauxiliar=new Fragata();
+        espacioDisponible(0,3);
+        setBarcoSeleccionado();
+        barcoauxiliar=new Destructor(false);
+        espacioDisponible(2,2);
+        setBarcoSeleccionado();
+        barcoauxiliar=new Destructor();
+        espacioDisponible(2,5);
+        setBarcoSeleccionado();
+        barcoauxiliar=new Destructor(false);
+        espacioDisponible(4,2);
+        setBarcoSeleccionado();
+        barcoauxiliar=new Submarino(false);
+        espacioDisponible(7,5);
+        setBarcoSeleccionado();
+        barcoauxiliar=new Submarino();
+        espacioDisponible(8,1);
+        setBarcoSeleccionado();
+        barcoauxiliar=new Acorazado();
+        espacioDisponible(9,0);
+        setBarcoSeleccionado();
+        */
+    }
+
+        /*ArrayList<Integer> lista = new ArrayList<>(10);
+        for(int i=0;i<10;i++){
+            int z = generarAleatorio(lista);
+            int x = z/10;
+            int y = z%10;
+            while(barcoauxiliar==null){
+                getDestructor();
+                getAcorazado();
+                getSubmarino();
+                getFragata();
+                girar();
+            }
+            while(!(espacioDisponible(x,y))){
+                z=generarAleatorio(lista);
+                x=z/10;
+                y=z%10;
+            }
+            setBarcoSeleccionado();
+
+        }
+
+    }
+
+    public static int generarAleatorio(ArrayList<Integer> lista){
+        Random ra = new Random();
+
+        int a = ra.nextInt(100);
+        while(lista.contains(a)){
+            a = ra.nextInt(100);
+        }
+        lista.add(a);
+        return a;
+    }*/
 
 }

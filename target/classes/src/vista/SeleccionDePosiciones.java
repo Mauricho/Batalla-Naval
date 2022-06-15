@@ -9,6 +9,9 @@ import javax.swing.*;
 import src.controlador.CtrSeleccionDePosiciones;
 import src.jugador;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 /**
  *
  * @author f_acu
@@ -2170,6 +2173,7 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
 
     private void jButton116ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton116ActionPerformed
         control.cancelarPosicion();
+        //jugador.generarFlotaAleatorio();
     }//GEN-LAST:event_jButton116ActionPerformed
 
     private void jButton117ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton117ActionPerformed
