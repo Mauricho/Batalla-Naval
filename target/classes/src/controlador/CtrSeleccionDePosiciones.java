@@ -25,51 +25,31 @@ public class CtrSeleccionDePosiciones implements Controlador{
     }
 
     @Override
-    public void juegoLuck() {
-        
-    }
+    public void juegoLuck() {}
 
     @Override
-    public void salir() {
-        
-    }
+    public void salir() {}
 
     @Override
-    public void cerrarVentana() {
-        
-    }
+    public void cerrarVentana() {}
 
     @Override
-    public void iniciar() {
-        
-    }
+    public void iniciar() {}
 
     @Override
-    public void posicionar(int x,int y) {
-        modelo.posicionar(x,y);
-    }
+    public void posicionar(int x,int y) {modelo.posicionar(x,y);}
 
     public void seleccionarFragata(){modelo.getFragata();}
 
-    public void seleccionarDestructor(){
-        modelo.getDestructor();
-    }
+    public void seleccionarDestructor(){modelo.getDestructor();}
 
-    public void seleccionarSubmarino(){
-        modelo.getSubmarino();
-    }
+    public void seleccionarSubmarino(){modelo.getSubmarino();}
 
-    public void seleccionarAcorazado(){
-        modelo.getAcorazado();
-    }
+    public void seleccionarAcorazado(){modelo.getAcorazado();}
 
-    public void confirmarPosicion(){
-        modelo.confirmar();
-    }
+    public void confirmarPosicion(){modelo.confirmar();}
 
-    public void cancelarPosicion(){
-        modelo.cancelar();
-    }
+    public void cancelarPosicion(){modelo.cancelar();}
 
     public void girar(){modelo.girar();}
     

@@ -39,7 +39,12 @@ public class TableroLuck extends javax.swing.JFrame implements Vista{
     public void hacerVisible(boolean b) {
         setVisible(b);
     }
-    
+
+    @Override
+    public void cargarImagenes() {
+
+    }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {

@@ -95,10 +95,12 @@ public class Modelo {
     }
     
     public void iniciarJuegoNormal() {
-        vistaActual.hacerVisible(false);
-        vistaActual = new Tablero(/*informacionDelJuego*/);
-        informacionDelJuego = new DatosPartida();
-        vistaActual.hacerVisible(true);
+        if(jugador.listo()) {
+            vistaActual.hacerVisible(false);
+            vistaActual = new Tablero(/*informacionDelJuego*/);
+            informacionDelJuego = new DatosPartida();
+            vistaActual.hacerVisible(true);
+        }
     }
 
     public void cerrarVentanaJuegoPerdido() {
