@@ -9,5 +9,18 @@ package src;
  * @author f_acu
  */
 public class JuegoLuck {
+    private int tipoArma=0;
     
+    public JuegoLuck(){
+        super();
+    }
+    
+    public boolean[] disparoLuck(int x, int y){
+        boolean disparos[] = null;
+        return disparos;
+    }
+    
+    public void setArma(int i){
+        this.tipoArma=i;
+    }
 }
