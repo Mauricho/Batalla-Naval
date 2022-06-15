@@ -22,6 +22,11 @@ public class VistaPausa extends javax.swing.JFrame implements Vista {
         setVisible(b);
     }
 
+    @Override
+    public void cargarImagenes() {
+
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

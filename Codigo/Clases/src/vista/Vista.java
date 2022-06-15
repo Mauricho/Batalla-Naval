@@ -10,4 +10,7 @@ package src.vista;
  */
 public interface Vista {
     void hacerVisible(boolean b);
+
+    void cargarImagenes();
 }
+

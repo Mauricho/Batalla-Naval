@@ -8,4 +8,9 @@ public class Destructor extends Barco{
     public Destructor() {
         super(4,"DESTRUCTOR");
     }
+
+    public Destructor(boolean direccion){
+        super(4,"DESTRUCTOR");
+        setDireccion(direccion);
+    }
 }

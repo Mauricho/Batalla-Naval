@@ -114,6 +114,11 @@ public class VistaJuegoPerdido extends javax.swing.JFrame implements Vista {
         setVisible(b);
     }
 
+    @Override
+    public void cargarImagenes() {
+
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

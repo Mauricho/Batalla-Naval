@@ -12,11 +12,13 @@ import java.util.List;
  * @author f_acu
  */
 public class jugador {
+    /*
     private static ArrayList<Barco> fragatas;
     private static ArrayList<Barco> destructores;
     private static ArrayList<Barco> submarinos;
     private static ArrayList<Barco> acorazados;
-    //private static List<Barco> flota;
+    private static List<Barco> flota;
+    */
 
     private final int cantFragatas=4; // Fragatas = 1 casillero
     private final int cantDestructores=3; // Destructores = 2 casilleros
@@ -29,21 +31,27 @@ public class jugador {
     public static final int tamanio=10;
 
     private static Barco barcoauxiliar;
+    private static boolean direccion;
     private static boolean flagSeleccion; // Indica si hay un barco seleccionado
 
     //Tablero para posicionar los barcos del jugador
     private static boolean[][] TableroJugador = new boolean[tamanio][tamanio];
-    private boolean Tablero[][]= new boolean[tamanio][tamanio];
+    private boolean[][] Tablero= new boolean[tamanio][tamanio];
     
     public jugador(){
         cleanTablero();
         cleanTableroJugador();
+        /*
         fragatas = new ArrayList<>(cantFragatas);
         destructores = new ArrayList<>(cantDestructores);
         submarinos = new ArrayList<>(cantSubmarinos);
         acorazados = new ArrayList<>(cantAcorazados);
+
         generarFlota();  //Aca se inicializan los barcos pero no se define aun su posicion
+
+        */
         barcoauxiliar = null;
+        direccion = true; // HORIZONTAL = true ; VERTICAL = false
         flagSeleccion = false;
         flota= new Barco[10];
         contador=0;
@@ -64,7 +72,7 @@ public class jugador {
             }
         }
     }
-
+    /*
     public void generarFlota(){
         for(int i=0;i<cantFragatas;i++){
             Fragata fragata = new Fragata();
@@ -83,6 +91,7 @@ public class jugador {
             acorazados.add(acorazado);
         }
     }
+    */
 
     public boolean disparo(int row, int col){
         boolean resultado=false;
@@ -103,6 +112,8 @@ public class jugador {
 
 
     public static void getAcorazado(){
+        barcoauxiliar = new Acorazado(direccion);
+        /*
         if(barcoauxiliar==null){
             barcoauxiliar=(Acorazado) acorazados.get(0);
             acorazados.remove(0);
@@ -115,9 +126,12 @@ public class jugador {
                 acorazados.remove(0);
             }
         }
+         */
     }
 
     public static void getSubmarino(){
+        barcoauxiliar = new Submarino(direccion);
+        /*
         if(barcoauxiliar==null){
             barcoauxiliar=(Submarino) submarinos.get(0);
             submarinos.remove(0);
@@ -130,9 +144,12 @@ public class jugador {
                 submarinos.remove(0);
             }
         }
+        */
     }
 
     public static void getDestructor(){
+        barcoauxiliar = new Destructor(direccion);
+        /*
         if(barcoauxiliar==null){
             barcoauxiliar=(Destructor) destructores.get(0);
             destructores.remove(0);
@@ -145,9 +162,12 @@ public class jugador {
                 destructores.remove(0);
             }
         }
+        */
     }
 
     public static void getFragata(){
+        barcoauxiliar = new Fragata(direccion);
+        /*
         if(barcoauxiliar==null){
             barcoauxiliar=(Fragata) fragatas.get(0);
             fragatas.remove(0);
@@ -160,9 +180,12 @@ public class jugador {
                 fragatas.remove(0);
             }
         }
+        */
     }
 
     public static void devolverBarco(){
+        barcoauxiliar = null;
+        /*
         switch (barcoauxiliar.getNombre()){
             case "FRAGATA":
                 Fragata fragata = new Fragata();
@@ -181,6 +204,7 @@ public class jugador {
                 acorazados.add(acorazado);
                 barcoauxiliar=null;
         }
+        */
     }
 
     public static boolean espacioDisponible(int x, int y){
@@ -193,6 +217,7 @@ public class jugador {
                     return false;
                 }
             }
+            levantarFlag();
             return true;
         }
         return false;   // Si no hay barco seleccionado devuelve false
@@ -210,7 +235,25 @@ public class jugador {
         bajarFlag();
     }
 
-    public static void girar(){}
+    public static void girar(){
+        if(direccion){
+            direccion=false;
+            if(barcoauxiliar!=null){
+                barcoauxiliar.setDireccion(false);
+            }
+        }
+        else{
+            direccion=true;
+            if(barcoauxiliar!=null){
+                barcoauxiliar.setDireccion(true);
+            }
+        }
+        /*
+        if(barcoauxiliar!=null){
+            barcoauxiliar.girar();
+        }
+*/
+    }
 
     public int getCantFragatas(){return cantFragatas;}
 
@@ -221,6 +264,15 @@ public class jugador {
     public int getCantSubmarinos() {return cantSubmarinos;}
 
     public int getContador(){return contador;}
+    
+    public static boolean listo(){
+        for(int i=0;i<10;i++){
+            if(flota[i]==null){
+                return false;
+            }
+        }
+        return true;
+    }
 
     public Barco[] getFlota() {
         return flota;
@@ -233,10 +285,11 @@ public class jugador {
     public boolean[][] getTablero() {
         return Tablero;
     }
-
+    /*
     public void setTablero(boolean[][] Tablero) {
         this.Tablero = Tablero;
     }
+     */
     
     public int barcosDisponibles(){
         this.cantBarcos=this.cantAcorazados+this.cantDestructores+this.cantFragatas+this.cantSubmarinos;
