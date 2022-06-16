@@ -1,14 +1,16 @@
 package src.integrationTest;
 
+import org.junit.Assert;
 import org.junit.Test;
+import src.jugador;
 
 import static org.junit.Assert.*;
 
 public class jugadorTest {
 
-    @Test
+    /*@Test
     public void generarFlota() {
-    }
+    }*/
 
     @Test
     public void disparo() {
@@ -20,6 +22,10 @@ public class jugadorTest {
 
     @Test
     public void devolverBarco() {
+        jugador test = new jugador();
+        test.getAcorazado();
+        test.devolverBarco();
+        assertSame(null,test.getBarcoauxiliar());
     }
 
     @Test
@@ -28,5 +34,12 @@ public class jugadorTest {
 
     @Test
     public void setBarcoSeleccionado() {
+    }
+    @Test
+    public void generarFlotaAleatorio() {
+        jugador test = new jugador();
+        test.generarFlotaAleatorio();
+        int result = test.getFlota().size();
+        assertEquals(10,result);
     }
 }

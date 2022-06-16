@@ -6,7 +6,7 @@ package src;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Random;
+//import java.util.Random;
 
 /**
  *
@@ -393,6 +393,8 @@ public class jugador {
         lista.add(a);
         return a;*//*
     }*/
+
+    public static Barco getBarcoauxiliar(){return barcoauxiliar;}
 
     public static void printTableroJugador(){
         for(int i=0;i<tamanio;i++){
