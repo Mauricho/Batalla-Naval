@@ -437,7 +437,6 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
 
         jPanel18.setLayout(new java.awt.BorderLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/src/vista/Fragata.png"))); // NOI18N
         jButton1.setToolTipText("");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2169,7 +2168,7 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
 
     private void jButton115ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton115ActionPerformed
         control.juegoNormal();
-        System.out.println(jugador.getCantBarcos());
+        System.out.println(jugador.getFlota().size());
     }//GEN-LAST:event_jButton115ActionPerformed
 
     private void jButton116ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton116ActionPerformed

@@ -111,14 +111,14 @@ public class jugador {
                     for(int j=0;j<tamanio;j++){
                         if(barcoauxiliar.getPosicion(i,j)==1){
                             if(TableroJugador[i][j]){
-                                System.out.println("Ya hay uno aqui mi rey");
+
                                 flag = false;
                             }
                         }
                     }
                 }
-                System.out.println(barcoauxiliar.getNombre()+ " ha sido ubicado desde la posicion: ("+x+","+y+")");
-
+                if(flag) System.out.println(barcoauxiliar.getNombre()+ " ha sido ubicado desde la posicion: ("+x+","+y+")");
+                else System.out.println("Ya hay uno aqui mi rey");
             }
             /*
             if(barcoauxiliar!=null) {
@@ -259,7 +259,7 @@ public class jugador {
         this.flota = flota;
     }*/
 
-    public ArrayList<Barco> getFlota(){return flota;}
+    public static ArrayList<Barco> getFlota(){return flota;}
 
     public boolean[][] getTablero() {
         return Tablero;
@@ -277,7 +277,7 @@ public class jugador {
     }
 
     public static void generarFlotaAleatorio(){
-        int z,y,x;
+        int z,y,x,w;
         //int j=0;
         ArrayList<Integer> lista = new ArrayList<>(100);
         for(int i=0;i<100;i++){
@@ -301,6 +301,8 @@ public class jugador {
             else if(getCantFragatas()<4){
                 getFragata();
             }
+            w=lista.size()-1-j;
+            if(lista.get(w)%2==1) girar();
             if(espacioDisponible(x,y)) setBarcoSeleccionado();
             if(flota.size()==10) break;
         }
