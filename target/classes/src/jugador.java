@@ -28,7 +28,7 @@ public class jugador {
     private static boolean flagSeleccion; // Indica si hay un barco seleccionado
 
     //Tablero para posicionar los barcos del jugador
-    private static boolean[][] TableroJugador = new boolean[tamanio][tamanio];
+    private final static boolean[][] TableroJugador = new boolean[tamanio][tamanio];
     private boolean[][] Tablero= new boolean[tamanio][tamanio];
     
     public jugador(){
@@ -102,6 +102,23 @@ public class jugador {
 
     public static boolean espacioDisponible(int x, int y){
         try{
+            if(barcoauxiliar!=null){
+                barcoauxiliar.setPosicion(x,y);
+                for(int i=0;i<tamanio;i++){
+                    for(int j=0;j<tamanio;j++){
+                        if(barcoauxiliar.getPosicion(i,j)==1){
+                            if(TableroJugador[i][j]){
+                                System.out.println("Ya hay uno aqui mi rey");
+                                return false;
+                            }
+                        }
+                    }
+                }
+                System.out.println(barcoauxiliar.getNombre()+ " ha sido ubicado desde la posicion: ("+x+","+y+")");
+                return true;
+
+            }
+            /*
             if(barcoauxiliar!=null) {
                 barcoauxiliar.setPosicion(x, y);
                 int j;
@@ -115,6 +132,7 @@ public class jugador {
                 System.out.println(barcoauxiliar.getNombre()+ " ha sido ubicado desde la posicion: ("+x+","+y+")");
                 return true;
             }
+            */
         }
         catch (IndexOutOfBoundsException e){
             System.out.println("No se puede mi rey");
@@ -127,10 +145,19 @@ public class jugador {
 
     public static void setBarcoSeleccionado(){
         if(barcoauxiliar!=null){
+            /*
             int y;
             for (int x: barcoauxiliar.getCasilleros().keySet()) {
                 y = barcoauxiliar.getCasilleros().get(x);
                 TableroJugador[x][y]=true;
+            }
+             */
+            for(int i=0;i<tamanio;i++){
+                for(int j=0;j<tamanio;j++){
+                    if(barcoauxiliar.getPosicion(i,j)==1){
+                        TableroJugador[i][j]=true;
+                    }
+                }
             }
             flota[cantBarcos]=barcoauxiliar;
             cantBarcos++;

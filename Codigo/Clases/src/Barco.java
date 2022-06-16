@@ -8,19 +8,20 @@ public abstract class Barco {
     private String nombre;
     private int[][] posicion;
     private boolean direccion;  // true = HORIZONTAL ; false = VERTICAL
+    /*
     private HashMap<Integer, Integer> casilleros;//<FILA , COLUMNA>
-
+    */
     public Barco(int tamanio, String nombre){
         this.tamanio=tamanio;
         this.nombre=nombre;
         posicion = new int[jugador.tamanio][jugador.tamanio];
-        casilleros = new HashMap<>(tamanio);
+        //casilleros = new HashMap<>(tamanio);
         cleanPosicion();
         direccion = true;
     }
 
     private void cleanPosicion() {
-        casilleros.clear();
+        //casilleros.clear();
         for(int i=0;i<jugador.tamanio;i++){
             for(int j=0;j<jugador.tamanio;j++){
                 posicion[i][j]=0;
@@ -37,13 +38,13 @@ public abstract class Barco {
         if(direccion){//HORIZONTAL
             for(int i=0;i<tamanio;i++){
                 posicion[x][y + i] = 1;
-                casilleros.put(x,y+i);
+                //casilleros.put(x,y+i);
             }
         }
         else{//VERTICAL
             for(int i=0;i<tamanio;i++) {
                 posicion[x + i][y] = 1;
-                casilleros.put(x+i,y);
+                //casilleros.put(x+i,y);
             }
         }
     }
@@ -52,5 +53,9 @@ public abstract class Barco {
 
     public int getTamanio(){return tamanio;}
 
+    public int getPosicion(int x, int y){return posicion[x][y];}
+
+    /*
     public HashMap<Integer,Integer> getCasilleros(){return casilleros;}
+     */
 }
