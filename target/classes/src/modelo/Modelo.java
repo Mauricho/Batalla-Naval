@@ -38,7 +38,8 @@ public class Modelo {
     }
 
     private Modelo() {
-        informacionDelJuego = new DatosPartida();
+        //informacionDelJuego = new DatosPartida();
+        jugador jugador = new jugador();
         vistaActual = null;
         vistaAdicional = null;
         vistatercera = null;
@@ -225,4 +226,6 @@ public class Modelo {
     public void getAcorazado(){
         jugador.getAcorazado();
     }
+
+    public void generarAleatorio(){jugador.generarFlotaAleatorio();}
 }
