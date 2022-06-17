@@ -55,6 +55,17 @@ public abstract class Barco {
 
     public int getPosicion(int x, int y){return posicion[x][y];}
 
+    public void printPosiciones(){
+        for(int i=0;i<jugador.tamanio;i++){
+            for(int j=0;j<jugador.tamanio;j++){
+                if(posicion[i][j]==1){
+                    System.out.print("("+i+","+j+") ");
+                }
+            }
+        }
+        System.out.println();
+    }
+
     /*
     public HashMap<Integer,Integer> getCasilleros(){return casilleros;}
      */

@@ -1811,6 +1811,11 @@ public class Tablero extends javax.swing.JFrame implements Vista {
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
+        jTextArea1.addContainerListener(new java.awt.event.ContainerAdapter() {
+            public void componentAdded(java.awt.event.ContainerEvent evt) {
+                jTextArea1ComponentAdded(evt);
+            }
+        });
         jScrollPane1.setViewportView(jTextArea1);
 
         jPanel128.setBackground(new java.awt.Color(51, 153, 255));
@@ -3239,6 +3244,10 @@ public class Tablero extends javax.swing.JFrame implements Vista {
         this.result = this.lugarDisparado(9, 9);
         this.resultadoDisparo(result);
         this.revisarEstado();    }//GEN-LAST:event_jButton55ActionPerformed
+
+    private void jTextArea1ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_jTextArea1ComponentAdded
+        //jTextArea1.setText("hola");
+    }//GEN-LAST:event_jTextArea1ComponentAdded
 
     public boolean lugarDisparado(int x, int y) {
         boolean resultado = control.generarDisparoJugador(x, y);

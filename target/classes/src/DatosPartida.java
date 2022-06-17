@@ -53,4 +53,6 @@ public class DatosPartida{
         }
         return false;
     }
+
+    public jugador getPlayer(){return player;}
 }
