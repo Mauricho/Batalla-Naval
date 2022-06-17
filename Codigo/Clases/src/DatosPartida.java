@@ -55,4 +55,12 @@ public class DatosPartida{
     }
 
     public jugador getPlayer(){return player;}
+
+    public boolean disparable(int x, int y) {
+       /* boolean[][] tablero = this.enemigo.getTablero();
+        boolean result;
+        tablero
+*/
+       return true;
+    }
 }
