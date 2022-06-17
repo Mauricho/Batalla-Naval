@@ -42,4 +42,44 @@ public class jugadorTest {
         int result = test.getFlota().size();
         assertEquals(10,result);
     }
+
+    /**
+     * Testeo la cantidad de Fragatas.
+     */
+    public void cantFragatas(){
+        jugador test = new jugador();
+        test.generarFlotaAleatorio();
+        int cantFragatas = test.getCantFragatas();
+        assertEquals(4,cantFragatas);
+    }
+
+    /**
+     * Testeo la cantidad de Destructores.
+     */
+    public void cantDestructores(){
+        jugador test = new jugador();
+        test.generarFlotaAleatorio();
+        int cantDestructores = test.getCantDestructores();
+        assertEquals(3,cantDestructores);
+    }
+
+    /**
+     * Testeo la cantidad de Submarinos.
+     */
+    public void cantSubmarinos(){
+        jugador test = new jugador();
+        test.generarFlotaAleatorio();
+        int cantSubmarinos = test.getCantFragatas();
+        assertEquals(2,cantSubmarinos);
+    }
+
+    /**
+     * Testeo la cantidad de Acorazados.
+     */
+    public void cantAcorazados(){
+        jugador test = new jugador();
+        test.generarFlotaAleatorio();
+        int cantAcorazados = test.getCantAcorazados();
+        assertEquals(1,cantAcorazados);
+    }
 }
