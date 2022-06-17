@@ -11,28 +11,34 @@ import java.util.ArrayList;
  * @author f_acu
  */
 public class DatosPartida{
-    private ArrayList<Integer[]> disparosAcertados;
-    private int barcosSanos;
-    private ArrayList<Integer[]> diparosAgua;
+    private ArrayList<Integer> disparosAcertados;
+    //private int barcosSanos;
+    private ArrayList<Integer> disparosAgua;
     private jugador player;
     private jugador enemigo;
     
     public DatosPartida(){
-        this.disparosAcertados=new ArrayList();
-        this.diparosAgua=new ArrayList();
+        this.disparosAcertados=new ArrayList<Integer>();
+        this.disparosAgua=new ArrayList<Integer>();
+        //disparosAgua.add(new Integer[]{1, 2});
         this.player = new jugador();
         this.enemigo = new jugador();
     }
     
     public boolean disparo(int x, int y){
-        boolean resultado;
-        resultado=this.player.disparo(x, y);
+        /*boolean resultado;
+        resultado=this.enemigo.disparo(x, y);
+        return resultado;*/
+        boolean resultado = this.enemigo.disparo(x,y);
+        if(resultado){
+            disparosAgua.add(x*10+y);
+        }
         return resultado;
     }
 
     public boolean disparoE() {
         boolean resultado;
-        resultado=this.enemigo.disparoE();
+        resultado=this.player.disparoE();
         return resultado;
     }
     
@@ -53,6 +59,25 @@ public class DatosPartida{
         }
         return false;
     }
-
     public jugador getPlayer(){return player;}
+
+    public boolean isAllReady(){return player.listo();}
+
+    public void setEnemigo(){enemigo.generarFlotaAleatorio();}
+
+    public void setBarcoSeleccionado(){player.setBarcoSeleccionado();}
+
+    public void setDevolverBarco(){player.devolverBarco();}
+
+    public boolean isDisponible(int x, int y){return player.espacioDisponible(x,y);}
+
+    public void setGirar(){player.girar();}
+
+    public void setFragata(){player.getFragata();}
+
+    public void setDestructor(){player.getDestructor();}
+
+    public void setSubmarino(){player.getSubmarino();}
+
+    public void setAcorazado(){player.getAcorazado();}
 }

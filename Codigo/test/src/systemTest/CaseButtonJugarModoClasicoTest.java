@@ -16,6 +16,7 @@ public class CaseButtonJugarModoClasicoTest {
         modelo.iniciarJuegoNormal();
         Vista SeleccionDePosiciones = modelo.getVistaActual();
 
+        // testea si la vista actual no es el menu principal
         assertNotEquals(vistaMenuPrincipal, SeleccionDePosiciones);
     }
 }

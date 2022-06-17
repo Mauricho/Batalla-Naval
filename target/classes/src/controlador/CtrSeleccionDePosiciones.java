@@ -53,6 +53,6 @@ public class CtrSeleccionDePosiciones implements Controlador{
 
     public void girar(){modelo.girar();}
 
-    public void generarAleatorio(){modelo.generarAleatorio();}
+    //public void generarAleatorio(){modelo.generarAleatorio();}
     
 }
