@@ -283,7 +283,7 @@ public class jugador {
         for(int i=0;i<100;i++){
             lista.add(i);
         }
-        Collections.shuffle(lista);
+        Collections.shuffle(lista); // mezcla el orden de los valores
         System.out.print(lista);
         for(int j=0;j<lista.size();j++){
             z = lista.get(j);
