@@ -47,6 +47,7 @@ public class jugadorTest {
     /**
      * Testeo la cantidad de Fragatas.
      */
+    @Test
     public void cantFragatas(){
         jugador test = new jugador();
         test.generarFlotaAleatorio();
@@ -57,6 +58,7 @@ public class jugadorTest {
     /**
      * Testeo la cantidad de Destructores.
      */
+    @Test
     public void cantDestructores(){
         jugador test = new jugador();
         test.generarFlotaAleatorio();
@@ -67,6 +69,7 @@ public class jugadorTest {
     /**
      * Testeo la cantidad de Submarinos.
      */
+    @Test
     public void cantSubmarinos(){
         jugador test = new jugador();
         test.generarFlotaAleatorio();
@@ -77,6 +80,7 @@ public class jugadorTest {
     /**
      * Testeo la cantidad de Acorazados.
      */
+    @Test
     public void cantAcorazados(){
         jugador test = new jugador();
         test.generarFlotaAleatorio();

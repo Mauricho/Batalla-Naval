@@ -15,6 +15,7 @@ public class BarcoTest {
     /**
      * Testeo las posiciones de la Fragatas.
      */
+    @Test
     public void setPosicionFragatas()
     {
         Barco acorazado  = new Acorazado(true);
@@ -27,6 +28,7 @@ public class BarcoTest {
     /**
      * Testeo las posiciones de los Destructores.
      */
+    @Test
     public void setPosicionDestructores()
     {
         Barco destructor = new Destructor(true);
@@ -39,6 +41,7 @@ public class BarcoTest {
     /**
      * Testeo las posiciones de los Submarinos.
      */
+    @Test
     public void setPosicionSubmarinos()
     {
         Barco submarino = new Submarino(true);
@@ -51,6 +54,7 @@ public class BarcoTest {
     /**
      * Testeo las posiciones de los Acorazados.
      */
+    @Test
     public void setPosicionAcorazados()
     {
         Barco acorazado = new Acorazado(true);
