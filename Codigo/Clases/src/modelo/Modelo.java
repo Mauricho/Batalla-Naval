@@ -24,6 +24,7 @@ public class Modelo {
 
     private static Modelo modelo = null;
     private DatosPartida informacionDelJuego;
+    private jugador player;
     private Vista vistaActual;
     private Vista vistaAdicional;
     private Vista vistatercera;
@@ -39,6 +40,7 @@ public class Modelo {
 
     private Modelo() {
         informacionDelJuego = new DatosPartida();
+        //player = informacionDelJuego.getPlayer();
         vistaActual = null;
         vistaAdicional = null;
         vistatercera = null;
@@ -182,7 +184,7 @@ public class Modelo {
     }
 
     public void posicionar(int x, int y){
-        if(jugador.espacioDisponible(x,y)){
+        if(informacionDelJuego.getPlayer().espacioDisponible(x,y)){
             disponible=true;
         }
         else{
@@ -192,14 +194,14 @@ public class Modelo {
 
     public void confirmar(){
         if(disponible){
-            jugador.setBarcoSeleccionado();
+            informacionDelJuego.getPlayer().setBarcoSeleccionado();
             disponible=false;
         }
     }
 
     public void cancelar(){
         disponible=false;
-        jugador.devolverBarco();
+        informacionDelJuego.getPlayer().devolverBarco();
     }
     
     public boolean estadoJuego(int j){
@@ -207,22 +209,24 @@ public class Modelo {
     }
 
     public void girar(){
-        jugador.girar();
+        informacionDelJuego.getPlayer().girar();
     }
 
     public void getFragata(){
-        jugador.getFragata();
+        informacionDelJuego.getPlayer().getFragata();
     }
 
     public void getDestructor(){
-        jugador.getDestructor();
+        informacionDelJuego.getPlayer().getDestructor();
     }
 
     public void getSubmarino(){
-        jugador.getSubmarino();
+        informacionDelJuego.getPlayer().getSubmarino();
     }
 
     public void getAcorazado(){
-        jugador.getAcorazado();
+        informacionDelJuego.getPlayer().getAcorazado();
     }
+
+    public void generarAleatorio(){informacionDelJuego.getPlayer().generarFlotaAleatorio();}
 }
