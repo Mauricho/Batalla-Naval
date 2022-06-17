@@ -35,6 +35,7 @@ public class jugadorTest {
     @Test
     public void setBarcoSeleccionado() {
     }
+
     @Test
     public void generarFlotaAleatorio() {
         jugador test = new jugador();
