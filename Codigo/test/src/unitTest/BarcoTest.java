@@ -6,7 +6,6 @@ public class BarcoTest {
 
     @Test
     public void girar() {
-
     }
 
     @Test
