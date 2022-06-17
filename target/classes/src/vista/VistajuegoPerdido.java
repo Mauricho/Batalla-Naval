@@ -116,6 +116,7 @@ public class VistaJuegoPerdido extends javax.swing.JFrame implements Vista {
 
     @Override
     public void cargarImagenes() {
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
