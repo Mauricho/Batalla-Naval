@@ -12,7 +12,7 @@ import src.modelo.Modelo;
  */
 public class CtrSeleccionDePosiciones implements Controlador{
     
-    private static Modelo modelo;
+    private Modelo modelo;
     
     public CtrSeleccionDePosiciones(){
         super();

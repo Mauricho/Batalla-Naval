@@ -61,17 +61,17 @@ public class jugador {
     }*/
 
     public boolean listo(){
-        if(getCantBarcos()==10){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return getCantBarcos() == 10;
     }
 
     public boolean disparo(int row, int col){
         //boolean resultado=false;
         // se fija si en la pos que disparo, hay un barco y devuelve boolean dependiendo del resultado true hay false no
+        for (Barco barco: flota) {
+            if(barco.getPosicion(row,col)==1){
+                barco.setCasilleros(row,col);
+            }
+        }
         return getPosicion(row,col);
     }
     
@@ -129,9 +129,9 @@ public class jugador {
             barcoauxiliar=null;
             System.out.println("Posicion confirmada");
 
-            for(int i=0;i<flota.size();i++) {
-                System.out.print(flota.get(i).getNombre() + ": ");
-                flota.get(i).printPosiciones();
+            for (Barco barco : flota) {
+                System.out.print(barco.getNombre() + ": ");
+                barco.printPosiciones();
                 System.out.println();
             }
         }
@@ -270,6 +270,15 @@ public class jugador {
     public Barco getBarcoauxiliar(){return barcoauxiliar;}
 
     public boolean getPosicion(int x, int y){return Tablero[x][y];}
+
+    public Barco getBarcoPosicion(int x, int y){
+        for (Barco barco: flota) {
+            if(barco.getPosicion(x,y)==1){
+                return barco;
+            }
+        }
+        return null;
+    }
 
     public void printTablero(){
         for(int i=0;i<tamanio;i++){

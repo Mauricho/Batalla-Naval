@@ -5,41 +5,71 @@
 package src;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  *
  * @author f_acu
  */
 public class DatosPartida{
-    private ArrayList<Integer> disparosAcertados;
+    //private ArrayList<Integer> disparosAcertados;
     //private int barcosSanos;
-    private ArrayList<Integer> disparosAgua;
+    //private ArrayList<Integer> disparosAgua;
+    private ArrayList<Integer> disparosEnemigos;
     private jugador player;
     private jugador enemigo;
     
     public DatosPartida(){
-        this.disparosAcertados=new ArrayList<Integer>();
-        this.disparosAgua=new ArrayList<Integer>();
+        //this.disparosAcertados= new ArrayList<>();
+        //this.disparosAgua=new ArrayList<>();
+        disparosEnemigos = new ArrayList<>(100);
+        for(int i=0;i<100;i++){
+            disparosEnemigos.add(i);
+        }
+        Collections.shuffle(disparosEnemigos);
         //disparosAgua.add(new Integer[]{1, 2});
         this.player = new jugador();
         this.enemigo = new jugador();
     }
+
+    //--------------------------------------------------------------------------
+    //--------------------------------------------------------------------------
     
     public boolean disparo(int x, int y){
+        /* se hace click y va a aca
+        una vez click aca se tiene que fijar en el tablero enemigo
+        si hay o no un barco
+         true = hay uno
+         false = no hay uno
+        si es true se fija en la condicion del barco en esa posicion
+        y le debe devolver si:
+        el barco es dañado
+        el barco es hundido
+        */
         /*boolean resultado;
         resultado=this.enemigo.disparo(x, y);
         return resultado;*/
-        boolean resultado = this.enemigo.disparo(x,y);
-        if(resultado){
-            disparosAgua.add(x*10+y);
+        if(this.enemigo.disparo(x,y)){
+            //disparosAcertados.add(x*10+y);
+            Barco barco = this.enemigo.getBarcoPosicion(x,y);
+            String estado = String.valueOf(barco.getCondicion());
         }
-        return resultado;
+        return this.enemigo.disparo(x,y);
     }
 
     public boolean disparoE() {
-        boolean resultado;
+        /*boolean resultado;
         resultado=this.player.disparoE();
-        return resultado;
+        return resultado;*/
+        int disparo = disparosEnemigos.get(0);
+        disparosEnemigos.remove(0);
+        int x = disparo/10;
+        int y = disparo%10;
+        if(this.player.disparo(x,y)){
+            Barco barco = this.player.getBarcoPosicion(x,y);
+            String estado = String.valueOf(barco.getCondicion());
+        }
+        return this.player.disparo(x,y);
     }
     
     public boolean estadoJuego(int j){
@@ -59,6 +89,11 @@ public class DatosPartida{
         }
         return false;
     }
+
+    //--------------------------------------------------------------------------
+    //------- SELECCION DE POSICIONES ------------------------------------------
+    //--------------------------------------------------------------------------
+
     public jugador getPlayer(){return player;}
 
     public boolean isAllReady(){return player.listo();}
@@ -80,4 +115,8 @@ public class DatosPartida{
     public void setSubmarino(){player.getSubmarino();}
 
     public void setAcorazado(){player.getAcorazado();}
+
+    //-----------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------
 }

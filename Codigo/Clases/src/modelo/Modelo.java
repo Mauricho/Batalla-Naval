@@ -160,9 +160,10 @@ public class Modelo {
     }
     
     public boolean dispararPosicion(int x, int y){
-        boolean result;
+        /*boolean result;
         result=this.informacionDelJuego.disparo(x, y);
-        return result;
+        return result;*/
+        return this.informacionDelJuego.disparo(x,y);
     }
 
     public boolean dispararPosicionE() {
