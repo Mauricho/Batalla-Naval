@@ -11,7 +11,9 @@ import src.modelo.Modelo;
  * @author f_acu
  */
 public class CtrSeleccionDePosiciones implements Controlador{
-    
+    /*
+    private static Modelo modelo;
+    */
     private Modelo modelo;
     
     public CtrSeleccionDePosiciones(){

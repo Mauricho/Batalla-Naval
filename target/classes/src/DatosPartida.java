@@ -12,17 +12,21 @@ import java.util.Collections;
  * @author f_acu
  */
 public class DatosPartida{
-    //private ArrayList<Integer> disparosAcertados;
-    //private int barcosSanos;
-    //private ArrayList<Integer> disparosAgua;
+    /*
+    private ArrayList<Integer[]> disparosAcertados;
+    private int barcosSanos;
+    private ArrayList<Integer[]> diparosAgua;
+    */
     private ArrayList<Integer> disparosEnemigos;
     private ArrayList<Integer> disparosJugador;
     private jugador player;
     private jugador enemigo;
     
     public DatosPartida(){
-        //this.disparosAcertados= new ArrayList<>();
-        //this.disparosAgua=new ArrayList<>();
+        /*
+        this.disparosAcertados=new ArrayList();
+        this.diparosAgua=new ArrayList();
+        */
         disparosEnemigos = new ArrayList<>(100);
         disparosJugador = new ArrayList<>(100);
         for(int i=0;i<100;i++){
@@ -50,9 +54,11 @@ public class DatosPartida{
 
         se tiene que fijar que no revise la posicion si ya esta en la lista
         */
-        /*boolean resultado;
-        resultado=this.enemigo.disparo(x, y);
-        return resultado;*/
+        /*
+        boolean resultado;
+        resultado=this.player.disparo(x, y);
+        return resultado;
+        */
         if(!(disparosJugador.contains(x*10+y))){
             disparosJugador.add(x*10+y);
             if(this.enemigo.disparo(x,y)){
@@ -75,9 +81,11 @@ public class DatosPartida{
     }
 
     public boolean disparoE() {
-        /*boolean resultado;
-        resultado=this.player.disparoE();
-        return resultado;*/
+        /*
+        boolean resultado;
+        resultado=this.enemigo.disparoE();
+        return resultado;
+        */
         int disparo = disparosEnemigos.get(0);
         disparosEnemigos.remove(0);
         int x = disparo/10;
@@ -95,6 +103,23 @@ public class DatosPartida{
     }
     
     public boolean estadoJuego(int j){
+        /*
+        switch(j){
+            case 1:
+                if(this.player.barcosDisponibles()==0){
+                    return false;
+                }
+                break;
+            case 2:
+                if(this.enemigo.barcosDisponibles()==0){
+                    return false;
+                }
+                break;
+            default:
+                break;
+        }
+        return false;
+        */
         switch(j){
             case 1:
                 System.out.println("Al jugador le quedan "+player.barcosDisponibles()+" barcos restantes.");
@@ -114,11 +139,23 @@ public class DatosPartida{
         return false;
     }
 
+    public jugador getPlayer(){return player;}
+
+    /*
+    public boolean disparable(int x, int y) {
+       /* boolean[][] tablero = this.enemigo.getTablero();
+        boolean result;
+        tablero
+*/
+     /*
+       return true;
+    }
+
+    */
+
     //--------------------------------------------------------------------------
     //------- SELECCION DE POSICIONES ------------------------------------------
     //--------------------------------------------------------------------------
-
-    public jugador getPlayer(){return player;}
 
     public boolean isAllReady(){return player.listo();}
 
