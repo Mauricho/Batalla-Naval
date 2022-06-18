@@ -19,7 +19,7 @@ public class jugador {
     private int cantSubmarinos; // submarinos = 3 casilleros
     private int cantAcorazados; // Acorazados = 4 casilleros
     //private static Barco[] flota;
-    private final ArrayList<Barco> flota = new ArrayList<>(10);
+    private ArrayList<Barco> flota = new ArrayList<>(10);
     //private int contador;
     private int cantBarcos; // Cantidad de barcos vivos en el tablero
 
@@ -67,19 +67,30 @@ public class jugador {
     public boolean disparo(int row, int col){
         //boolean resultado=false;
         // se fija si en la pos que disparo, hay un barco y devuelve boolean dependiendo del resultado true hay false no
-        for (Barco barco: flota) {
+        /*for (Barco barco: flota) {
             if(barco.getPosicion(row,col)==1){
                 barco.setCasilleros(row,col);
+                if(barco.getCondicion()==Condicion.HUNDIDO){
+                    cantBarcos--;
+                }
+            }
+        }*/
+        for(int i=0;i<flota.size();i++){
+            if(flota.get(i).getPosicion(row,col)==1){
+                flota.get(i).setCasilleros(row,col);
+                if(flota.get(i).isHundido()){
+                    cantBarcos--;
+                }
             }
         }
         return getPosicion(row,col);
     }
     
-    public boolean disparoE(){
+    /*public boolean disparoE(){
         boolean resultado=false;
         //hay que implementar
         return resultado;
-    }
+    }*/
 
     public void devolverBarco(){
         this.barcoauxiliar = null;
@@ -112,6 +123,7 @@ public class jugador {
         return flag;
     }
 
+    // Confirma posicion del barco
     public void setBarcoSeleccionado(){
         if(this.barcoauxiliar!=null){
             for(int i=0;i<tamanio;i++){
@@ -138,18 +150,24 @@ public class jugador {
     }
 
     public void sumarBarco(){
-        /*int aux = this.barcoauxiliar.getTamanio();
-        switch(aux){
+        switch(this.barcoauxiliar.getTamanio()){
             case 1:
                 cantFragatas++;
+                break;
             case 2:
                 cantDestructores++;
+                break;
             case 3:
                 cantSubmarinos++;
+                break;
             case 4:
                 cantAcorazados++;
-        }*/
-        int aux = this.barcoauxiliar.getTamanio();
+                break;
+            default:
+                System.out.println("Como mierda llegaste aca");
+                break;
+        }
+        /*int aux = this.barcoauxiliar.getTamanio();
         if(aux == 4){
             cantAcorazados++;
         }
@@ -164,7 +182,7 @@ public class jugador {
         }
         else{
             System.out.println("Como mierda llegaste aca flaco");
-        }
+        }*/
     }
 
     public void girar(){

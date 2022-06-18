@@ -41,13 +41,13 @@ public abstract class Barco {
         if(direccion){//HORIZONTAL
             for(int i=0;i<tamanio;i++){
                 posicion[x][y + i] = 1;
-                casilleros.add(x*10+y);
+                casilleros.add(x*10+(y+i));
             }
         }
         else{//VERTICAL
             for(int i=0;i<tamanio;i++) {
                 posicion[x + i][y] = 1;
-                casilleros.add(x*10+y);
+                casilleros.add((x+i)*10+y);
             }
         }
     }
@@ -98,6 +98,7 @@ public abstract class Barco {
         casilleros.remove(aux);
         if(casilleros.isEmpty()) setHundido();
         else setAveriado();
+        //printCasilleros();
     }
 
     public void printCasilleros(){

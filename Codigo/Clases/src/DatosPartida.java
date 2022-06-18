@@ -59,7 +59,8 @@ public class DatosPartida{
                 //disparosAcertados.add(x*10+y);
                 Barco barco = this.enemigo.getBarcoPosicion(x,y);
                 String estado = String.valueOf(barco.getCondicion());
-                System.out.println("Estado del barco acertado: "+estado);
+                barco.printCasilleros();
+                System.out.println("Estado del barco acertado: " + estado);
             }
             else{
                 System.out.println("Disparo al agua");
@@ -80,9 +81,14 @@ public class DatosPartida{
         disparosEnemigos.remove(0);
         int x = disparo/10;
         int y = disparo%10;
+        System.out.println("El enemigo ha disparado en la posicion ("+x+","+y+")");
         if(this.player.disparo(x,y)){
             Barco barco = this.player.getBarcoPosicion(x,y);
             String estado = String.valueOf(barco.getCondicion());
+            System.out.println("Barco acertado. Estado: "+estado);
+        }
+        else{
+            System.out.println("Disparo al agua");
         }
         return this.player.disparo(x,y);
     }
