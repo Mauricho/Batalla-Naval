@@ -404,4 +404,6 @@ public class jugador {
             System.out.println();
         }
     }
+
+    public static boolean getDireccion(){return direccion;}
 }
