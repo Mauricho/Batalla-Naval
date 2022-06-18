@@ -2168,13 +2168,13 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
 
     private void jButton115ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton115ActionPerformed
         control.juegoNormal();
-        System.out.println(jugador.getFlota().size());
+        //System.out.println(jugador.getFlota().size());
     }//GEN-LAST:event_jButton115ActionPerformed
 
     private void jButton116ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton116ActionPerformed
-        //control.cancelarPosicion();
+        control.cancelarPosicion();
         //jugador.generarFlotaAleatorio();
-        control.generarAleatorio();
+        //control.generarAleatorio();
     }//GEN-LAST:event_jButton116ActionPerformed
 
     private void jButton117ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton117ActionPerformed
