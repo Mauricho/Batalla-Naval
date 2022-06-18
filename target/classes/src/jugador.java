@@ -61,17 +61,17 @@ public class jugador {
     }*/
 
     public boolean listo(){
-        if(getCantBarcos()==10){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return getCantBarcos() == 10;
     }
 
     public boolean disparo(int row, int col){
         //boolean resultado=false;
         // se fija si en la pos que disparo, hay un barco y devuelve boolean dependiendo del resultado true hay false no
+        for (Barco barco: flota) {
+            if(barco.getPosicion(row,col)==1){
+                barco.setCasilleros(row,col);
+            }
+        }
         return getPosicion(row,col);
     }
     
@@ -82,7 +82,7 @@ public class jugador {
     }
 
     public void devolverBarco(){
-        barcoauxiliar = null;
+        this.barcoauxiliar = null;
         System.out.println("Posicion cancelada");
     }
 
@@ -113,32 +113,33 @@ public class jugador {
     }
 
     public void setBarcoSeleccionado(){
-        if(barcoauxiliar!=null){
+        if(this.barcoauxiliar!=null){
             for(int i=0;i<tamanio;i++){
                 for(int j=0;j<tamanio;j++){
-                    if(barcoauxiliar.getPosicion(i,j)==1){
+                    if(this.barcoauxiliar.getPosicion(i,j)==1){
                         Tablero[i][j]=true;
                         System.out.print("("+i+","+j+")");
                     }
                 }
             }
-            Barco aux = barcoauxiliar;
+            Barco aux = this.barcoauxiliar;
             flota.add(aux);
             cantBarcos++;
             sumarBarco();
-            barcoauxiliar=null;
+            this.barcoauxiliar=null;
             System.out.println("Posicion confirmada");
 
-            for(int i=0;i<flota.size();i++) {
-                System.out.print(flota.get(i).getNombre() + ": ");
-                flota.get(i).printPosiciones();
+            for (Barco barco : flota) {
+                System.out.print(barco.getNombre() + ": ");
+                barco.printPosiciones();
                 System.out.println();
             }
         }
     }
 
     public void sumarBarco(){
-        switch(barcoauxiliar.getTamanio()){
+        /*int aux = this.barcoauxiliar.getTamanio();
+        switch(aux){
             case 1:
                 cantFragatas++;
             case 2:
@@ -147,6 +148,22 @@ public class jugador {
                 cantSubmarinos++;
             case 4:
                 cantAcorazados++;
+        }*/
+        int aux = this.barcoauxiliar.getTamanio();
+        if(aux == 4){
+            cantAcorazados++;
+        }
+        else if(aux == 3){
+            cantSubmarinos++;
+        }
+        else if(aux == 2){
+            cantDestructores++;
+        }
+        else if(aux == 1){
+            cantFragatas++;
+        }
+        else{
+            System.out.println("Como mierda llegaste aca flaco");
         }
     }
 
@@ -171,7 +188,7 @@ public class jugador {
 
     public void getAcorazado(){
         if(getCantAcorazados()<1) {
-            barcoauxiliar = new Acorazado(direccion);
+            this.barcoauxiliar = new Acorazado(direccion);
             System.out.println(barcoauxiliar.getNombre()+" seleccionado");
         }
         else{
@@ -181,7 +198,7 @@ public class jugador {
 
     public void getSubmarino(){
         if(getCantSubmarinos()<2) {
-            barcoauxiliar = new Submarino(direccion);
+            this.barcoauxiliar = new Submarino(direccion);
             System.out.println(barcoauxiliar.getNombre()+" seleccionado");
         }
         else{
@@ -191,7 +208,7 @@ public class jugador {
 
     public void getDestructor(){
         if(getCantDestructores()<3){
-            barcoauxiliar = new Destructor(direccion);
+            this.barcoauxiliar = new Destructor(direccion);
             System.out.println(barcoauxiliar.getNombre()+" seleccionado");
         }
         else{
@@ -201,7 +218,7 @@ public class jugador {
 
     public void getFragata(){
         if(getCantFragatas()<4){
-            barcoauxiliar = new Fragata(direccion);
+            this.barcoauxiliar = new Fragata(direccion);
             System.out.println(barcoauxiliar.getNombre()+" seleccionado");
         }
         else{
@@ -259,17 +276,26 @@ public class jugador {
             if(espacioDisponible(x,y)) setBarcoSeleccionado();
             if(flota.size()==10) break;
         }
-        /*for(int i=0;i<flota.size();i++){
-            System.out.print(flota.get(i).getNombre()+": ");
-            flota.get(i).printPosiciones();
+        for (Barco barco : flota) {
+            System.out.print(barco.getNombre() + ": ");
+            barco.printPosiciones();
             System.out.println();
-        }*/
-        //printTablero();
+        }
+        printTablero();
     }
 
     public Barco getBarcoauxiliar(){return barcoauxiliar;}
 
     public boolean getPosicion(int x, int y){return Tablero[x][y];}
+
+    public Barco getBarcoPosicion(int x, int y){
+        for (Barco barco: flota) {
+            if(barco.getPosicion(x,y)==1){
+                return barco;
+            }
+        }
+        return null;
+    }
 
     public void printTablero(){
         for(int i=0;i<tamanio;i++){

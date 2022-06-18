@@ -94,9 +94,16 @@ public abstract class Barco {
     }
 
     public void setCasilleros(int x,int y){
-        casilleros.remove(x*10+y);
+        Integer aux = x*10+y;
+        casilleros.remove(aux);
         if(casilleros.isEmpty()) setHundido();
         else setAveriado();
+    }
+
+    public void printCasilleros(){
+        for(int x : casilleros){
+            System.out.println("("+x/10+","+x%10+")");
+        }
     }
 
     /*

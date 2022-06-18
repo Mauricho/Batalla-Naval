@@ -3250,18 +3250,17 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     }//GEN-LAST:event_jTextArea1ComponentAdded
 
     public boolean lugarDisparado(int x, int y) {
-        boolean resultado = control.generarDisparoJugador(x, y);
-        return resultado;
+        return control.generarDisparoJugador(x, y);
     }
 
     public void revisarEstado() {
-        if (!control.estadoJuego(2)) {
+        /*if (!control.estadoJuego(2)) {
             control.partidaPerdida();
         }
         control.generarDisparoEnemigo();
         if (control.estadoJuego(1)) {
             control.partidaGanada();
-        }
+        }*/
     }
 
     public void resultadoDisparo(boolean res) {

@@ -16,6 +16,7 @@ public class DatosPartida{
     //private int barcosSanos;
     //private ArrayList<Integer> disparosAgua;
     private ArrayList<Integer> disparosEnemigos;
+    private ArrayList<Integer> disparosJugador;
     private jugador player;
     private jugador enemigo;
     
@@ -23,6 +24,7 @@ public class DatosPartida{
         //this.disparosAcertados= new ArrayList<>();
         //this.disparosAgua=new ArrayList<>();
         disparosEnemigos = new ArrayList<>(100);
+        disparosJugador = new ArrayList<>(100);
         for(int i=0;i<100;i++){
             disparosEnemigos.add(i);
         }
@@ -45,16 +47,29 @@ public class DatosPartida{
         y le debe devolver si:
         el barco es dañado
         el barco es hundido
+
+        se tiene que fijar que no revise la posicion si ya esta en la lista
         */
         /*boolean resultado;
         resultado=this.enemigo.disparo(x, y);
         return resultado;*/
-        if(this.enemigo.disparo(x,y)){
-            //disparosAcertados.add(x*10+y);
-            Barco barco = this.enemigo.getBarcoPosicion(x,y);
-            String estado = String.valueOf(barco.getCondicion());
+        if(!(disparosJugador.contains(x*10+y))){
+            disparosJugador.add(x*10+y);
+            if(this.enemigo.disparo(x,y)){
+                //disparosAcertados.add(x*10+y);
+                Barco barco = this.enemigo.getBarcoPosicion(x,y);
+                String estado = String.valueOf(barco.getCondicion());
+                System.out.println("Estado del barco acertado: "+estado);
+            }
+            else{
+                System.out.println("Disparo al agua");
+            }
+            return this.enemigo.disparo(x,y);
         }
-        return this.enemigo.disparo(x,y);
+        else{
+            System.out.println("Ya disparaste aqui flaco busca otro");
+            return false;
+        }
     }
 
     public boolean disparoE() {

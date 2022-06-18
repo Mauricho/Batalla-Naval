@@ -167,9 +167,10 @@ public class Modelo {
     }
 
     public boolean dispararPosicionE() {
-        boolean result;
+        /*boolean result;
         result=this.informacionDelJuego.disparoE();
-        return result;
+        return result;*/
+        return informacionDelJuego.disparoE();
     }
 
     public void iniciarSeleccionDePosiciones(int tipo) {
