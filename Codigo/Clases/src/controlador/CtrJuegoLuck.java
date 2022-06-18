@@ -58,4 +58,8 @@ public class CtrJuegoLuck implements Controlador {
     public void juegoLuck() {
     
     }
+
+    public boolean disparable(int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
