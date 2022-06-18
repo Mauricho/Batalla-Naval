@@ -21,9 +21,18 @@ El proyecto lo basamos en el juego Batalla Naval, en el cual un usuario seleccio
 El juego continua de esta forma hasta que alguno de los dos se queda sin barco.
 Y agregamos un modo de juego inventado por nosotros, LuckShot cuyas reglas se explican más abajo.
 
-#Reglas del juego
+# Reglas del juego modo normal
 1. Cada jugador puede tener como máximo 10 barcos
-2. Cada jugador puede tener:
+2. Cada jugador puede tener: 4 fragatas, 3 destructores, 2 submarinos, 1 acorazado
+3. Es un disparo por turno.
+4. Quien se queda sin barcos pierde la partida
+
+# Regla del juego modo LuckShot
+1.
+2.
+3.
+4.
+5.
 
 # Documentación
 A toda la documentación del proyecto se la puede leer en el [repositorio de github](https://github.com/Mauricho/Batalla-Naval/tree/Develop/Documentacion "repositorio de github").
@@ -33,21 +42,24 @@ Algunos datos más se pueden llegar a encontrar en esos archivos .pdf.
 # Capturas de pantalla
 Esta son algunas capturas de pantalla sobre el avance del juego.
 
-##Menú Principal
-##Selección de los barcos
-##Tablero de la jugada
+## Tablero y Barcos
+![](https://github.com/Mauricho/Batalla-Naval/blob/Develop/Documentacion/Imagenes/tablero.png?raw=true)
+En la imagen se puede visualizar la idea de un tablero, con los respectivos barcos y los lugares que ocupa cada uno.
+
+## Menú Principal
+
+## Selección de los barcos
+
+## Tablero de la jugada
+
 # Integrantes
+Los integrantes del proyecto son:
+* [KevinReynoso](https://github.com/KevinReynoso "KevinReynoso")
+* [FacujesusM](https://github.com/FacujesusM "FacujesusM")
+* [Mauricho](https://github.com/Mauricho "Mauricho")
 
-#### 标题（用底线的形式）Heading (underline)
 
-This is an H1
-=============
-
-This is an H2
--------------
-
-### 字符效果和横线等
-                
+// Abajo dejo la guía por si hace falta agregar más cosas !!
 ----
 
 ~~删除线~~ <s>删除线（开启识别HTML标签时）</s>
@@ -211,13 +223,13 @@ Image:
 
 + 列表一
 + 列表二
-    + 列表二-1
-    + 列表二-2
-    + 列表二-3
+  + 列表二-1
+  + 列表二-2
+  + 列表二-3
 + 列表三
-    * 列表一
-    * 列表二
-    * 列表三
+  * 列表一
+  * 列表二
+  * 列表三
 
 #### 有序列表 Ordered Lists (-)
 
@@ -230,12 +242,12 @@ Image:
 - [x] GFM task list 1
 - [x] GFM task list 2
 - [ ] GFM task list 3
-    - [ ] GFM task list 3-1
-    - [ ] GFM task list 3-2
-    - [ ] GFM task list 3-3
+  - [ ] GFM task list 3-1
+  - [ ] GFM task list 3-2
+  - [ ] GFM task list 3-3
 - [ ] GFM task list 4
-    - [ ] GFM task list 4-1
-    - [ ] GFM task list 4-2
+  - [ ] GFM task list 4-1
+  - [ ] GFM task list 4-2
 
 ----
 
@@ -298,8 +310,8 @@ X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;
 - [x] [ ] :smiley: this is a complete item :smiley:;
 - [ ] []this is an incomplete item [test link](#) :fa-star: @pandao;
 - [ ] [ ]this is an incomplete item :fa-star: :fa-gear:;
-    - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;
-    - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);
+  - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;
+  - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);
 
 #### 反斜杠 Escape
 
