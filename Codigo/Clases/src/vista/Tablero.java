@@ -4102,6 +4102,8 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     }//GEN-LAST:event_btn99ActionPerformed
 
     private void btn100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn100ActionPerformed
+        //jTextArea1.setText("HOLAAAAAAAAAA");
+        //control.escribir(jTextArea1,"HOLAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         if (btn100.isSelected()) {
             if (control.disparable(9, 9)) {
                 if (control.generarDisparoJugador(9, 9)) {
@@ -4130,7 +4132,7 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     }
 
     public void resultadoDisparo(boolean res) {
-
+        //control.escribir(jTextArea1,"holaaa");
     }
 
     @Override

@@ -17,6 +17,7 @@ public class DatosPartida{
     private ArrayList<Integer> alrededor;
     private jugador player;
     private jugador enemigo;
+    private boolean flag;
     
     public DatosPartida(){
         disparosEnemigos = new ArrayList<>(100);
@@ -28,6 +29,7 @@ public class DatosPartida{
         Collections.shuffle(disparosEnemigos);
         this.player = new jugador();
         this.enemigo = new jugador();
+        flag = false;
     }
 
     //--------------------------------------------------------------------------
@@ -54,23 +56,51 @@ public class DatosPartida{
     }
 
     public boolean disparoE() {
-        int disparo = disparosEnemigos.get(0);
-        disparosEnemigos.remove(0);
-        int x = disparo/10;
-        int y = disparo%10;
-        System.out.println("El enemigo ha disparado en la posicion ("+x+","+y+")");
-        if(this.player.disparo(x,y)){
-            Barco barco = this.player.getBarcoPosicion(x,y);
-            String estado = String.valueOf(barco.getCondicion());
-            System.out.println("Barco acertado. Estado: "+estado);
-            if(barco.isAveriado()){
-                buscarAlrededor(disparo);
+        if(!flag){
+            int disparo = disparosEnemigos.get(0);
+            disparosEnemigos.remove(0);
+            int x = disparo/10;
+            int y = disparo%10;
+            System.out.println("El enemigo ha disparado en la posicion ("+x+","+y+")");
+            if(this.player.disparo(x,y)){
+                Barco barco = this.player.getBarcoPosicion(x,y);
+                String estado = String.valueOf(barco.getCondicion());
+                System.out.println("Barco acertado. Estado: "+estado);
+                if(barco.isAveriado()){
+                    flag = true;
+                    buscarAlrededor(disparo);
+                }
             }
+            else{
+                System.out.println("Disparo al agua");
+            }
+            return this.player.disparo(x,y);
         }
         else{
-            System.out.println("Disparo al agua");
+            int disparo = alrededor.get(0);
+            disparosEnemigos.remove(alrededor.remove(0));
+            int x = disparo/10;
+            int y = disparo%10;
+            System.out.println("El enemigo ha disparado en la posicion ("+x+","+y+")");
+            if(this.player.disparo(x,y)){
+                Barco barco = this.player.getBarcoPosicion(x,y);
+                String estado = String.valueOf(barco.getCondicion());
+                System.out.println("Barco acertado. Estado: "+estado);
+                if(barco.isAveriado()){
+                    flag = true;
+                    buscarAlrededor(disparo);
+                }
+                if(barco.isHundido()){
+                    alrededor.clear();
+                    flag = false;
+                }
+            }
+            else{
+                System.out.println("Disparo al agua");
+            }
+            return this.player.disparo(x,y);
+
         }
-        return this.player.disparo(x,y);
     }
 
     public void buscarAlrededor(Integer x){
@@ -82,11 +112,11 @@ public class DatosPartida{
         if(disparosEnemigos.contains(x-1)) alrededor.add(disparosEnemigos.remove(x-1));*/
 
         for(int i=0;i<disparosEnemigos.size();i++){
-            if(disparosEnemigos.get(i)==x+10) alrededor.add(disparosEnemigos.remove(i));
+            if(disparosEnemigos.get(i)==x+10) alrededor.add(disparosEnemigos.get(i));
             //disparosEnemigos.remove(i);
-            if(disparosEnemigos.get(i)==x-10) alrededor.add(disparosEnemigos.remove(i));
-            if(disparosEnemigos.get(i)==x+1) alrededor.add(disparosEnemigos.remove(i));
-            if(disparosEnemigos.get(i)==x-1) alrededor.add(disparosEnemigos.remove(i));
+            if(disparosEnemigos.get(i)==x-10) alrededor.add(disparosEnemigos.get(i));
+            if(disparosEnemigos.get(i)==x+1) alrededor.add(disparosEnemigos.get(i));
+            if(disparosEnemigos.get(i)==x-1) alrededor.add(disparosEnemigos.get(i));
         }
         System.out.println(alrededor);
     }

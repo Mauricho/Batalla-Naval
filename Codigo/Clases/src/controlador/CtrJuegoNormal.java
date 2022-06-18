@@ -6,6 +6,8 @@ package src.controlador;
 
 import src.modelo.Modelo;
 
+import javax.swing.*;
+
 /**
  *
  * @author f_acu
@@ -71,5 +73,9 @@ public class CtrJuegoNormal implements Controlador {
 
     public boolean disparable(int x, int y) {
         return modelo.disparable(x, y);
+    }
+
+    public void escribir(JTextArea j,String text){
+        modelo.escribir(j,text);
     }
 }

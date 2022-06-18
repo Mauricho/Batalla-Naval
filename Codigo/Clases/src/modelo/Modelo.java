@@ -14,6 +14,8 @@ import src.vista.VistaJuegoGanado;
 import src.vista.VistaJuegoPerdido;
 //import src.vista.VistaJuegoPerdido;
 import src.vista.VistaMenuPrincipal;
+
+import javax.swing.*;
 //import src.vista.VistaPausa;
 
 /**
@@ -46,6 +48,7 @@ public class Modelo {
         vistatercera = null;
         //juegoActual = null;
         disponible=false;
+
     }
 
     /*    public void iniciar() {
@@ -113,6 +116,7 @@ public class Modelo {
              */
             informacionDelJuego.setEnemigo();
             vistaActual.hacerVisible(true);
+            //vistaActual.jTextArea1.append("Holaaaa");
         }
         else{
             informacionDelJuego.getPlayer().printTablero();
@@ -240,5 +244,9 @@ public class Modelo {
 
     public boolean disparable(int x, int y) {
         return this.informacionDelJuego.disparable(x, y);
+    }
+
+    public void escribir(JTextArea j,String text){
+        j.setText(text);
     }
 }
