@@ -75,16 +75,21 @@ public class jugador {
                 }
             }
         }*/
+
         for(int i=0;i<flota.size();i++){
             if(flota.get(i).getPosicion(row,col)==1){
                 flota.get(i).setCasilleros(row,col);
-                if(flota.get(i).isHundido()){
-                    cantBarcos--;
-                }
+                /*if(flota.get(i).isHundido()){
+                    flota.remove(flota.get(i));
+                }*/
             }
         }
         return getPosicion(row,col);
     }
+
+    /*public void setFlota(Barco barco){
+        flota.remove(barco);
+    }*/
     
     /*public boolean disparoE(){
         boolean resultado=false;
@@ -261,7 +266,8 @@ public class jugador {
     }
 
     public int barcosDisponibles(){
-        this.cantBarcos= cantAcorazados+ cantDestructores+ cantFragatas+ cantSubmarinos;
+        //this.cantBarcos= cantAcorazados+ cantDestructores+ cantFragatas+ cantSubmarinos;
+        //this.cantBarcos = flota.size();
         return this.cantBarcos;
     }
 
@@ -307,12 +313,13 @@ public class jugador {
     public boolean getPosicion(int x, int y){return Tablero[x][y];}
 
     public Barco getBarcoPosicion(int x, int y){
+        Barco aux = new Fragata();
         for (Barco barco: flota) {
             if(barco.getPosicion(x,y)==1){
-                return barco;
+                aux = barco;
             }
         }
-        return null;
+        return aux;
     }
 
     public void printTablero(){
@@ -322,5 +329,20 @@ public class jugador {
             }
             System.out.println();
         }
+    }
+
+    public boolean areAllHundido(){
+        cantBarcos=10;
+        for(Barco barco : flota){
+            if(!(barco.isHundido())){
+                cantBarcos--;
+            }
+        }
+        for (Barco barco : flota){
+            if(!(barco.isHundido())){
+                return false;
+            }
+        }
+        return true;
     }
 }

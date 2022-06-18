@@ -61,6 +61,7 @@ public class DatosPartida{
                 String estado = String.valueOf(barco.getCondicion());
                 barco.printCasilleros();
                 System.out.println("Estado del barco acertado: " + estado);
+                //enemigo.setFlota(barco);
             }
             else{
                 System.out.println("Disparo al agua");
@@ -96,13 +97,15 @@ public class DatosPartida{
     public boolean estadoJuego(int j){
         switch(j){
             case 1:
-                if(this.player.barcosDisponibles()==0){
-                    return false;
+                System.out.println("Al jugador le quedan "+player.barcosDisponibles()+" barcos restantes.");
+                if(this.player.areAllHundido()){
+                    return true;
                 }
                 break;
             case 2:
-                if(this.enemigo.barcosDisponibles()==0){
-                    return false;
+                System.out.println("Al enemigo le quedan "+enemigo.barcosDisponibles()+" barcos restantes.");
+                if(this.enemigo.areAllHundido()){
+                    return true;
                 }
                 break;
             default:

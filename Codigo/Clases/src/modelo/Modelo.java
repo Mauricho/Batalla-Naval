@@ -11,8 +11,8 @@ import src.vista.SeleccionDePosiciones;
 import src.vista.Tablero;
 import src.vista.Vista;
 import src.vista.VistaJuegoGanado;
-import src.vista.VistaJuegoPerdido;
 //import src.vista.VistaJuegoPerdido;
+import src.vista.VistaJuegoPerdido;
 import src.vista.VistaMenuPrincipal;
 //import src.vista.VistaPausa;
 
