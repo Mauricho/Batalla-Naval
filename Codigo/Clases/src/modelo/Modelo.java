@@ -40,6 +40,7 @@ public class Modelo {
 
     private Modelo() {
         //informacionDelJuego = new DatosPartida();
+        //player = informacionDelJuego.getPlayer();
         vistaActual = null;
         vistaAdicional = null;
         vistatercera = null;
@@ -96,10 +97,20 @@ public class Modelo {
     }
     
     public void iniciarJuegoNormal() {
+        /*
+        if(jugador.listo()) {
+            vistaActual.hacerVisible(false);
+            vistaActual = new Tablero(/*informacionDelJuego*//*);
+        informacionDelJuego = new DatosPartida();
+        vistaActual.hacerVisible(true);
+    }
+    */
         if(informacionDelJuego.isAllReady()) {
             vistaActual.hacerVisible(false);
             vistaActual = new Tablero(/*informacionDelJuego*/);
-            //informacionDelJuego = new DatosPartida();
+            /*
+            informacionDelJuego = new DatosPartida();
+             */
             informacionDelJuego.setEnemigo();
             vistaActual.hacerVisible(true);
         }
@@ -160,16 +171,20 @@ public class Modelo {
     }
     
     public boolean dispararPosicion(int x, int y){
-        /*boolean result;
+        /*
+        boolean result;
         result=this.informacionDelJuego.disparo(x, y);
-        return result;*/
+        return result;
+        */
         return this.informacionDelJuego.disparo(x,y);
     }
 
     public boolean dispararPosicionE() {
-        /*boolean result;
+        /*
+        boolean result;
         result=this.informacionDelJuego.disparoE();
-        return result;*/
+        return result;
+        */
         return informacionDelJuego.disparoE();
     }
 
@@ -186,6 +201,7 @@ public class Modelo {
 
     public void confirmar(){
         if(disponible){
+            //informacionDelJuego.getPlayer().setBarcoSeleccionado();
             informacionDelJuego.setBarcoSeleccionado();
             disponible=false;
         }
@@ -231,5 +247,56 @@ public class Modelo {
         vistatercera = (Vista) new VistaPausa();
         vistatercera.hacerVisible(true);
     }
+
+    public void posicionar(int x, int y){
+        if(informacionDelJuego.getPlayer().espacioDisponible(x,y)){
+            disponible=true;
+        }
+        else{
+            disponible=false;
+        }
+    }
+
+    public void confirmar(){
+        if(disponible){
+            informacionDelJuego.getPlayer().setBarcoSeleccionado();
+            disponible=false;
+        }
+    }
+
+    public void cancelar(){
+        disponible=false;
+        informacionDelJuego.getPlayer().devolverBarco();
+    }
+
+    public boolean estadoJuego(int j){
+        return this.informacionDelJuego.estadoJuego(j);
+    }
+
+    public void girar(){
+        informacionDelJuego.getPlayer().girar();
+    }
+
+    public void getFragata(){
+        informacionDelJuego.getPlayer().getFragata();
+    }
+
+    public void getDestructor(){
+        informacionDelJuego.getPlayer().getDestructor();
+    }
+
+    public void getSubmarino(){
+        informacionDelJuego.getPlayer().getSubmarino();
+    }
+
+    public void getAcorazado(){
+        informacionDelJuego.getPlayer().getAcorazado();
+    }
+
+    public void generarAleatorio(){informacionDelJuego.getPlayer().generarFlotaAleatorio();}
+
+    public boolean disparable(int x, int y) {
+        return this.informacionDelJuego.disparable(x, y);
+
 */
 }
