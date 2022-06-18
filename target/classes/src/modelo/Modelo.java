@@ -11,7 +11,7 @@ import src.vista.SeleccionDePosiciones;
 import src.vista.Tablero;
 import src.vista.Vista;
 import src.vista.VistaJuegoGanado;
-import src.vista.VistaJuegoPerdido;
+//import src.vista.VistaJuegoPerdido;
 //import src.vista.VistaJuegoPerdido;
 import src.vista.VistaMenuPrincipal;
 //import src.vista.VistaPausa;
@@ -40,6 +40,7 @@ public class Modelo {
 
     private Modelo() {
         //informacionDelJuego = new DatosPartida();
+        //player = informacionDelJuego.getPlayer();
         vistaActual = null;
         vistaAdicional = null;
         vistatercera = null;
@@ -96,10 +97,20 @@ public class Modelo {
     }
     
     public void iniciarJuegoNormal() {
+        /*
+        if(jugador.listo()) {
+            vistaActual.hacerVisible(false);
+            vistaActual = new Tablero(/*informacionDelJuego*//*);
+        informacionDelJuego = new DatosPartida();
+        vistaActual.hacerVisible(true);
+    }
+    */
         if(informacionDelJuego.isAllReady()) {
             vistaActual.hacerVisible(false);
             vistaActual = new Tablero(/*informacionDelJuego*/);
-            //informacionDelJuego = new DatosPartida();
+            /*
+            informacionDelJuego = new DatosPartida();
+             */
             informacionDelJuego.setEnemigo();
             vistaActual.hacerVisible(true);
         }
@@ -117,7 +128,7 @@ public class Modelo {
     }
 
     public void verJuegoPerdido() {
-        vistatercera = (Vista) new VistaJuegoPerdido();
+        //vistatercera = (Vista) new VistaJuegoPerdido();
         vistatercera.hacerVisible(true);
     }
 
@@ -160,16 +171,20 @@ public class Modelo {
     }
     
     public boolean dispararPosicion(int x, int y){
-        /*boolean result;
+        /*
+        boolean result;
         result=this.informacionDelJuego.disparo(x, y);
-        return result;*/
+        return result;
+        */
         return this.informacionDelJuego.disparo(x,y);
     }
 
     public boolean dispararPosicionE() {
-        /*boolean result;
+        /*
+        boolean result;
         result=this.informacionDelJuego.disparoE();
-        return result;*/
+        return result;
+        */
         return informacionDelJuego.disparoE();
     }
 
@@ -186,6 +201,7 @@ public class Modelo {
 
     public void confirmar(){
         if(disponible){
+            //informacionDelJuego.getPlayer().setBarcoSeleccionado();
             informacionDelJuego.setBarcoSeleccionado();
             disponible=false;
         }
@@ -220,16 +236,9 @@ public class Modelo {
         informacionDelJuego.setAcorazado();
     }
 
-    //public void generarAleatorio(){informacionDelJuego.getPlayer().generarFlotaAleatorio();}
+    public DatosPartida getInformacionDelJuego(){return informacionDelJuego;}
 
-    /*
-    public void cerrarPausa() {
-        iniciarVistaMenuPrincipal();
+    public boolean disparable(int x, int y) {
+        return this.informacionDelJuego.disparable(x, y);
     }
-
-    public void verPausa() {
-        vistatercera = (Vista) new VistaPausa();
-        vistatercera.hacerVisible(true);
-    }
-*/
 }

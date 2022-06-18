@@ -11,7 +11,7 @@ import src.vista.SeleccionDePosiciones;
 import src.vista.Tablero;
 import src.vista.Vista;
 import src.vista.VistaJuegoGanado;
-import src.vista.VistaJuegoPerdido;
+//import src.vista.VistaJuegoPerdido;
 //import src.vista.VistaJuegoPerdido;
 import src.vista.VistaMenuPrincipal;
 //import src.vista.VistaPausa;
@@ -128,7 +128,7 @@ public class Modelo {
     }
 
     public void verJuegoPerdido() {
-        vistatercera = (Vista) new VistaJuegoPerdido();
+        //vistatercera = (Vista) new VistaJuegoPerdido();
         vistatercera.hacerVisible(true);
     }
 
@@ -236,67 +236,9 @@ public class Modelo {
         informacionDelJuego.setAcorazado();
     }
 
-    //public void generarAleatorio(){informacionDelJuego.getPlayer().generarFlotaAleatorio();}
-
-    /*
-    public void cerrarPausa() {
-        iniciarVistaMenuPrincipal();
-    }
-
-    public void verPausa() {
-        vistatercera = (Vista) new VistaPausa();
-        vistatercera.hacerVisible(true);
-    }
-
-    public void posicionar(int x, int y){
-        if(informacionDelJuego.getPlayer().espacioDisponible(x,y)){
-            disponible=true;
-        }
-        else{
-            disponible=false;
-        }
-    }
-
-    public void confirmar(){
-        if(disponible){
-            informacionDelJuego.getPlayer().setBarcoSeleccionado();
-            disponible=false;
-        }
-    }
-
-    public void cancelar(){
-        disponible=false;
-        informacionDelJuego.getPlayer().devolverBarco();
-    }
-
-    public boolean estadoJuego(int j){
-        return this.informacionDelJuego.estadoJuego(j);
-    }
-
-    public void girar(){
-        informacionDelJuego.getPlayer().girar();
-    }
-
-    public void getFragata(){
-        informacionDelJuego.getPlayer().getFragata();
-    }
-
-    public void getDestructor(){
-        informacionDelJuego.getPlayer().getDestructor();
-    }
-
-    public void getSubmarino(){
-        informacionDelJuego.getPlayer().getSubmarino();
-    }
-
-    public void getAcorazado(){
-        informacionDelJuego.getPlayer().getAcorazado();
-    }
-
-    public void generarAleatorio(){informacionDelJuego.getPlayer().generarFlotaAleatorio();}
+    public DatosPartida getInformacionDelJuego(){return informacionDelJuego;}
 
     public boolean disparable(int x, int y) {
         return this.informacionDelJuego.disparable(x, y);
-
-*/
+    }
 }

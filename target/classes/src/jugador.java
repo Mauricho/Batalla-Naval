@@ -18,20 +18,15 @@ public class jugador {
     private int cantDestructores; // Destructores = 2 casilleros
     private int cantSubmarinos; // submarinos = 3 casilleros
     private int cantAcorazados; // Acorazados = 4 casilleros
-    //private static Barco[] flota;
     private ArrayList<Barco> flota = new ArrayList<>(10);
-    //private int contador;
-    private int cantBarcos; // Cantidad de barcos vivos en el tablero
+    private int cantBarcos;
 
     public static final int tamanio=10;
 
     private Barco barcoauxiliar;
     private boolean direccion;
-    //private static boolean flagSeleccion; // Indica si hay un barco seleccionado
-
 
     private final boolean[][] Tablero = new boolean[tamanio][tamanio];//Tablero para posicionar los barcos del jugador
-    //private final boolean[][] Tablero= new boolean[tamanio][tamanio];
     
     public jugador(){
         cleanTablero();
@@ -52,29 +47,11 @@ public class jugador {
         }
     }
 
-    /*private void cleanTableroJugador(){
-        for (int i=0; i<tamanio;i++){
-            for (int j=0; j<tamanio;j++){
-                TableroJugador[i][j]=false;
-            }
-        }
-    }*/
-
     public boolean listo(){
         return getCantBarcos() == 10;
     }
 
     public boolean disparo(int row, int col){
-        //boolean resultado=false;
-        // se fija si en la pos que disparo, hay un barco y devuelve boolean dependiendo del resultado true hay false no
-        /*for (Barco barco: flota) {
-            if(barco.getPosicion(row,col)==1){
-                barco.setCasilleros(row,col);
-                if(barco.getCondicion()==Condicion.HUNDIDO){
-                    cantBarcos--;
-                }
-            }
-        }*/
 
         for(int i=0;i<flota.size();i++){
             if(flota.get(i).getPosicion(row,col)==1){
@@ -172,22 +149,6 @@ public class jugador {
                 System.out.println("Como mierda llegaste aca");
                 break;
         }
-        /*int aux = this.barcoauxiliar.getTamanio();
-        if(aux == 4){
-            cantAcorazados++;
-        }
-        else if(aux == 3){
-            cantSubmarinos++;
-        }
-        else if(aux == 2){
-            cantDestructores++;
-        }
-        else if(aux == 1){
-            cantFragatas++;
-        }
-        else{
-            System.out.println("Como mierda llegaste aca flaco");
-        }*/
     }
 
     public void girar(){
@@ -345,4 +306,6 @@ public class jugador {
         }
         return true;
     }
+
+    public boolean getDireccion(){return direccion;}
 }
