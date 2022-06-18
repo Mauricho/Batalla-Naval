@@ -1,6 +1,6 @@
 package src;
 
-
+import java.util.HashMap;
 import java.util.ArrayList;
 
 public abstract class Barco {
@@ -16,7 +16,11 @@ public abstract class Barco {
     public Barco(int tamanio, String nombre){
         this.tamanio=tamanio;
         this.nombre=nombre;
+        /*
+        posicion = new int[jugador.tamanio][jugador.tamanio];
+         */
         condicion = Condicion.SANO;
+        //casilleros = new HashMap<>(tamanio);
         posicion = new int[jugador.tamanio][jugador.tamanio];
         casilleros = new ArrayList<>(tamanio);
         cleanPosicion();
@@ -24,6 +28,7 @@ public abstract class Barco {
     }
 
     private void cleanPosicion() {
+        //casilleros.clear();
         casilleros.clear();
         for(int i=0;i<jugador.tamanio;i++){
             for(int j=0;j<jugador.tamanio;j++){
@@ -41,12 +46,14 @@ public abstract class Barco {
         if(direccion){//HORIZONTAL
             for(int i=0;i<tamanio;i++){
                 posicion[x][y + i] = 1;
+                //casilleros.put(x,y+i);
                 casilleros.add(x*10+(y+i));
             }
         }
         else{//VERTICAL
             for(int i=0;i<tamanio;i++) {
                 posicion[x + i][y] = 1;
+                //casilleros.put(x+i,y);
                 casilleros.add((x+i)*10+y);
             }
         }
