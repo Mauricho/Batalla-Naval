@@ -56,23 +56,10 @@ public class jugador {
         for(int i=0;i<flota.size();i++){
             if(flota.get(i).getPosicion(row,col)==1){
                 flota.get(i).setCasilleros(row,col);
-                /*if(flota.get(i).isHundido()){
-                    flota.remove(flota.get(i));
-                }*/
             }
         }
         return getPosicion(row,col);
     }
-
-    /*public void setFlota(Barco barco){
-        flota.remove(barco);
-    }*/
-    
-    /*public boolean disparoE(){
-        boolean resultado=false;
-        //hay que implementar
-        return resultado;
-    }*/
 
     public void devolverBarco(){
         this.barcoauxiliar = null;
@@ -239,7 +226,6 @@ public class jugador {
             lista.add(i);
         }
         Collections.shuffle(lista); // mezcla el orden de los valores
-        //System.out.print(lista);
         for(int j=0;j<lista.size();j++){
             z = lista.get(j);
             x=z/10;
@@ -293,12 +279,6 @@ public class jugador {
     }
 
     public boolean areAllHundido(){
-        cantBarcos=10;
-        for(Barco barco : flota){
-            if(!(barco.isHundido())){
-                cantBarcos--;
-            }
-        }
         for (Barco barco : flota){
             if(!(barco.isHundido())){
                 return false;

@@ -4120,11 +4120,11 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     }
 
     public void revisarEstado() {
-        if (control.estadoJuego(1)) {
+        if (control.estadoJuego(2)) {
             control.partidaGanada();
         }
         control.generarDisparoEnemigo();
-        if (control.estadoJuego(2)) {
+        if (control.estadoJuego(1)) {
             control.partidaPerdida();
         }
     }

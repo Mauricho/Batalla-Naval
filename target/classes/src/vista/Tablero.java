@@ -2737,7 +2737,7 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     }//GEN-LAST:event_jTextArea1ComponentAdded
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        if (btn1.isSelected()) {
+        //if (btn1.isSelected()) {
             if (control.disparable(0, 0)) {
                 if (control.generarDisparoJugador(0, 0)) {
                     btn1.setBackground(Color.red);
@@ -2746,7 +2746,7 @@ public class Tablero extends javax.swing.JFrame implements Vista {
                 }
                 revisarEstado();
             }
-        }
+        //}
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
@@ -4120,11 +4120,11 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     }
 
     public void revisarEstado() {
-        if (control.estadoJuego(1)) {
+        if (control.estadoJuego(2)) {
             control.partidaGanada();
         }
         control.generarDisparoEnemigo();
-        if (control.estadoJuego(2)) {
+        if (control.estadoJuego(1)) {
             control.partidaPerdida();
         }
     }

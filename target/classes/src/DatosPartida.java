@@ -14,12 +14,14 @@ import java.util.Collections;
 public class DatosPartida{
     private final ArrayList<Integer> disparosEnemigos;
     private final ArrayList<Integer> disparosJugador;
+    private ArrayList<Integer> alrededor;
     private jugador player;
     private jugador enemigo;
     
     public DatosPartida(){
         disparosEnemigos = new ArrayList<>(100);
         disparosJugador = new ArrayList<>(100);
+        alrededor = new ArrayList<>();
         for(int i=0;i<100;i++){
             disparosEnemigos.add(i);
         }
@@ -61,23 +63,44 @@ public class DatosPartida{
             Barco barco = this.player.getBarcoPosicion(x,y);
             String estado = String.valueOf(barco.getCondicion());
             System.out.println("Barco acertado. Estado: "+estado);
+            if(barco.isAveriado()){
+                buscarAlrededor(disparo);
+            }
         }
         else{
             System.out.println("Disparo al agua");
         }
         return this.player.disparo(x,y);
     }
+
+    public void buscarAlrededor(Integer x){
+        /*if(disparosEnemigos.contains(x+10)){
+            alrededor.add(disparosEnemigos.remove(x+10));
+        }
+        if(disparosEnemigos.contains(x-10)) alrededor.add(disparosEnemigos.remove(x-10));
+        if(disparosEnemigos.contains(x+1)) alrededor.add(disparosEnemigos.remove(x+1));
+        if(disparosEnemigos.contains(x-1)) alrededor.add(disparosEnemigos.remove(x-1));*/
+
+        for(int i=0;i<disparosEnemigos.size();i++){
+            if(disparosEnemigos.get(i)==x+10) alrededor.add(disparosEnemigos.remove(i));
+            //disparosEnemigos.remove(i);
+            if(disparosEnemigos.get(i)==x-10) alrededor.add(disparosEnemigos.remove(i));
+            if(disparosEnemigos.get(i)==x+1) alrededor.add(disparosEnemigos.remove(i));
+            if(disparosEnemigos.get(i)==x-1) alrededor.add(disparosEnemigos.remove(i));
+        }
+        System.out.println(alrededor);
+    }
     
     public boolean estadoJuego(int j){
         switch(j){
             case 1:
-                System.out.println("Al jugador le quedan "+player.barcosDisponibles()+" barcos restantes.");
+                //System.out.println("Al jugador le quedan "+player.barcosDisponibles()+" barcos restantes.");
                 if(this.player.areAllHundido()){
                     return true;
                 }
                 break;
             case 2:
-                System.out.println("Al enemigo le quedan "+enemigo.barcosDisponibles()+" barcos restantes.");
+                //System.out.println("Al enemigo le quedan "+enemigo.barcosDisponibles()+" barcos restantes.");
                 if(this.enemigo.areAllHundido()){
                     return true;
                 }
@@ -88,7 +111,18 @@ public class DatosPartida{
         return false;
     }
 
-    public boolean disparable(int x, int y){return true;}
+    public boolean disparable(int x, int y) {
+        for(int disp: this.disparosJugador){
+            if(disp==(x*10+y)){
+                return false;
+            }
+        }
+        return true;
+        /*
+        if(disparoJugador.contains(x*10+y) return false
+        return true;
+         */
+    }
 
     //--------------------------------------------------------------------------
     //------- SELECCION DE POSICIONES ------------------------------------------
