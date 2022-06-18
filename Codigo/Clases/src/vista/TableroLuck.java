@@ -41,6 +41,14 @@ public class TableroLuck extends javax.swing.JFrame implements Vista{
     public void cargarImagenes() {
 
     }
+    
+    public void revisarEstado(){
+        
+    }
+    
+    public void Actualizar(){
+        
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -545,7 +553,7 @@ public class TableroLuck extends javax.swing.JFrame implements Vista{
         jPanel2.setBackground(new java.awt.Color(51, 51, 255));
 
         jPanel3.setBackground(new java.awt.Color(51, 153, 255));
-        jPanel3.setLayout(new java.awt.GridLayout());
+        jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel4.setBackground(new java.awt.Color(51, 153, 255));
         jPanel4.setLayout(new java.awt.GridLayout(11, 11, 2, 2));
@@ -4124,13 +4132,7 @@ public class TableroLuck extends javax.swing.JFrame implements Vista{
         //jTextArea1.setText("hola");
     }//GEN-LAST:event_jTextArea1ComponentAdded
     
-    public void revisarEstado(){
-        
-    }
     
-    public void Actualizar(){
-        
-    }
     /**
      * @param args the command line arguments
      */

@@ -299,4 +299,8 @@ public class Modelo {
         return this.informacionDelJuego.disparable(x, y);
 
 */
+
+    public boolean disparable(int x, int y) {
+        return this.informacionDelJuego.disparable(x, y);
+    }
 }
