@@ -15,7 +15,7 @@ public class VistaJuegoPerdido extends javax.swing.JFrame implements Vista {
     /**
      * Creates new form VistajuegoPerdido
      */
-    private CtrJuegoPerdido control;
+    private static CtrJuegoPerdido control;
     public VistaJuegoPerdido() {
         initComponents();
         this.setLocationRelativeTo(null);

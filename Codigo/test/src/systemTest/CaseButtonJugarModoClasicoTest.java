@@ -13,9 +13,7 @@ public class CaseButtonJugarModoClasicoTest {
         modelo.iniciarVistaMenuPrincipal();
 
         Vista vistaMenuPrincipal = modelo.getVistaActual();
-        /*
-        modelo.iniciarJuegoNormal();
-         */
+
         modelo.iniciarSeleccionDePosiciones(1);
         Vista SeleccionDePosiciones = modelo.getVistaActual();
 
