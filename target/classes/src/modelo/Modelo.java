@@ -230,5 +230,7 @@ public class Modelo {
 
     public void generarAleatorio(){informacionDelJuego.getPlayer().generarFlotaAleatorio();}
 
-    public DatosPartida getInformacionDelJuego() {return informacionDelJuego;}
+    public boolean disparable(int x, int y) {
+        return this.informacionDelJuego.disparable(x, y);
+    }
 }

@@ -65,4 +65,8 @@ public class CtrJuegoNormal implements Controlador {
     @Override
     public void juegoLuck() {
     }
+
+    public boolean disparable(int x, int y) {
+        return modelo.disparable(x, y);
+    }
 }
