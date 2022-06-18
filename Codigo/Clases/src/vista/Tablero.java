@@ -20,7 +20,7 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private jugador player = new jugador();
     private static CtrJuegoNormal control;
     boolean result = false;
-    
+
     public Tablero() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -2737,11 +2737,11 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     }//GEN-LAST:event_jTextArea1ComponentAdded
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(0, 0)){
-                if(control.generarDisparoJugador(0, 0)){
+        if (btn1.isSelected()) {
+            if (control.disparable(0, 0)) {
+                if (control.generarDisparoJugador(0, 0)) {
                     btn1.setBackground(Color.red);
-                }else{
+                } else {
                     btn1.setBackground(Color.blue);
                 }
                 revisarEstado();
@@ -2750,26 +2750,26 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(0, 1)){
-                if(control.generarDisparoJugador(0, 1)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn2.isSelected()) {
+            if (control.disparable(0, 1)) {
+                if (control.generarDisparoJugador(0, 1)) {
+                    btn2.setBackground(Color.red);
+                } else {
+                    btn2.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
         }
-        
+
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(0, 2)){
-                if(control.generarDisparoJugador(0, 2)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn3.isSelected()) {
+            if (control.disparable(0, 2)) {
+                if (control.generarDisparoJugador(0, 2)) {
+                    btn3.setBackground(Color.red);
+                } else {
+                    btn3.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2777,12 +2777,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(0, 3)){
-                if(control.generarDisparoJugador(0, 3)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn4.isSelected()) {
+            if (control.disparable(0, 3)) {
+                if (control.generarDisparoJugador(0, 3)) {
+                    btn4.setBackground(Color.red);
+                } else {
+                    btn4.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2790,12 +2790,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(0, 4)){
-                if(control.generarDisparoJugador(0, 4)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn5.isSelected()) {
+            if (control.disparable(0, 4)) {
+                if (control.generarDisparoJugador(0, 4)) {
+                    btn5.setBackground(Color.red);
+                } else {
+                    btn5.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2803,12 +2803,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(0, 5)){
-                if(control.generarDisparoJugador(0, 5)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn6.isSelected()) {
+            if (control.disparable(0, 5)) {
+                if (control.generarDisparoJugador(0, 5)) {
+                    btn6.setBackground(Color.red);
+                } else {
+                    btn6.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2816,12 +2816,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(0, 6)){
-                if(control.generarDisparoJugador(0, 6)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn7.isSelected()) {
+            if (control.disparable(0, 6)) {
+                if (control.generarDisparoJugador(0, 6)) {
+                    btn7.setBackground(Color.red);
+                } else {
+                    btn7.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2829,12 +2829,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(0, 7)){
-                if(control.generarDisparoJugador(0, 7)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn8.isSelected()) {
+            if (control.disparable(0, 7)) {
+                if (control.generarDisparoJugador(0, 7)) {
+                    btn8.setBackground(Color.red);
+                } else {
+                    btn8.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2842,12 +2842,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(0, 8)){
-                if(control.generarDisparoJugador(0, 8)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn9.isSelected()) {
+            if (control.disparable(0, 8)) {
+                if (control.generarDisparoJugador(0, 8)) {
+                    btn9.setBackground(Color.red);
+                } else {
+                    btn9.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2855,12 +2855,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn9ActionPerformed
 
     private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(0, 9)){
-                if(control.generarDisparoJugador(0, 9)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn10.isSelected()) {
+            if (control.disparable(0, 9)) {
+                if (control.generarDisparoJugador(0, 9)) {
+                    btn10.setBackground(Color.red);
+                } else {
+                    btn10.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2868,12 +2868,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn10ActionPerformed
 
     private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(1, 0)){
-                if(control.generarDisparoJugador(1, 0)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn11.isSelected()) {
+            if (control.disparable(1, 0)) {
+                if (control.generarDisparoJugador(1, 0)) {
+                    btn11.setBackground(Color.red);
+                } else {
+                    btn11.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2881,12 +2881,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn11ActionPerformed
 
     private void btn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn12ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(1, 1)){
-                if(control.generarDisparoJugador(1, 1)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn12.isSelected()) {
+            if (control.disparable(1, 1)) {
+                if (control.generarDisparoJugador(1, 1)) {
+                    btn12.setBackground(Color.red);
+                } else {
+                    btn12.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2894,12 +2894,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn12ActionPerformed
 
     private void btn13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn13ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(1, 2)){
-                if(control.generarDisparoJugador(1, 2)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn13.isSelected()) {
+            if (control.disparable(1, 2)) {
+                if (control.generarDisparoJugador(1, 2)) {
+                    btn13.setBackground(Color.red);
+                } else {
+                    btn13.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2907,12 +2907,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn13ActionPerformed
 
     private void btn14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn14ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(1, 3)){
-                if(control.generarDisparoJugador(1, 3)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn14.isSelected()) {
+            if (control.disparable(1, 3)) {
+                if (control.generarDisparoJugador(1, 3)) {
+                    btn14.setBackground(Color.red);
+                } else {
+                    btn14.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2920,12 +2920,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn14ActionPerformed
 
     private void btn15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn15ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(1, 4)){
-                if(control.generarDisparoJugador(1, 4)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn15.isSelected()) {
+            if (control.disparable(1, 4)) {
+                if (control.generarDisparoJugador(1, 4)) {
+                    btn15.setBackground(Color.red);
+                } else {
+                    btn15.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2933,12 +2933,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn15ActionPerformed
 
     private void btn16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn16ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(1, 5)){
-                if(control.generarDisparoJugador(1, 5)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn16.isSelected()) {
+            if (control.disparable(1, 5)) {
+                if (control.generarDisparoJugador(1, 5)) {
+                    btn16.setBackground(Color.red);
+                } else {
+                    btn16.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2946,12 +2946,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn16ActionPerformed
 
     private void btn17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn17ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(1, 6)){
-                if(control.generarDisparoJugador(1, 6)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn17.isSelected()) {
+            if (control.disparable(1, 6)) {
+                if (control.generarDisparoJugador(1, 6)) {
+                    btn17.setBackground(Color.red);
+                } else {
+                    btn17.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2959,12 +2959,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn17ActionPerformed
 
     private void btn18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn18ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(1, 7)){
-                if(control.generarDisparoJugador(1, 7)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn18.isSelected()) {
+            if (control.disparable(1, 7)) {
+                if (control.generarDisparoJugador(1, 7)) {
+                    btn18.setBackground(Color.red);
+                } else {
+                    btn18.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2972,12 +2972,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn18ActionPerformed
 
     private void btn19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn19ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(1, 8)){
-                if(control.generarDisparoJugador(1, 8)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn19.isSelected()) {
+            if (control.disparable(1, 8)) {
+                if (control.generarDisparoJugador(1, 8)) {
+                    btn19.setBackground(Color.red);
+                } else {
+                    btn19.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2985,12 +2985,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn19ActionPerformed
 
     private void btn20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn20ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(1, 9)){
-                if(control.generarDisparoJugador(1, 9)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn20.isSelected()) {
+            if (control.disparable(1, 9)) {
+                if (control.generarDisparoJugador(1, 9)) {
+                    btn20.setBackground(Color.red);
+                } else {
+                    btn20.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -2998,12 +2998,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn20ActionPerformed
 
     private void btn21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn21ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(2, 0)){
-                if(control.generarDisparoJugador(2, 0)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn21.isSelected()) {
+            if (control.disparable(2, 0)) {
+                if (control.generarDisparoJugador(2, 0)) {
+                    btn21.setBackground(Color.red);
+                } else {
+                    btn21.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3011,12 +3011,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn21ActionPerformed
 
     private void btn22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn22ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(2, 1)){
-                if(control.generarDisparoJugador(2, 1)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn22.isSelected()) {
+            if (control.disparable(2, 1)) {
+                if (control.generarDisparoJugador(2, 1)) {
+                    btn22.setBackground(Color.red);
+                } else {
+                    btn22.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3024,12 +3024,12 @@ if(btn1.isSelected()){
             }//GEN-LAST:event_btn22ActionPerformed
 
     private void btn23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn23ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(2, 2)){
-                if(control.generarDisparoJugador(2, 2)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn23.isSelected()) {
+            if (control.disparable(2, 2)) {
+                if (control.generarDisparoJugador(2, 2)) {
+                    btn23.setBackground(Color.red);
+                } else {
+                    btn23.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3038,12 +3038,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn23ActionPerformed
 
     private void btn24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn24ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(2, 3)){
-                if(control.generarDisparoJugador(2, 3)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn24.isSelected()) {
+            if (control.disparable(2, 3)) {
+                if (control.generarDisparoJugador(2, 3)) {
+                    btn24.setBackground(Color.red);
+                } else {
+                    btn24.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3052,12 +3052,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn24ActionPerformed
 
     private void btn25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn25ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(2, 4)){
-                if(control.generarDisparoJugador(2, 4)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn25.isSelected()) {
+            if (control.disparable(2, 4)) {
+                if (control.generarDisparoJugador(2, 4)) {
+                    btn25.setBackground(Color.red);
+                } else {
+                    btn25.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3066,12 +3066,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn25ActionPerformed
 
     private void btn26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn26ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(2, 5)){
-                if(control.generarDisparoJugador(2, 5)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn26.isSelected()) {
+            if (control.disparable(2, 5)) {
+                if (control.generarDisparoJugador(2, 5)) {
+                    btn26.setBackground(Color.red);
+                } else {
+                    btn26.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3080,12 +3080,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn26ActionPerformed
 
     private void btn27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn27ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(2, 6)){
-                if(control.generarDisparoJugador(2, 6)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn27.isSelected()) {
+            if (control.disparable(2, 6)) {
+                if (control.generarDisparoJugador(2, 6)) {
+                    btn27.setBackground(Color.red);
+                } else {
+                    btn27.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3094,12 +3094,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn27ActionPerformed
 
     private void btn28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn28ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(2, 7)){
-                if(control.generarDisparoJugador(2, 7)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn28.isSelected()) {
+            if (control.disparable(2, 7)) {
+                if (control.generarDisparoJugador(2, 7)) {
+                    btn28.setBackground(Color.red);
+                } else {
+                    btn28.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3108,12 +3108,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn28ActionPerformed
 
     private void btn29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn29ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(2, 8)){
-                if(control.generarDisparoJugador(2, 8)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn29.isSelected()) {
+            if (control.disparable(2, 8)) {
+                if (control.generarDisparoJugador(2, 8)) {
+                    btn29.setBackground(Color.red);
+                } else {
+                    btn29.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3122,12 +3122,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn29ActionPerformed
 
     private void btn30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn30ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(2, 9)){
-                if(control.generarDisparoJugador(2, 9)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn30.isSelected()) {
+            if (control.disparable(2, 9)) {
+                if (control.generarDisparoJugador(2, 9)) {
+                    btn30.setBackground(Color.red);
+                } else {
+                    btn30.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3136,12 +3136,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn30ActionPerformed
 
     private void btn31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn31ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(3, 0)){
-                if(control.generarDisparoJugador(3, 0)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn31.isSelected()) {
+            if (control.disparable(3, 0)) {
+                if (control.generarDisparoJugador(3, 0)) {
+                    btn31.setBackground(Color.red);
+                } else {
+                    btn31.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3150,12 +3150,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn31ActionPerformed
 
     private void btn32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn32ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(3, 1)){
-                if(control.generarDisparoJugador(3, 1)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn32.isSelected()) {
+            if (control.disparable(3, 1)) {
+                if (control.generarDisparoJugador(3, 1)) {
+                    btn32.setBackground(Color.red);
+                } else {
+                    btn32.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3164,12 +3164,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn32ActionPerformed
 
     private void btn33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn33ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(3, 2)){
-                if(control.generarDisparoJugador(3, 2)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn33.isSelected()) {
+            if (control.disparable(3, 2)) {
+                if (control.generarDisparoJugador(3, 2)) {
+                    btn33.setBackground(Color.red);
+                } else {
+                    btn33.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3178,12 +3178,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn33ActionPerformed
 
     private void btn34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn34ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(3, 3)){
-                if(control.generarDisparoJugador(3, 3)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn34.isSelected()) {
+            if (control.disparable(3, 3)) {
+                if (control.generarDisparoJugador(3, 3)) {
+                    btn34.setBackground(Color.red);
+                } else {
+                    btn34.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3192,12 +3192,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn34ActionPerformed
 
     private void btn35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn35ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(3, 4)){
-                if(control.generarDisparoJugador(3, 4)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn35.isSelected()) {
+            if (control.disparable(3, 4)) {
+                if (control.generarDisparoJugador(3, 4)) {
+                    btn35.setBackground(Color.red);
+                } else {
+                    btn35.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3206,12 +3206,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn35ActionPerformed
 
     private void btn36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn36ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(3, 5)){
-                if(control.generarDisparoJugador(3, 5)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn36.isSelected()) {
+            if (control.disparable(3, 5)) {
+                if (control.generarDisparoJugador(3, 5)) {
+                    btn36.setBackground(Color.red);
+                } else {
+                    btn36.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3220,12 +3220,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn36ActionPerformed
 
     private void btn37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn37ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(3, 6)){
-                if(control.generarDisparoJugador(3, 6)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn37.isSelected()) {
+            if (control.disparable(3, 6)) {
+                if (control.generarDisparoJugador(3, 6)) {
+                    btn37.setBackground(Color.red);
+                } else {
+                    btn37.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3234,12 +3234,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn37ActionPerformed
 
     private void btn38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn38ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(3, 7)){
-                if(control.generarDisparoJugador(3, 7)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn38.isSelected()) {
+            if (control.disparable(3, 7)) {
+                if (control.generarDisparoJugador(3, 7)) {
+                    btn38.setBackground(Color.red);
+                } else {
+                    btn38.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3248,12 +3248,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn38ActionPerformed
 
     private void btn39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn39ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(3, 8)){
-                if(control.generarDisparoJugador(3, 8)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn39.isSelected()) {
+            if (control.disparable(3, 8)) {
+                if (control.generarDisparoJugador(3, 8)) {
+                    btn39.setBackground(Color.red);
+                } else {
+                    btn39.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3262,12 +3262,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn39ActionPerformed
 
     private void btn40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn40ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(3, 9)){
-                if(control.generarDisparoJugador(3, 9)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn40.isSelected()) {
+            if (control.disparable(3, 9)) {
+                if (control.generarDisparoJugador(3, 9)) {
+                    btn40.setBackground(Color.red);
+                } else {
+                    btn40.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3276,12 +3276,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn40ActionPerformed
 
     private void btn41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn41ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(4, 0)){
-                if(control.generarDisparoJugador(4, 0)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn41.isSelected()) {
+            if (control.disparable(4, 0)) {
+                if (control.generarDisparoJugador(4, 0)) {
+                    btn41.setBackground(Color.red);
+                } else {
+                    btn41.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3290,12 +3290,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn41ActionPerformed
 
     private void btn42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn42ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(4, 1)){
-                if(control.generarDisparoJugador(4, 1)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn42.isSelected()) {
+            if (control.disparable(4, 1)) {
+                if (control.generarDisparoJugador(4, 1)) {
+                    btn42.setBackground(Color.red);
+                } else {
+                    btn42.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3304,12 +3304,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn42ActionPerformed
 
     private void btn43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn43ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(4, 2)){
-                if(control.generarDisparoJugador(4, 2)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn43.isSelected()) {
+            if (control.disparable(4, 2)) {
+                if (control.generarDisparoJugador(4, 2)) {
+                    btn43.setBackground(Color.red);
+                } else {
+                    btn43.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3318,12 +3318,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn43ActionPerformed
 
     private void btn44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn44ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(4, 3)){
-                if(control.generarDisparoJugador(4, 3)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn44.isSelected()) {
+            if (control.disparable(4, 3)) {
+                if (control.generarDisparoJugador(4, 3)) {
+                    btn44.setBackground(Color.red);
+                } else {
+                    btn44.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3332,12 +3332,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn44ActionPerformed
 
     private void btn45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn45ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(4, 4)){
-                if(control.generarDisparoJugador(4, 4)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn45.isSelected()) {
+            if (control.disparable(4, 4)) {
+                if (control.generarDisparoJugador(4, 4)) {
+                    btn45.setBackground(Color.red);
+                } else {
+                    btn45.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3346,12 +3346,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn45ActionPerformed
 
     private void btn46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn46ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(4, 5)){
-                if(control.generarDisparoJugador(4, 5)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn46.isSelected()) {
+            if (control.disparable(4, 5)) {
+                if (control.generarDisparoJugador(4, 5)) {
+                    btn46.setBackground(Color.red);
+                } else {
+                    btn46.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3360,12 +3360,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn46ActionPerformed
 
     private void btn47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn47ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(4, 6)){
-                if(control.generarDisparoJugador(4, 6)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn47.isSelected()) {
+            if (control.disparable(4, 6)) {
+                if (control.generarDisparoJugador(4, 6)) {
+                    btn47.setBackground(Color.red);
+                } else {
+                    btn47.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3374,12 +3374,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn47ActionPerformed
 
     private void btn48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn48ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(4, 7)){
-                if(control.generarDisparoJugador(4, 7)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn48.isSelected()) {
+            if (control.disparable(4, 7)) {
+                if (control.generarDisparoJugador(4, 7)) {
+                    btn48.setBackground(Color.red);
+                } else {
+                    btn48.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3388,12 +3388,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn48ActionPerformed
 
     private void btn49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn49ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(4, 8)){
-                if(control.generarDisparoJugador(4, 8)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn49.isSelected()) {
+            if (control.disparable(4, 8)) {
+                if (control.generarDisparoJugador(4, 8)) {
+                    btn49.setBackground(Color.red);
+                } else {
+                    btn49.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3402,12 +3402,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn49ActionPerformed
 
     private void btn50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn50ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(4, 9)){
-                if(control.generarDisparoJugador(4, 9)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn50.isSelected()) {
+            if (control.disparable(4, 9)) {
+                if (control.generarDisparoJugador(4, 9)) {
+                    btn50.setBackground(Color.red);
+                } else {
+                    btn50.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3416,12 +3416,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn50ActionPerformed
 
     private void btn51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn51ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(5, 0)){
-                if(control.generarDisparoJugador(5, 0)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn51.isSelected()) {
+            if (control.disparable(5, 0)) {
+                if (control.generarDisparoJugador(5, 0)) {
+                    btn51.setBackground(Color.red);
+                } else {
+                    btn51.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3430,12 +3430,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn51ActionPerformed
 
     private void btn52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn52ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(5, 1)){
-                if(control.generarDisparoJugador(5, 1)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn52.isSelected()) {
+            if (control.disparable(5, 1)) {
+                if (control.generarDisparoJugador(5, 1)) {
+                    btn52.setBackground(Color.red);
+                } else {
+                    btn52.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3444,12 +3444,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn52ActionPerformed
 
     private void btn53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn53ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(5, 2)){
-                if(control.generarDisparoJugador(5, 2)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn53.isSelected()) {
+            if (control.disparable(5, 2)) {
+                if (control.generarDisparoJugador(5, 2)) {
+                    btn53.setBackground(Color.red);
+                } else {
+                    btn53.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3458,12 +3458,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn53ActionPerformed
 
     private void btn54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn54ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(5, 3)){
-                if(control.generarDisparoJugador(5, 3)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn54.isSelected()) {
+            if (control.disparable(5, 3)) {
+                if (control.generarDisparoJugador(5, 3)) {
+                    btn54.setBackground(Color.red);
+                } else {
+                    btn54.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3472,12 +3472,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn54ActionPerformed
 
     private void btn55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn55ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(5, 4)){
-                if(control.generarDisparoJugador(5, 4)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn55.isSelected()) {
+            if (control.disparable(5, 4)) {
+                if (control.generarDisparoJugador(5, 4)) {
+                    btn55.setBackground(Color.red);
+                } else {
+                    btn55.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3486,12 +3486,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn55ActionPerformed
 
     private void btn56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn56ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(5, 5)){
-                if(control.generarDisparoJugador(5, 5)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn56.isSelected()) {
+            if (control.disparable(5, 5)) {
+                if (control.generarDisparoJugador(5, 5)) {
+                    btn56.setBackground(Color.red);
+                } else {
+                    btn56.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3500,12 +3500,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn56ActionPerformed
 
     private void btn57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn57ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(5, 6)){
-                if(control.generarDisparoJugador(5, 6)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn57.isSelected()) {
+            if (control.disparable(5, 6)) {
+                if (control.generarDisparoJugador(5, 6)) {
+                    btn57.setBackground(Color.red);
+                } else {
+                    btn57.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3514,12 +3514,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn57ActionPerformed
 
     private void btn58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn58ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(5, 7)){
-                if(control.generarDisparoJugador(5, 7)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn58.isSelected()) {
+            if (control.disparable(5, 7)) {
+                if (control.generarDisparoJugador(5, 7)) {
+                    btn58.setBackground(Color.red);
+                } else {
+                    btn58.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3528,12 +3528,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn58ActionPerformed
 
     private void btn59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn59ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(5, 8)){
-                if(control.generarDisparoJugador(5, 8)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn59.isSelected()) {
+            if (control.disparable(5, 8)) {
+                if (control.generarDisparoJugador(5, 8)) {
+                    btn59.setBackground(Color.red);
+                } else {
+                    btn59.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3542,12 +3542,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn59ActionPerformed
 
     private void btn60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn60ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(5, 9)){
-                if(control.generarDisparoJugador(5, 9)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn60.isSelected()) {
+            if (control.disparable(5, 9)) {
+                if (control.generarDisparoJugador(5, 9)) {
+                    btn60.setBackground(Color.red);
+                } else {
+                    btn60.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3556,12 +3556,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn60ActionPerformed
 
     private void btn61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn61ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(6, 0)){
-                if(control.generarDisparoJugador(6, 0)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn61.isSelected()) {
+            if (control.disparable(6, 0)) {
+                if (control.generarDisparoJugador(6, 0)) {
+                    btn61.setBackground(Color.red);
+                } else {
+                    btn61.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3570,12 +3570,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn61ActionPerformed
 
     private void btn62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn62ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(6, 1)){
-                if(control.generarDisparoJugador(6, 1)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn62.isSelected()) {
+            if (control.disparable(6, 1)) {
+                if (control.generarDisparoJugador(6, 1)) {
+                    btn62.setBackground(Color.red);
+                } else {
+                    btn62.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3584,12 +3584,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn62ActionPerformed
 
     private void btn63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn63ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(6, 2)){
-                if(control.generarDisparoJugador(6, 2)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn63.isSelected()) {
+            if (control.disparable(6, 2)) {
+                if (control.generarDisparoJugador(6, 2)) {
+                    btn63.setBackground(Color.red);
+                } else {
+                    btn63.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3598,12 +3598,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn63ActionPerformed
 
     private void btn64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn64ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(6, 3)){
-                if(control.generarDisparoJugador(6, 3)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn64.isSelected()) {
+            if (control.disparable(6, 3)) {
+                if (control.generarDisparoJugador(6, 3)) {
+                    btn64.setBackground(Color.red);
+                } else {
+                    btn64.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3612,12 +3612,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn64ActionPerformed
 
     private void btn65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn65ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(6, 4)){
-                if(control.generarDisparoJugador(6, 4)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn65.isSelected()) {
+            if (control.disparable(6, 4)) {
+                if (control.generarDisparoJugador(6, 4)) {
+                    btn65.setBackground(Color.red);
+                } else {
+                    btn65.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3626,12 +3626,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn65ActionPerformed
 
     private void btn66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn66ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(6, 5)){
-                if(control.generarDisparoJugador(6, 5)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn66.isSelected()) {
+            if (control.disparable(6, 5)) {
+                if (control.generarDisparoJugador(6, 5)) {
+                    btn66.setBackground(Color.red);
+                } else {
+                    btn66.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3640,12 +3640,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn66ActionPerformed
 
     private void btn67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn67ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(6, 6)){
-                if(control.generarDisparoJugador(6, 6)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn67.isSelected()) {
+            if (control.disparable(6, 6)) {
+                if (control.generarDisparoJugador(6, 6)) {
+                    btn67.setBackground(Color.red);
+                } else {
+                    btn67.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3654,12 +3654,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn67ActionPerformed
 
     private void btn68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn68ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(6, 7)){
-                if(control.generarDisparoJugador(6, 7)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn68.isSelected()) {
+            if (control.disparable(6, 7)) {
+                if (control.generarDisparoJugador(6, 7)) {
+                    btn68.setBackground(Color.red);
+                } else {
+                    btn68.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3668,12 +3668,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn68ActionPerformed
 
     private void btn69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn69ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(6, 8)){
-                if(control.generarDisparoJugador(6, 8)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn69.isSelected()) {
+            if (control.disparable(6, 8)) {
+                if (control.generarDisparoJugador(6, 8)) {
+                    btn69.setBackground(Color.red);
+                } else {
+                    btn69.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3682,12 +3682,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn69ActionPerformed
 
     private void btn70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn70ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(6, 9)){
-                if(control.generarDisparoJugador(6, 9)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn70.isSelected()) {
+            if (control.disparable(6, 9)) {
+                if (control.generarDisparoJugador(6, 9)) {
+                    btn70.setBackground(Color.red);
+                } else {
+                    btn70.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3696,12 +3696,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn70ActionPerformed
 
     private void btn71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn71ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(7, 0)){
-                if(control.generarDisparoJugador(7, 0)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn71.isSelected()) {
+            if (control.disparable(7, 0)) {
+                if (control.generarDisparoJugador(7, 0)) {
+                    btn71.setBackground(Color.red);
+                } else {
+                    btn71.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3710,12 +3710,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn71ActionPerformed
 
     private void btn72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn72ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(7, 1)){
-                if(control.generarDisparoJugador(7, 1)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn72.isSelected()) {
+            if (control.disparable(7, 1)) {
+                if (control.generarDisparoJugador(7, 1)) {
+                    btn72.setBackground(Color.red);
+                } else {
+                    btn72.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3724,12 +3724,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn72ActionPerformed
 
     private void btn73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn73ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(7, 2)){
-                if(control.generarDisparoJugador(7, 2)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn73.isSelected()) {
+            if (control.disparable(7, 2)) {
+                if (control.generarDisparoJugador(7, 2)) {
+                    btn73.setBackground(Color.red);
+                } else {
+                    btn73.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3738,12 +3738,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn73ActionPerformed
 
     private void btn74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn74ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(7, 3)){
-                if(control.generarDisparoJugador(7, 3)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn74.isSelected()) {
+            if (control.disparable(7, 3)) {
+                if (control.generarDisparoJugador(7, 3)) {
+                    btn74.setBackground(Color.red);
+                } else {
+                    btn74.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3752,12 +3752,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn74ActionPerformed
 
     private void btn75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn75ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(7, 4)){
-                if(control.generarDisparoJugador(7, 4)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn75.isSelected()) {
+            if (control.disparable(7, 4)) {
+                if (control.generarDisparoJugador(7, 4)) {
+                    btn75.setBackground(Color.red);
+                } else {
+                    btn75.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3766,12 +3766,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn75ActionPerformed
 
     private void btn76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn76ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(7, 5)){
-                if(control.generarDisparoJugador(7, 5)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn76.isSelected()) {
+            if (control.disparable(7, 5)) {
+                if (control.generarDisparoJugador(7, 5)) {
+                    btn76.setBackground(Color.red);
+                } else {
+                    btn76.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3780,12 +3780,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn76ActionPerformed
 
     private void btn77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn77ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(7, 6)){
-                if(control.generarDisparoJugador(7, 6)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn77.isSelected()) {
+            if (control.disparable(7, 6)) {
+                if (control.generarDisparoJugador(7, 6)) {
+                    btn77.setBackground(Color.red);
+                } else {
+                    btn77.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3794,12 +3794,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn77ActionPerformed
 
     private void btn78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn78ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(7, 7)){
-                if(control.generarDisparoJugador(7, 7)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn78.isSelected()) {
+            if (control.disparable(7, 7)) {
+                if (control.generarDisparoJugador(7, 7)) {
+                    btn78.setBackground(Color.red);
+                } else {
+                    btn78.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3808,12 +3808,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn78ActionPerformed
 
     private void btn79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn79ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(7, 8)){
-                if(control.generarDisparoJugador(7, 8)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn79.isSelected()) {
+            if (control.disparable(7, 8)) {
+                if (control.generarDisparoJugador(7, 8)) {
+                    btn79.setBackground(Color.red);
+                } else {
+                    btn79.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3822,12 +3822,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn79ActionPerformed
 
     private void btn80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn80ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(7, 9)){
-                if(control.generarDisparoJugador(7, 9)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn80.isSelected()) {
+            if (control.disparable(7, 9)) {
+                if (control.generarDisparoJugador(7, 9)) {
+                    btn80.setBackground(Color.red);
+                } else {
+                    btn80.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3836,12 +3836,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn80ActionPerformed
 
     private void btn81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn81ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(8, 0)){
-                if(control.generarDisparoJugador(8, 0)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn81.isSelected()) {
+            if (control.disparable(8, 0)) {
+                if (control.generarDisparoJugador(8, 0)) {
+                    btn81.setBackground(Color.red);
+                } else {
+                    btn81.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3850,12 +3850,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn81ActionPerformed
 
     private void btn82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn82ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(8, 1)){
-                if(control.generarDisparoJugador(8, 1)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn82.isSelected()) {
+            if (control.disparable(8, 1)) {
+                if (control.generarDisparoJugador(8, 1)) {
+                    btn82.setBackground(Color.red);
+                } else {
+                    btn82.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3864,12 +3864,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn82ActionPerformed
 
     private void btn83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn83ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(8, 2)){
-                if(control.generarDisparoJugador(8, 2)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn83.isSelected()) {
+            if (control.disparable(8, 2)) {
+                if (control.generarDisparoJugador(8, 2)) {
+                    btn83.setBackground(Color.red);
+                } else {
+                    btn83.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3878,12 +3878,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn83ActionPerformed
 
     private void btn84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn84ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(8, 3)){
-                if(control.generarDisparoJugador(8, 3)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn84.isSelected()) {
+            if (control.disparable(8, 3)) {
+                if (control.generarDisparoJugador(8, 3)) {
+                    btn84.setBackground(Color.red);
+                } else {
+                    btn84.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3892,12 +3892,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn84ActionPerformed
 
     private void btn85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn85ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(8, 4)){
-                if(control.generarDisparoJugador(8, 4)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn85.isSelected()) {
+            if (control.disparable(8, 4)) {
+                if (control.generarDisparoJugador(8, 4)) {
+                    btn85.setBackground(Color.red);
+                } else {
+                    btn85.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3906,12 +3906,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn85ActionPerformed
 
     private void btn86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn86ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(8, 5)){
-                if(control.generarDisparoJugador(8, 5)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn86.isSelected()) {
+            if (control.disparable(8, 5)) {
+                if (control.generarDisparoJugador(8, 5)) {
+                    btn86.setBackground(Color.red);
+                } else {
+                    btn86.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3920,12 +3920,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn86ActionPerformed
 
     private void btn87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn87ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(8, 6)){
-                if(control.generarDisparoJugador(8, 6)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn87.isSelected()) {
+            if (control.disparable(8, 6)) {
+                if (control.generarDisparoJugador(8, 6)) {
+                    btn87.setBackground(Color.red);
+                } else {
+                    btn87.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3934,12 +3934,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn87ActionPerformed
 
     private void btn88ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn88ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(8, 7)){
-                if(control.generarDisparoJugador(8, 7)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn88.isSelected()) {
+            if (control.disparable(8, 7)) {
+                if (control.generarDisparoJugador(8, 7)) {
+                    btn88.setBackground(Color.red);
+                } else {
+                    btn88.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3948,12 +3948,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn88ActionPerformed
 
     private void btn89ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn89ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(8, 8)){
-                if(control.generarDisparoJugador(8, 8)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn89.isSelected()) {
+            if (control.disparable(8, 8)) {
+                if (control.generarDisparoJugador(8, 8)) {
+                    btn89.setBackground(Color.red);
+                } else {
+                    btn89.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3962,12 +3962,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn89ActionPerformed
 
     private void btn90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn90ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(8, 9)){
-                if(control.generarDisparoJugador(8, 9)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn90.isSelected()) {
+            if (control.disparable(8, 9)) {
+                if (control.generarDisparoJugador(8, 9)) {
+                    btn90.setBackground(Color.red);
+                } else {
+                    btn90.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3976,12 +3976,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn90ActionPerformed
 
     private void btn91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn91ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(9, 0)){
-                if(control.generarDisparoJugador(9, 0)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn91.isSelected()) {
+            if (control.disparable(9, 0)) {
+                if (control.generarDisparoJugador(9, 0)) {
+                    btn91.setBackground(Color.red);
+                } else {
+                    btn91.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -3990,12 +3990,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn91ActionPerformed
 
     private void btn92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn92ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(9, 1)){
-                if(control.generarDisparoJugador(9, 1)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn92.isSelected()) {
+            if (control.disparable(9, 1)) {
+                if (control.generarDisparoJugador(9, 1)) {
+                    btn92.setBackground(Color.red);
+                } else {
+                    btn92.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -4004,12 +4004,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn92ActionPerformed
 
     private void btn93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn93ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(9, 2)){
-                if(control.generarDisparoJugador(9, 2)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn93.isSelected()) {
+            if (control.disparable(9, 2)) {
+                if (control.generarDisparoJugador(9, 2)) {
+                    btn93.setBackground(Color.red);
+                } else {
+                    btn93.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -4018,12 +4018,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn93ActionPerformed
 
     private void btn94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn94ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(9, 3)){
-                if(control.generarDisparoJugador(9, 3)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn94.isSelected()) {
+            if (control.disparable(9, 3)) {
+                if (control.generarDisparoJugador(9, 3)) {
+                    btn94.setBackground(Color.red);
+                } else {
+                    btn94.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -4032,12 +4032,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn94ActionPerformed
 
     private void btn95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn95ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(9, 4)){
-                if(control.generarDisparoJugador(9, 4)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn95.isSelected()) {
+            if (control.disparable(9, 4)) {
+                if (control.generarDisparoJugador(9, 4)) {
+                    btn95.setBackground(Color.red);
+                } else {
+                    btn95.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -4046,12 +4046,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn95ActionPerformed
 
     private void btn96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn96ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(9, 5)){
-                if(control.generarDisparoJugador(9, 5)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn96.isSelected()) {
+            if (control.disparable(9, 5)) {
+                if (control.generarDisparoJugador(9, 5)) {
+                    btn96.setBackground(Color.red);
+                } else {
+                    btn96.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -4060,12 +4060,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn96ActionPerformed
 
     private void btn97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn97ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(9, 6)){
-                if(control.generarDisparoJugador(9, 6)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn97.isSelected()) {
+            if (control.disparable(9, 6)) {
+                if (control.generarDisparoJugador(9, 6)) {
+                    btn97.setBackground(Color.red);
+                } else {
+                    btn97.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -4074,12 +4074,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn97ActionPerformed
 
     private void btn98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn98ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(9, 7)){
-                if(control.generarDisparoJugador(9, 7)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn98.isSelected()) {
+            if (control.disparable(9, 7)) {
+                if (control.generarDisparoJugador(9, 7)) {
+                    btn98.setBackground(Color.red);
+                } else {
+                    btn98.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -4088,12 +4088,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn98ActionPerformed
 
     private void btn99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn99ActionPerformed
-        if(btn1.isSelected()){
-            if(control.disparable(9, 8)){
-                if(control.generarDisparoJugador(9, 8)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn99.isSelected()) {
+            if (control.disparable(9, 8)) {
+                if (control.generarDisparoJugador(9, 8)) {
+                    btn99.setBackground(Color.red);
+                } else {
+                    btn99.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -4102,12 +4102,12 @@ if(btn1.isSelected()){
     }//GEN-LAST:event_btn99ActionPerformed
 
     private void btn100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn100ActionPerformed
-if(btn1.isSelected()){
-            if(control.disparable(9, 9)){
-                if(control.generarDisparoJugador(9, 9)){
-                    btn1.setBackground(Color.red);
-                }else{
-                    btn1.setBackground(Color.blue);
+        if (btn100.isSelected()) {
+            if (control.disparable(9, 9)) {
+                if (control.generarDisparoJugador(9, 9)) {
+                    btn100.setBackground(Color.red);
+                } else {
+                    btn100.setBackground(Color.blue);
                 }
                 revisarEstado();
             }
@@ -4120,11 +4120,11 @@ if(btn1.isSelected()){
     }
 
     public void revisarEstado() {
-        if (!control.estadoJuego(1)) {
+        if (control.estadoJuego(1)) {
             control.partidaGanada();
         }
         control.generarDisparoEnemigo();
-        if (!control.estadoJuego(2)) {
+        if (control.estadoJuego(2)) {
             control.partidaPerdida();
         }
     }
