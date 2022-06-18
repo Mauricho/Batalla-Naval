@@ -229,4 +229,6 @@ public class Modelo {
     }
 
     public void generarAleatorio(){informacionDelJuego.getPlayer().generarFlotaAleatorio();}
+
+    public DatosPartida getInformacionDelJuego() {return informacionDelJuego;}
 }
