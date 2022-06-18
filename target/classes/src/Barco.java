@@ -1,27 +1,35 @@
 package src;
 
-
 import java.util.HashMap;
+import java.util.ArrayList;
 
 public abstract class Barco {
     private int tamanio;
     private String nombre;
     private int[][] posicion;
     private boolean direccion;  // true = HORIZONTAL ; false = VERTICAL
+    private Condicion condicion;
+    private ArrayList<Integer> casilleros;
     /*
     private HashMap<Integer, Integer> casilleros;//<FILA , COLUMNA>
     */
     public Barco(int tamanio, String nombre){
         this.tamanio=tamanio;
         this.nombre=nombre;
+        /*
         posicion = new int[jugador.tamanio][jugador.tamanio];
+         */
+        condicion = Condicion.SANO;
         //casilleros = new HashMap<>(tamanio);
+        posicion = new int[jugador.tamanio][jugador.tamanio];
+        casilleros = new ArrayList<>(tamanio);
         cleanPosicion();
         direccion = true;
     }
 
     private void cleanPosicion() {
         //casilleros.clear();
+        casilleros.clear();
         for(int i=0;i<jugador.tamanio;i++){
             for(int j=0;j<jugador.tamanio;j++){
                 posicion[i][j]=0;
@@ -39,12 +47,14 @@ public abstract class Barco {
             for(int i=0;i<tamanio;i++){
                 posicion[x][y + i] = 1;
                 //casilleros.put(x,y+i);
+                casilleros.add(x*10+(y+i));
             }
         }
         else{//VERTICAL
             for(int i=0;i<tamanio;i++) {
                 posicion[x + i][y] = 1;
                 //casilleros.put(x+i,y);
+                casilleros.add((x+i)*10+y);
             }
         }
     }
@@ -64,6 +74,44 @@ public abstract class Barco {
             }
         }
         System.out.println();
+    }
+
+    public Condicion getCondicion(){
+        return condicion;
+    }
+
+    public void setAveriado(){
+        condicion=Condicion.AVERIADO;
+    }
+
+    public void setHundido(){
+        condicion=Condicion.HUNDIDO;
+    }
+
+    public boolean isAveriado(){
+        return condicion == Condicion.AVERIADO;
+    }
+
+    public boolean isHundido(){
+        return condicion == Condicion.HUNDIDO;
+    }
+
+    public ArrayList<Integer> getCasilleros(){
+        return casilleros;
+    }
+
+    public void setCasilleros(int x,int y){
+        Integer aux = x*10+y;
+        casilleros.remove(aux);
+        if(casilleros.isEmpty()) setHundido();
+        else setAveriado();
+        //printCasilleros();
+    }
+
+    public void printCasilleros(){
+        for(int x : casilleros){
+            System.out.println("("+x/10+","+x%10+")");
+        }
     }
 
     /*

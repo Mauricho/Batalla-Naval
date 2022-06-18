@@ -30,6 +30,7 @@ public class jugadorTest {
 
     @Test
     public void espacioDisponible() {
+
     }
 
     @Test

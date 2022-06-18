@@ -11,8 +11,10 @@ import src.modelo.Modelo;
  * @author f_acu
  */
 public class CtrSeleccionDePosiciones implements Controlador{
-    
+    /*
     private static Modelo modelo;
+    */
+    private Modelo modelo;
     
     public CtrSeleccionDePosiciones(){
         super();
@@ -53,6 +55,6 @@ public class CtrSeleccionDePosiciones implements Controlador{
 
     public void girar(){modelo.girar();}
 
-    public void generarAleatorio(){modelo.generarAleatorio();}
+    //public void generarAleatorio(){modelo.generarAleatorio();}
     
 }
