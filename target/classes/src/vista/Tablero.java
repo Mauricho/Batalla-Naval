@@ -2753,7 +2753,7 @@ public class Tablero extends JFrame implements Vista, Observador {
                 } else {
                     btn1.setBackground(Color.blue);
                 }
-                actualizar(0,0);
+                //actualizar(0,0);
                 revisarEstado();
             }
         }
@@ -4651,7 +4651,7 @@ public class Tablero extends JFrame implements Vista, Observador {
     @Override
     public void actualizar(int x,int y, int condicion) {
         String resultado = "";
-        jTextArea1.append("Se ha disparado en la posicion ("+x+","+y+")");
+        jTextArea1.append("Se ha disparado en la posicion ("+x+","+y+")\n");
         switch (condicion){
             case 0:
                 resultado = "AGUA";
@@ -4663,7 +4663,7 @@ public class Tablero extends JFrame implements Vista, Observador {
                 resultado = "HUNDIDO";
                 break;
         }
-        jTextArea1.append("Resultado del disparo: "+resultado);
+        jTextArea1.append("Resultado del disparo: "+resultado+"\n");
     }
     // End of variables declaration//GEN-END:variables
 

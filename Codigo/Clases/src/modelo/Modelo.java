@@ -39,12 +39,9 @@ public class Modelo {
     }
 
     private Modelo() {
-        //informacionDelJuego = new DatosPartida();
-        //player = informacionDelJuego.getPlayer();
         vistaActual = null;
         vistaAdicional = null;
         vistatercera = null;
-        //juegoActual = null;
         disponible=false;
 
     }
@@ -98,23 +95,12 @@ public class Modelo {
     }
     
     public void iniciarJuegoNormal() {
-        /*
-        if(jugador.listo()) {
-            vistaActual.hacerVisible(false);
-            vistaActual = new Tablero(/*informacionDelJuego*//*);
-        informacionDelJuego = new DatosPartida();
-        vistaActual.hacerVisible(true);
-    }
-    */
+
         if(informacionDelJuego.isAllReady()) {
             vistaActual.hacerVisible(false);
             vistaActual = new Tablero(informacionDelJuego.terminal);
-            /*
-            informacionDelJuego = new DatosPartida();
-             */
             informacionDelJuego.setEnemigo();
             vistaActual.hacerVisible(true);
-            //vistaActual.jTextArea1.append("Holaaaa");
         }
         else{
             informacionDelJuego.getPlayer().printTablero();
@@ -173,20 +159,10 @@ public class Modelo {
     }
     
     public boolean dispararPosicion(int x, int y){
-        /*
-        boolean result;
-        result=this.informacionDelJuego.disparo(x, y);
-        return result;
-        */
         return this.informacionDelJuego.disparo(x,y);
     }
 
     public boolean dispararPosicionE() {
-        /*
-        boolean result;
-        result=this.informacionDelJuego.disparoE();
-        return result;
-        */
         return informacionDelJuego.disparoE();
     }
 
@@ -203,7 +179,6 @@ public class Modelo {
 
     public void confirmar(){
         if(disponible){
-            //informacionDelJuego.getPlayer().setBarcoSeleccionado();
             informacionDelJuego.setBarcoSeleccionado();
             disponible=false;
         }
@@ -244,7 +219,4 @@ public class Modelo {
         return this.informacionDelJuego.disparable(x, y);
     }
 
-    public void escribir(JTextArea j,String text){
-        j.setText(text);
-    }
 }

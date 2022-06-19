@@ -39,6 +39,7 @@ public class Terminal implements Sujeto{
     public void setCondicionActual(int condicion){
         condicionActual=condicion;
     }
+
     public void actualizar(int dx, int dy, int condicion){
         setDx(dx);
         setDy(dy);

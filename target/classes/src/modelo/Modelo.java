@@ -98,14 +98,7 @@ public class Modelo {
     }
     
     public void iniciarJuegoNormal() {
-        /*
-        if(jugador.listo()) {
-            vistaActual.hacerVisible(false);
-            vistaActual = new Tablero(/*informacionDelJuego*//*);
-        informacionDelJuego = new DatosPartida();
-        vistaActual.hacerVisible(true);
-    }
-    */
+
         if(informacionDelJuego.isAllReady()) {
             vistaActual.hacerVisible(false);
             vistaActual = new Tablero(informacionDelJuego.terminal);
@@ -173,20 +166,10 @@ public class Modelo {
     }
     
     public boolean dispararPosicion(int x, int y){
-        /*
-        boolean result;
-        result=this.informacionDelJuego.disparo(x, y);
-        return result;
-        */
         return this.informacionDelJuego.disparo(x,y);
     }
 
     public boolean dispararPosicionE() {
-        /*
-        boolean result;
-        result=this.informacionDelJuego.disparoE();
-        return result;
-        */
         return informacionDelJuego.disparoE();
     }
 
