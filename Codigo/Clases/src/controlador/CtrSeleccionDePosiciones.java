@@ -28,7 +28,9 @@ public class CtrSeleccionDePosiciones implements Controlador{
     }
 
     @Override
-    public void juegoLuck() {}
+    public void juegoLuck() {
+        modelo.iniciarJuegoLuck();
+    }
 
     @Override
     public void salir() {}

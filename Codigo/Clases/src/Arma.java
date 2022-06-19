@@ -25,22 +25,25 @@ public class Arma {
         int ran=rand.nextInt(upperBound);
         if(ran==11 || ran == 13){
             this.tipoArma=2;
-        }else if(ran%2!=0){
+            System.out.println("disparo Bomba");
+        }/*else if(ran%2!=0){
             this.tipoArma=1;
-        }else if(ran==19){
+        }*/else if(ran==19){
             this.tipoArma=3;
+            System.out.println("disparo Avion");
         }else{
             this.tipoArma=0;
+            System.out.println("disparo comun");
         }
     }
     
-    public ArrayList disparos(int x, int y){
+    public ArrayList<Integer> disparos(int x, int y){
         ArrayList<Integer> res= new ArrayList();
         switch(this.tipoArma){
             case 1:
                 return disparoBomba(x, y);
             case 2:
-                return disparoBomba(x, y);
+                return disparoAvion(x, y);
             case 3:
                 return disparoBomba(x, y);                
             default: break;
@@ -50,7 +53,7 @@ public class Arma {
         return res;
     }
     
-    public ArrayList disparoBomba(int x, int y){
+    public ArrayList<Integer> disparoBomba(int x, int y){
         int inicial =x*10 + y;
         int count=0;
         ArrayList<Integer> res=new ArrayList();
@@ -65,7 +68,7 @@ public class Arma {
         return res;
     }
     
-    public ArrayList disparoAvion(int x, int y){
+    public ArrayList<Integer> disparoAvion(int x, int y){
         int inicial =x*10 + y;
         int count=0;
         ArrayList<Integer> res=new ArrayList();

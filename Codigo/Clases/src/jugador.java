@@ -28,6 +28,8 @@ public class jugador {
 
     private final boolean[][] Tablero = new boolean[tamanio][tamanio];//Tablero para posicionar los barcos del jugador
     
+    Arma armamento=new Arma();
+    
     public jugador(){
         cleanTablero();
         cantFragatas=0;
@@ -288,4 +290,16 @@ public class jugador {
     }
 
     public boolean getDireccion(){return direccion;}
+    
+    public ArrayList<Integer> disparoLuck(int x, int y){
+        ArrayList<Integer> dispar=this.armamento.disparos(x, y);
+        for(int disp: dispar){
+            this.disparo(disp/10, disp%10);
+        }
+        return dispar;
+    }
+    
+    public void setArma(){
+        this.armamento.setTipoArma();
+    }
 }

@@ -9,6 +9,7 @@ import src.DatosPartida;
 import src.jugador;
 import src.vista.SeleccionDePosiciones;
 import src.vista.Tablero;
+import src.vista.TableroLuck;
 import src.vista.Vista;
 import src.vista.VistaJuegoGanado;
 import src.vista.VistaJuegoPerdido;
@@ -108,6 +109,21 @@ public class Modelo {
         if(informacionDelJuego.isAllReady()) {
             vistaActual.hacerVisible(false);
             vistaActual = new Tablero(/*informacionDelJuego*/);
+            /*
+            informacionDelJuego = new DatosPartida();
+             */
+            informacionDelJuego.setEnemigo();
+            vistaActual.hacerVisible(true);
+        }
+        else{
+            informacionDelJuego.getPlayer().printTablero();
+        }
+    }
+    
+    public void iniciarJuegoLuck() {
+        if(informacionDelJuego.isAllReady()) {
+            vistaActual.hacerVisible(false);
+            vistaActual = new TableroLuck(/*informacionDelJuego*/);
             /*
             informacionDelJuego = new DatosPartida();
              */
@@ -240,5 +256,9 @@ public class Modelo {
 
     public boolean disparable(int x, int y) {
         return this.informacionDelJuego.disparable(x, y);
+    }
+    
+    public void setArma(){
+        this.informacionDelJuego.setArma();
     }
 }
