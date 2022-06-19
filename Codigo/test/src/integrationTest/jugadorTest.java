@@ -74,7 +74,7 @@ public class jugadorTest {
     public void cantSubmarinos(){
         jugador test = new jugador();
         test.generarFlotaAleatorio();
-        int cantSubmarinos = test.getCantFragatas();
+        int cantSubmarinos = test.getCantSubmarinos();
         assertEquals(2,cantSubmarinos);
     }
 
