@@ -35,12 +35,13 @@ public class DatosPartida{
         this.player = new jugador();
         this.enemigo = new jugador();
         flag = false;
+
+        /*observadores = new ArrayList<>();*/
     }
 
     //--------------------------------------------------------------------------
-    //---------- DISPARO JUGADOR -----------------------------------------------
     //--------------------------------------------------------------------------
-
+    
     public boolean disparo(int x, int y){
         if(!(disparosJugador.contains(x*10+y))){
             disparosJugador.add(x*10+y);
@@ -56,7 +57,7 @@ public class DatosPartida{
                 condicionActual=0;
                 System.out.println("Disparo al agua");
             }
-            setTerminal(x,y,condicionActual,"Jugador");
+            setTerminal(x,y,condicionActual);
             return this.enemigo.disparo(x,y);
         }
         else{
@@ -64,10 +65,6 @@ public class DatosPartida{
             return false;
         }
     }
-
-    //--------------------------------------------------------------------------
-    //---------- DISPARO ENEMIGO -----------------------------------------------
-    //--------------------------------------------------------------------------
 
     public boolean disparoE() {
         if(!flag){
@@ -91,7 +88,7 @@ public class DatosPartida{
                 condicionActual=0;
                 //System.out.println("Disparo al agua");
             }
-            setTerminal(x,y,condicionActual,"Enemigo");
+            setTerminal(x,y,condicionActual);
             return this.player.disparo(x,y);
         }
         else{
@@ -119,7 +116,7 @@ public class DatosPartida{
                 condicionActual=0;
                 System.out.println("Disparo al agua");
             }
-            setTerminal(x,y,condicionActual,"Enemigo");
+            setTerminal(x,y,condicionActual);
             return this.player.disparo(x,y);
 
         }
@@ -134,11 +131,7 @@ public class DatosPartida{
         }
         System.out.println(alrededor);
     }
-
-    //--------------------------------------------------------------------------
-    //--------------------------------------------------------------------------
-    //--------------------------------------------------------------------------
-
+    
     public boolean estadoJuego(int j){
         switch(j){
             case 1:
@@ -160,7 +153,15 @@ public class DatosPartida{
     }
 
     public boolean disparable(int x, int y) {
-        return !disparosJugador.contains(x * 10 + y);
+        /*for(int disp: this.disparosJugador){
+            if(disp==(x*10+y)){
+                return false;
+            }
+        }
+        return true;*/
+
+        if(disparosJugador.contains(x*10+y)) return false;
+        return true;
 
     }
 
@@ -190,10 +191,13 @@ public class DatosPartida{
 
     public void setAcorazado(){player.getAcorazado();}
 
-    public void setTerminal(int dx, int dy, int condicion, String jugador){
-        terminal.actualizar(dx,dy,condicion,jugador);
+    public void setTerminal(int dx, int dy, int condicion){
+        terminal.actualizar(dx,dy,condicion);
     }
-
+    
+    public boolean checkBarco(int x, int y){
+        return this.player.getTablero()[x][y];
+    }
     //-----------------------------------------------------------------------------
     //-----------------------------------------------------------------------------
     //-----------------------------------------------------------------------------

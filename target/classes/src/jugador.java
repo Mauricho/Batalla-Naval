@@ -44,6 +44,10 @@ public class jugador {
             }
         }
     }
+    
+    public boolean[][] getTablero(){
+        return this.Tablero;
+    }
 
     public boolean listo(){return flota.size() == 10;}
 

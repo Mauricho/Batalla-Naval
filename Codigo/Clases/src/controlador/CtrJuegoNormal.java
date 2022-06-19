@@ -18,15 +18,15 @@ public class CtrJuegoNormal implements Controlador {
 
     public CtrJuegoNormal() {
         super();
-        modelo = Modelo.getInstance();
+        this.modelo = Modelo.getInstance();
     }
     
     public boolean generarDisparoJugador(int x, int y){
         return modelo.dispararPosicion(x,y);
     }
     
-    public void generarDisparoEnemigo(){
-        modelo.dispararPosicionE();
+    public boolean generarDisparoEnemigo(){
+        return modelo.dispararPosicionE();//aca tiene que ir el codigo de disparo aleatorio
     }
 
     public boolean estadoJuego(int j){
@@ -70,4 +70,11 @@ public class CtrJuegoNormal implements Controlador {
         return modelo.disparable(x, y);
     }
 
+    public void escribir(JTextArea j,String text){
+        modelo.escribir(j,text);
+    }
+    
+    public boolean checkBarco(int x, int y){
+        return modelo.checkBarco(x, y);
+    }
 }
