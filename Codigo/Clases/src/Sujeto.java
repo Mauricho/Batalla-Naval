@@ -8,6 +8,8 @@ package src;
  *
  * @author f_acu
  */
-public class Sujeto {
-    
+public interface Sujeto {
+    void suscribirObservador(Observador ob);
+    void desuscribirObservador(Observador ob);
+    void avisarObservadores();
 }

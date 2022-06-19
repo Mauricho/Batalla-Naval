@@ -5,11 +5,14 @@
 package src.vista;
 
 import java.awt.Color;
+import java.util.concurrent.TimeUnit;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import src.controlador.CtrJuegoNormal;
 import src.jugador;
+
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 /**
  *
@@ -4124,6 +4127,11 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     public void revisarEstado() {
         if (control.estadoJuego(2)) {
             control.partidaGanada();
+        }
+        try{
+            TimeUnit.SECONDS.sleep(1);}
+        catch(InterruptedException e){
+            e.printStackTrace();
         }
         control.generarDisparoEnemigo();
         if (control.estadoJuego(1)) {

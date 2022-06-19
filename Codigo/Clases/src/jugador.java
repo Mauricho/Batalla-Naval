@@ -18,8 +18,7 @@ public class jugador {
     private int cantDestructores; // Destructores = 2 casilleros
     private int cantSubmarinos; // submarinos = 3 casilleros
     private int cantAcorazados; // Acorazados = 4 casilleros
-    private ArrayList<Barco> flota = new ArrayList<>(10);
-    private int cantBarcos;
+    private final ArrayList<Barco> flota = new ArrayList<>(10);
 
     public static final int tamanio=10;
 
@@ -36,7 +35,6 @@ public class jugador {
         cantAcorazados=0;
         barcoauxiliar = null;
         direccion = true; // HORIZONTAL = true ; VERTICAL = false
-        cantBarcos=0;
     }
 
     private void cleanTablero(){
@@ -47,12 +45,9 @@ public class jugador {
         }
     }
 
-    public boolean listo(){
-        return getCantBarcos() == 10;
-    }
+    public boolean listo(){return flota.size() == 10;}
 
     public boolean disparo(int row, int col){
-
         for(int i=0;i<flota.size();i++){
             if(flota.get(i).getPosicion(row,col)==1){
                 flota.get(i).setCasilleros(row,col);
@@ -94,7 +89,7 @@ public class jugador {
 
     // Confirma posicion del barco
     public void setBarcoSeleccionado(){
-        if(this.barcoauxiliar!=null){
+        if(this.barcoauxiliar!=null && !(barcoauxiliar.isEmpty())){
             for(int i=0;i<tamanio;i++){
                 for(int j=0;j<tamanio;j++){
                     if(this.barcoauxiliar.getPosicion(i,j)==1){
@@ -105,7 +100,6 @@ public class jugador {
             }
             Barco aux = this.barcoauxiliar;
             flota.add(aux);
-            cantBarcos++;
             sumarBarco();
             this.barcoauxiliar=null;
             System.out.println("Posicion confirmada");
@@ -131,9 +125,6 @@ public class jugador {
                 break;
             case 4:
                 cantAcorazados++;
-                break;
-            default:
-                System.out.println("Como mierda llegaste aca");
                 break;
         }
     }
@@ -197,27 +188,6 @@ public class jugador {
         }
     }
 
-    public int getCantFragatas(){return cantFragatas;}
-
-    public int getCantAcorazados() {return cantAcorazados;}
-
-    public int getCantDestructores() {return cantDestructores;}
-
-    public int getCantSubmarinos() {return cantSubmarinos;}
-
-    public int getCantBarcos(){return cantBarcos;}
-
-    public ArrayList<Barco> getFlota(){return flota;}
-
-    public boolean[][] getTablero() {
-        return Tablero;
-    }
-
-    public int barcosDisponibles(){
-        //this.cantBarcos= cantAcorazados+ cantDestructores+ cantFragatas+ cantSubmarinos;
-        //this.cantBarcos = flota.size();
-        return this.cantBarcos;
-    }
 
     public void generarFlotaAleatorio(){
         int z,y,x,w;
@@ -255,9 +225,24 @@ public class jugador {
         printTablero();
     }
 
-    public Barco getBarcoauxiliar(){return barcoauxiliar;}
+    public boolean areAllHundido(){
+        for (Barco barco : flota){
+            if(!(barco.isHundido())){
+                return false;
+            }
+        }
+        return true;
+    }
 
-    public boolean getPosicion(int x, int y){return Tablero[x][y];}
+    public int getCantFragatas(){return cantFragatas;}
+
+    public int getCantAcorazados() {return cantAcorazados;}
+
+    public int getCantDestructores() {return cantDestructores;}
+
+    public int getCantSubmarinos() {return cantSubmarinos;}
+
+    public ArrayList<Barco> getFlota(){return flota;}
 
     public Barco getBarcoPosicion(int x, int y){
         Barco aux = new Fragata();
@@ -269,6 +254,12 @@ public class jugador {
         return aux;
     }
 
+    public Barco getBarcoauxiliar(){return barcoauxiliar;}
+
+    public boolean getPosicion(int x, int y){return Tablero[x][y];}
+
+    public boolean getDireccion(){return direccion;}
+
     public void printTablero(){
         for(int i=0;i<tamanio;i++){
             for(int j=0;j<tamanio;j++){
@@ -277,15 +268,4 @@ public class jugador {
             System.out.println();
         }
     }
-
-    public boolean areAllHundido(){
-        for (Barco barco : flota){
-            if(!(barco.isHundido())){
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public boolean getDireccion(){return direccion;}
 }

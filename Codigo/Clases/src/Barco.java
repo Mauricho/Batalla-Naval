@@ -10,17 +10,11 @@ public abstract class Barco {
     private boolean direccion;  // true = HORIZONTAL ; false = VERTICAL
     private Condicion condicion;
     private ArrayList<Integer> casilleros;
-    /*
-    private HashMap<Integer, Integer> casilleros;//<FILA , COLUMNA>
-    */
+
     public Barco(int tamanio, String nombre){
         this.tamanio=tamanio;
         this.nombre=nombre;
-        /*
-        posicion = new int[jugador.tamanio][jugador.tamanio];
-         */
         condicion = Condicion.SANO;
-        //casilleros = new HashMap<>(tamanio);
         posicion = new int[jugador.tamanio][jugador.tamanio];
         casilleros = new ArrayList<>(tamanio);
         cleanPosicion();
@@ -28,7 +22,6 @@ public abstract class Barco {
     }
 
     private void cleanPosicion() {
-        //casilleros.clear();
         casilleros.clear();
         for(int i=0;i<jugador.tamanio;i++){
             for(int j=0;j<jugador.tamanio;j++){
@@ -46,14 +39,12 @@ public abstract class Barco {
         if(direccion){//HORIZONTAL
             for(int i=0;i<tamanio;i++){
                 posicion[x][y + i] = 1;
-                //casilleros.put(x,y+i);
                 casilleros.add(x*10+(y+i));
             }
         }
         else{//VERTICAL
             for(int i=0;i<tamanio;i++) {
                 posicion[x + i][y] = 1;
-                //casilleros.put(x+i,y);
                 casilleros.add((x+i)*10+y);
             }
         }
@@ -65,6 +56,8 @@ public abstract class Barco {
 
     public int getPosicion(int x, int y){return posicion[x][y];}
 
+    //public boolean getPosicion(int x, int y){return casilleros.contains(x*10+y);}
+
     public void printPosiciones(){
         for(int i=0;i<jugador.tamanio;i++){
             for(int j=0;j<jugador.tamanio;j++){
@@ -75,6 +68,8 @@ public abstract class Barco {
         }
         System.out.println();
     }
+
+    public boolean isEmpty(){return casilleros.isEmpty();}
 
     public Condicion getCondicion(){
         return condicion;
@@ -96,10 +91,6 @@ public abstract class Barco {
         return condicion == Condicion.HUNDIDO;
     }
 
-    public ArrayList<Integer> getCasilleros(){
-        return casilleros;
-    }
-
     public void setCasilleros(int x,int y){
         Integer aux = x*10+y;
         casilleros.remove(aux);
@@ -113,8 +104,4 @@ public abstract class Barco {
             System.out.println("("+x/10+","+x%10+")");
         }
     }
-
-    /*
-    public HashMap<Integer,Integer> getCasilleros(){return casilleros;}
-     */
 }
