@@ -180,7 +180,7 @@ public class jugador {
 
     public void getFragata(){
         if(getCantFragatas()<4){
-            this.barcoauxiliar = new Fragata(direccion);
+            this.barcoauxiliar = new Fragata();
             System.out.println(barcoauxiliar.getNombre()+" seleccionado");
         }
         else{

@@ -432,11 +432,7 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista {
         jPanel18.setLayout(new java.awt.BorderLayout());
 
         jButton1.setToolTipText("");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jButton1.addActionListener(this::jButton1ActionPerformed);
         jPanel18.add(jButton1, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel18);

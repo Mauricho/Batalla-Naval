@@ -5,18 +5,14 @@
 package src.vista;
 
 import java.awt.Color;
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-
-import src.Condicion;
 import src.Observador;
 import src.Sujeto;
 import src.controlador.CtrJuegoNormal;
-import src.jugador;
-
-import static java.util.concurrent.TimeUnit.SECONDS;
 
 /**
  *
@@ -24,16 +20,18 @@ import static java.util.concurrent.TimeUnit.SECONDS;
  */
 public class Tablero extends JFrame implements Vista, Observador {
 
-    //private jugador player = new jugador();
     private static CtrJuegoNormal control;
-    //boolean result = false;
     private Sujeto sujeto;
+    private String letras = "ABCDEFGHIJ";
+    private int barcosEnemigo=10;
+    private int barcosJugador=10;
 
     public Tablero(Sujeto sujeto) {
         initComponents();
         this.setLocationRelativeTo(null);
         this.control = new CtrJuegoNormal();
         sujeto.suscribirObservador(this);
+
     }
 
     public void cargarImagenes() {
@@ -4113,8 +4111,6 @@ public class Tablero extends JFrame implements Vista, Observador {
     }//GEN-LAST:event_btn99ActionPerformed
 
     private void btn100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn100ActionPerformed
-        //jTextArea1.setText("HOLAAAAAAAAAA");
-        //control.escribir(jTextArea1,"HOLAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         if (btn100.isSelected()) {
             if (control.disparable(9, 9)) {
                 if (control.generarDisparoJugador(9, 9)) {
@@ -4135,11 +4131,6 @@ public class Tablero extends JFrame implements Vista, Observador {
     public void revisarEstado() {
         if (control.estadoJuego(2)) {
             control.partidaGanada();
-        }
-        try{
-            TimeUnit.SECONDS.sleep(1);}
-        catch(InterruptedException e){
-            e.printStackTrace();
         }
         control.generarDisparoEnemigo();
         if (control.estadoJuego(1)) {
@@ -4644,14 +4635,11 @@ public class Tablero extends JFrame implements Vista, Observador {
     private javax.swing.JTextArea jTextArea1;
 
     @Override
-    public void actualizar(int x, int y) {
-
-    }
-
-    @Override
-    public void actualizar(int x,int y, int condicion) {
+    public void actualizar(int x,int y, int condicion, String jugador) {
         String resultado = "";
-        jTextArea1.append("Se ha disparado en la posicion ("+x+","+y+")\n");
+        char x1=letras.charAt(x);
+
+        jTextArea1.append("El "+jugador+" ha disparado en la posicion ("+x1+","+(y+1)+").\n");
         switch (condicion){
             case 0:
                 resultado = "AGUA";
@@ -4664,6 +4652,19 @@ public class Tablero extends JFrame implements Vista, Observador {
                 break;
         }
         jTextArea1.append("Resultado del disparo: "+resultado+"\n");
+        if(resultado.equals("HUNDIDO")){
+            if(jugador.equals("Jugador")){
+                barcosEnemigo--;
+                jTextArea1.append("Quedan "+barcosEnemigo+" restantes por el mar.\n\n");
+            }
+            else{
+                barcosJugador--;
+                jTextArea1.append("Quedan "+barcosJugador+" restantes por el mar.\n\n");
+            }
+        }
+        else{
+            jTextArea1.append("\n");
+        }
     }
     // End of variables declaration//GEN-END:variables
 

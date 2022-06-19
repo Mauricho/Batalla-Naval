@@ -56,7 +56,7 @@ public class DatosPartida{
                 condicionActual=0;
                 System.out.println("Disparo al agua");
             }
-            setTerminal(x,y,condicionActual);
+            setTerminal(x,y,condicionActual,"Jugador");
             return this.enemigo.disparo(x,y);
         }
         else{
@@ -91,7 +91,7 @@ public class DatosPartida{
                 condicionActual=0;
                 //System.out.println("Disparo al agua");
             }
-            setTerminal(x,y,condicionActual);
+            setTerminal(x,y,condicionActual,"Enemigo");
             return this.player.disparo(x,y);
         }
         else{
@@ -119,7 +119,7 @@ public class DatosPartida{
                 condicionActual=0;
                 System.out.println("Disparo al agua");
             }
-            setTerminal(x,y,condicionActual);
+            setTerminal(x,y,condicionActual,"Enemigo");
             return this.player.disparo(x,y);
 
         }
@@ -190,8 +190,8 @@ public class DatosPartida{
 
     public void setAcorazado(){player.getAcorazado();}
 
-    public void setTerminal(int dx, int dy, int condicion){
-        terminal.actualizar(dx,dy,condicion);
+    public void setTerminal(int dx, int dy, int condicion, String jugador){
+        terminal.actualizar(dx,dy,condicion,jugador);
     }
 
     //-----------------------------------------------------------------------------

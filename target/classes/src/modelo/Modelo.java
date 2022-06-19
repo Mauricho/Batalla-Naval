@@ -39,12 +39,9 @@ public class Modelo {
     }
 
     private Modelo() {
-        //informacionDelJuego = new DatosPartida();
-        //player = informacionDelJuego.getPlayer();
         vistaActual = null;
         vistaAdicional = null;
         vistatercera = null;
-        //juegoActual = null;
         disponible=false;
 
     }
@@ -102,12 +99,8 @@ public class Modelo {
         if(informacionDelJuego.isAllReady()) {
             vistaActual.hacerVisible(false);
             vistaActual = new Tablero(informacionDelJuego.terminal);
-            /*
-            informacionDelJuego = new DatosPartida();
-             */
             informacionDelJuego.setEnemigo();
             vistaActual.hacerVisible(true);
-            //vistaActual.jTextArea1.append("Holaaaa");
         }
         else{
             informacionDelJuego.getPlayer().printTablero();
@@ -186,7 +179,6 @@ public class Modelo {
 
     public void confirmar(){
         if(disponible){
-            //informacionDelJuego.getPlayer().setBarcoSeleccionado();
             informacionDelJuego.setBarcoSeleccionado();
             disponible=false;
         }
@@ -227,7 +219,4 @@ public class Modelo {
         return this.informacionDelJuego.disparable(x, y);
     }
 
-    public void escribir(JTextArea j,String text){
-        j.setText(text);
-    }
 }
