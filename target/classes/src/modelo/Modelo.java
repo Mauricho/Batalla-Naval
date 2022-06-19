@@ -195,6 +195,9 @@ public class Modelo {
         return this.informacionDelJuego.disparo(x,y);
     }
 
+    public boolean dispararPosicionLuck(int x, int y){
+        return this.informacionDelJuego.disparoLuck(x, y);
+    }
     public boolean dispararPosicionE() {
         /*
         boolean result;

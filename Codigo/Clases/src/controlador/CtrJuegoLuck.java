@@ -21,7 +21,7 @@ public class CtrJuegoLuck implements Controlador {
 
     public boolean generarDisparoJugador(int x, int y){
         boolean succes;
-        succes=modelo.dispararPosicion(x, y);
+        succes=modelo.dispararPosicionLuck(x, y);
         return succes;
     }
     

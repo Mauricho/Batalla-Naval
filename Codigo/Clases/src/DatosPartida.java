@@ -52,6 +52,26 @@ public class DatosPartida{
             return false;
         }
     }
+    
+    public boolean disparoLuck(int x, int y){
+        if(!(disparosJugador.contains(x*10+y))){
+            disparosJugador.add(x*10+y);
+            if(this.enemigo.disparoLuck(x,y)){
+                Barco barco = this.enemigo.getBarcoPosicion(x,y);
+                String estado = String.valueOf(barco.getCondicion());
+                barco.printCasilleros();
+                System.out.println("Estado del barco acertado: " + estado);
+            }
+            else{
+                System.out.println("Disparo al agua");
+            }
+            return this.enemigo.disparoLuck(x,y);
+        }
+        else{
+            System.out.println("Ya disparaste aqui flaco busca otro");
+            return false;
+        }
+    }
 
     public boolean disparoE() {
         int disparo = disparosEnemigos.get(0);
