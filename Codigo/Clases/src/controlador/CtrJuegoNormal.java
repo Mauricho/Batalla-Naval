@@ -6,7 +6,7 @@ package src.controlador;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
-import javax.swing.*;
+
 import src.modelo.Modelo;
 /**
  *
