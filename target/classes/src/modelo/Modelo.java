@@ -4,6 +4,7 @@
  */
 package src.modelo;
 
+import javax.swing.JPanel;
 import src.BatallaNaval;
 import src.DatosPartida;
 import src.jugador;
@@ -264,4 +265,5 @@ public class Modelo {
     public void setArma(){
         this.informacionDelJuego.setArma();
     }
+    
 }
