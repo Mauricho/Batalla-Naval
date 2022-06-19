@@ -4,9 +4,7 @@
  */
 package src.modelo;
 
-import src.BatallaNaval;
-import src.DatosPartida;
-import src.jugador;
+import src.*;
 import src.vista.SeleccionDePosiciones;
 import src.vista.Tablero;
 import src.vista.Vista;
@@ -110,7 +108,7 @@ public class Modelo {
     */
         if(informacionDelJuego.isAllReady()) {
             vistaActual.hacerVisible(false);
-            vistaActual = new Tablero(/*informacionDelJuego*/);
+            vistaActual = new Tablero(informacionDelJuego.terminal);
             /*
             informacionDelJuego = new DatosPartida();
              */

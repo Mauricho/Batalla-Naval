@@ -1,5 +1,5 @@
 package src;
 
-enum Condicion {
+public enum Condicion {
     SANO,AVERIADO,HUNDIDO;
 }

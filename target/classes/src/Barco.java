@@ -4,12 +4,12 @@ import java.util.HashMap;
 import java.util.ArrayList;
 
 public abstract class Barco {
-    private int tamanio;
-    private String nombre;
-    private int[][] posicion;
+    private final int tamanio;
+    private final String nombre;
+    private final int[][] posicion;
     private boolean direccion;  // true = HORIZONTAL ; false = VERTICAL
     private Condicion condicion;
-    private ArrayList<Integer> casilleros;
+    private final ArrayList<Integer> casilleros;
 
     public Barco(int tamanio, String nombre){
         this.tamanio=tamanio;
@@ -55,8 +55,6 @@ public abstract class Barco {
     public int getTamanio(){return tamanio;}
 
     public int getPosicion(int x, int y){return posicion[x][y];}
-
-    //public boolean getPosicion(int x, int y){return casilleros.contains(x*10+y);}
 
     public void printPosiciones(){
         for(int i=0;i<jugador.tamanio;i++){

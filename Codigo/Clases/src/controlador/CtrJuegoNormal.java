@@ -22,11 +22,6 @@ public class CtrJuegoNormal implements Controlador {
     }
     
     public boolean generarDisparoJugador(int x, int y){
-        /*
-        boolean succes;
-        succes=modelo.dispararPosicion(x, y);
-        return succes;
-        */
         return modelo.dispararPosicion(x,y);
     }
     

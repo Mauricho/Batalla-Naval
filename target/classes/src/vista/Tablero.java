@@ -9,6 +9,10 @@ import java.util.concurrent.TimeUnit;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+
+import src.Condicion;
+import src.Observador;
+import src.Sujeto;
 import src.controlador.CtrJuegoNormal;
 import src.jugador;
 
@@ -18,16 +22,18 @@ import static java.util.concurrent.TimeUnit.SECONDS;
  *
  * @author f_acu
  */
-public class Tablero extends javax.swing.JFrame implements Vista {
+public class Tablero extends JFrame implements Vista, Observador {
 
-    private jugador player = new jugador();
+    //private jugador player = new jugador();
     private static CtrJuegoNormal control;
-    boolean result = false;
+    //boolean result = false;
+    private Sujeto sujeto;
 
-    public Tablero() {
+    public Tablero(Sujeto sujeto) {
         initComponents();
         this.setLocationRelativeTo(null);
         this.control = new CtrJuegoNormal();
+        sujeto.suscribirObservador(this);
     }
 
     public void cargarImagenes() {
@@ -2747,6 +2753,7 @@ public class Tablero extends javax.swing.JFrame implements Vista {
                 } else {
                     btn1.setBackground(Color.blue);
                 }
+                actualizar(0,0);
                 revisarEstado();
             }
         }
@@ -3244,6 +3251,7 @@ public class Tablero extends javax.swing.JFrame implements Vista {
                 } else {
                     btn38.setBackground(Color.blue);
                 }
+
                 revisarEstado();
             }
         }
@@ -4634,6 +4642,29 @@ public class Tablero extends javax.swing.JFrame implements Vista {
     private javax.swing.JPanel jPanel99;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+
+    @Override
+    public void actualizar(int x, int y) {
+
+    }
+
+    @Override
+    public void actualizar(int x,int y, int condicion) {
+        String resultado = "";
+        jTextArea1.append("Se ha disparado en la posicion ("+x+","+y+")");
+        switch (condicion){
+            case 0:
+                resultado = "AGUA";
+                break;
+            case 1:
+                resultado = "AVERIADO";
+                break;
+            case 2:
+                resultado = "HUNDIDO";
+                break;
+        }
+        jTextArea1.append("Resultado del disparo: "+resultado);
+    }
     // End of variables declaration//GEN-END:variables
 
 }
