@@ -73,4 +73,8 @@ public class CtrJuegoNormal implements Controlador {
     public void escribir(JTextArea j,String text){
         modelo.escribir(j,text);
     }
+    
+    public boolean checkBarco(int x, int y){
+        return modelo.checkBarco(x, y);
+    }
 }

@@ -194,6 +194,10 @@ public class DatosPartida{
     public void setTerminal(int dx, int dy, int condicion){
         terminal.actualizar(dx,dy,condicion);
     }
+    
+    public boolean checkBarco(int x, int y){
+        return this.player.getTablero()[x][y];
+    }
     //-----------------------------------------------------------------------------
     //-----------------------------------------------------------------------------
     //-----------------------------------------------------------------------------

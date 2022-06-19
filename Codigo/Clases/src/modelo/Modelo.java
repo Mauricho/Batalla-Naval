@@ -247,4 +247,8 @@ public class Modelo {
     public void escribir(JTextArea j,String text){
         j.setText(text);
     }
+    
+    public boolean checkBarco(int x, int y){
+        return this.informacionDelJuego.checkBarco(x, y);
+    }
 }

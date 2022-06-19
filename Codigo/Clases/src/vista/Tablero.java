@@ -25,6 +25,9 @@ public class Tablero extends JFrame implements Vista, Observador {
     private static CtrJuegoNormal control;
     //boolean result = false;
     private Sujeto sujeto;
+    int barcosEnemigo=10;
+    int barcosJugador=10;
+    String letras="ABCDEFGHIJ";
 
     public Tablero(Sujeto sujeto) {
         initComponents();
@@ -52,6 +55,7 @@ public class Tablero extends JFrame implements Vista, Observador {
                             }else{
                                 btn_tablero.setBackground(Color.blue);
                             }
+                            revisarEstado();
                         } 
                     }
                 });
@@ -73,6 +77,9 @@ public class Tablero extends JFrame implements Vista, Observador {
                 JButton tab=new JButton();
                 tab.setBounds(42*j, 28*i, 42, 28);
                 tab.setBackground(Color.gray);
+                if (control.checkBarco(i, j)){
+                    tab.setBackground(Color.green);
+                }
                 
                 this.posJug[i][j]=tab;
             }
@@ -86,13 +93,67 @@ public class Tablero extends JFrame implements Vista, Observador {
     }
     
     @Override
+    public void actualizar(int x,int y, int condicion, String jugador) {
+        String resultado = "";
+        char x1=letras.charAt(x);
+
+        jTextArea1.append("El "+jugador+" ha disparado en la posicion ("+x1+","+(y+1)+").\n");
+        switch (condicion){
+            case 0:
+                resultado = "AGUA";
+                if(jugador.equals("Enemigo")){
+                    this.posJug[x][y].setBackground(Color.blue);
+                }
+                break;
+            case 1:
+                resultado = "AVERIADO";
+                if(jugador.equals("Enemigo")){
+                    this.posJug[x][y].setBackground(Color.red);
+                }
+                break;
+            case 2:
+                resultado = "HUNDIDO";
+                if(jugador.equals("Enemigo")){
+                    this.posJug[x][y].setBackground(Color.red);
+                }
+                break;
+        }
+        jTextArea1.append("Resultado del disparo: "+resultado+"\n");
+        if(resultado.equals("HUNDIDO")){
+            if(jugador.equals("Jugador")){
+                barcosEnemigo--;
+                jTextArea1.append("Quedan "+barcosEnemigo+" restantes por el mar.\n\n");
+            }
+            else{
+                barcosJugador--;
+                jTextArea1.append("Quedan "+barcosJugador+" restantes por el mar.\n\n");
+            }
+        }
+        else{
+            jTextArea1.append("\n");
+        }
+    }
+    
+    @Override
     public void actualizar(int dx, int dy) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
     }
 
-    @Override
-    public void actualizar(int dx, int dy, int condicion) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+  
+    
+    public void revisarEstado() {
+        if (control.estadoJuego(2)) {
+            control.partidaGanada();
+        }
+        try{
+            TimeUnit.SECONDS.sleep(1);}
+        catch(InterruptedException e){
+            e.printStackTrace();
+        }
+        control.generarDisparoEnemigo();
+        if (control.estadoJuego(1)) {
+            control.partidaPerdida();
+        }
     }
 
     public void cargarImagenes() {
@@ -246,21 +307,6 @@ public class Tablero extends JFrame implements Vista, Observador {
     public boolean lugarDisparado(int x, int y) {
         boolean resultado = control.generarDisparoJugador(x, y);
         return resultado;
-    }
-
-    public void revisarEstado() {
-        if (control.estadoJuego(2)) {
-            control.partidaGanada();
-        }
-        try{
-            TimeUnit.SECONDS.sleep(1);}
-        catch(InterruptedException e){
-            e.printStackTrace();
-        }
-        control.generarDisparoEnemigo();
-        if (control.estadoJuego(1)) {
-            control.partidaPerdida();
-        }
     }
 
     public void resultadoDisparo(boolean res) {
