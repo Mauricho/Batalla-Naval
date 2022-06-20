@@ -4,6 +4,7 @@
  */
 package src.controlador;
 
+import javax.swing.JTextArea;
 import src.modelo.Modelo;
 
 /**
@@ -20,15 +21,11 @@ public class CtrJuegoLuck implements Controlador {
     }
 
     public boolean generarDisparoJugador(int x, int y){
-        boolean succes;
-        succes=modelo.dispararPosicion(x, y);
-        return succes;
+        return modelo.dispararPosicion(x, y);
     }
     
     public boolean generarDisparoEnemigo(){
-        boolean succes=false;
-        succes=modelo.dispararPosicionE();//aca tiene que ir el codigo de disparo aleatorio
-        return succes;
+        return modelo.dispararPosicionE();//aca tiene que ir el codigo de disparo aleatorio
     }
     
     @Override
@@ -57,5 +54,37 @@ public class CtrJuegoLuck implements Controlador {
     @Override
     public void juegoLuck() {
     
+    }
+    
+    public boolean estadoJuego(int j){
+        return modelo.estadoJuego(j);
+    }
+    
+    public void partidaGanada(){
+        modelo.verJuegoGanado();
+    }
+    
+    public void partidaPerdida(){
+        modelo.verJuegoPerdido();
+    }
+    
+    public boolean disparable(int x, int y) {
+        return modelo.disparable(x, y);
+    }
+
+    public void escribir(JTextArea j,String text){
+        modelo.escribir(j,text);
+    }
+    
+    public boolean checkBarco(int x, int y){
+        return modelo.checkBarco(x, y);
+    }
+    
+    public void setArmaEnemigo(){
+        modelo.setArmaEnemigo();
+    }
+    
+    public void setArmaJugador(){
+        modelo.setArmaJugador();
     }
 }

@@ -12,7 +12,7 @@ import java.util.Collections;
  *
  * @author f_acu
  */
-public class jugador {
+public class jugador extends Juego{
 
     private int cantFragatas; // Fragatas = 1 casillero
     private int cantDestructores; // Destructores = 2 casilleros

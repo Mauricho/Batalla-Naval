@@ -4,10 +4,25 @@
  */
 package src;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author f_acu
  */
-public class jugadorLuck {
+public class jugadorLuck extends Juego{
+    private Arma armamento;
     
+    public jugadorLuck(){
+        super();
+        armamento=new Arma();
+    }
+    
+    public ArrayList<Integer> getDisparos(int x, int y){
+        return this.armamento.disparos(x, y);
+    }
+    
+    public void setArma(){
+        this.armamento.setTipoArma();
+    }
 }

@@ -77,6 +77,11 @@ public class VistaMenuPrincipal extends javax.swing.JFrame implements Vista {
         jPanel5.setLayout(new java.awt.BorderLayout());
 
         botonLuckyShot.setText("LuckyShot");
+        botonLuckyShot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonLuckyShotActionPerformed(evt);
+            }
+        });
         jPanel5.add(botonLuckyShot, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel5);
@@ -126,6 +131,10 @@ public class VistaMenuPrincipal extends javax.swing.JFrame implements Vista {
         // TODO add your handling code here:
         control.salir();
     }//GEN-LAST:event_botonSalidaActionPerformed
+
+    private void botonLuckyShotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonLuckyShotActionPerformed
+        control.SeleccionDPosiciones(2);
+    }//GEN-LAST:event_botonLuckyShotActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botonLuckyShot;
