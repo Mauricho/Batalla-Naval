@@ -139,13 +139,6 @@ public class TableroLuck extends javax.swing.JFrame implements Vista, Observador
         }
     }
     
-    @Override
-    public void actualizar(int dx, int dy) {
-        
-    }
-
-  
-    
     public void revisarEstado() {
         if (control.estadoJuego(2)) {
             control.partidaGanada();

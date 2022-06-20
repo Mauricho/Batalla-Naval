@@ -71,10 +71,6 @@ public class CtrJuegoLuck implements Controlador {
     public boolean disparable(int x, int y) {
         return modelo.disparable(x, y);
     }
-
-    public void escribir(JTextArea j,String text){
-        modelo.escribir(j,text);
-    }
     
     public boolean checkBarco(int x, int y){
         return modelo.checkBarco(x, y);

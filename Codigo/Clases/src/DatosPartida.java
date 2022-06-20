@@ -67,7 +67,7 @@ public class DatosPartida {
                     condicionActual = 0;
                     System.out.println("Disparo al agua");
                 }
-                setTerminal(x, y, condicionActual);
+                setTerminal(x,y,condicionActual,"Jugador");
                 return this.enemigo.disparo(x, y);
             } else {
                 System.out.println("Ya disparaste aqui flaco busca otro");
@@ -101,7 +101,7 @@ public class DatosPartida {
                             condicionActual = 0;
                             System.out.println("Disparo al agua");
                         }
-                        setTerminal(row, col, condicionActual);
+                        setTerminal(row,col,condicionActual,"Jugador");
 
                     }
                 }
@@ -139,7 +139,7 @@ public class DatosPartida {
                 condicionActual = 0;
                 //System.out.println("Disparo al agua");
             }
-            setTerminal(x, y, condicionActual);
+            setTerminal(x,y,condicionActual,"Enemigo");
             return this.player.disparo(x, y);
         } else {
             int disparo = alrededor.get(0);
@@ -168,7 +168,7 @@ public class DatosPartida {
                 condicionActual = 0;
                 System.out.println("Disparo al agua");
             }
-            setTerminal(x, y, condicionActual);
+            setTerminal(x,y,condicionActual,"Enemigo");
             return this.player.disparo(x, y);
 
         }
@@ -274,8 +274,8 @@ public class DatosPartida {
         player.getAcorazado();
     }
 
-    public void setTerminal(int dx, int dy, int condicion) {
-        terminal.actualizar(dx, dy, condicion);
+    public void setTerminal(int dx, int dy, int condicion, String jugador){
+        terminal.actualizar(dx,dy,condicion,jugador);
     }
 
     public boolean checkBarco(int x, int y) {

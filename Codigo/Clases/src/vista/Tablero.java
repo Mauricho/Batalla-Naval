@@ -89,6 +89,7 @@ public class Tablero extends JFrame implements Vista, Observador {
             }
         }
     }
+
     
     @Override
     public void actualizar(int x,int y, int condicion, String jugador) {
