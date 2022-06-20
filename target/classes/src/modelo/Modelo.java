@@ -4,6 +4,7 @@
  */
 package src.modelo;
 
+import java.util.ArrayList;
 import src.*;
 import src.vista.*;
 
@@ -209,5 +210,9 @@ public class Modelo {
     
     public void setArmaJugador(){
         this.informacionDelJuego.setArmaJugador();
+    }
+    
+    public ArrayList<Integer> getPosicionesActuales(){
+        return this.informacionDelJuego.getPosicionesActuales();
     }
 }

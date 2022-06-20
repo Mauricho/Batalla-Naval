@@ -6,6 +6,7 @@ package src.vista;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
 import javax.swing.JButton;
 import src.controlador.CtrSeleccionDePosiciones;
 
@@ -42,6 +43,7 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista{
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         control.posicionar((Integer)((JButton)e.getSource()).getClientProperty("x"), (Integer)((JButton)e.getSource()).getClientProperty("y"));
+                        btn_tablero.setBackground(Color.red);
                     }
                 });
                 
@@ -358,6 +360,10 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista{
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         control.confirmarPosicion();        // TODO add your handling code here:
+        ArrayList<Integer> pos=control.getPosicionesActuales();
+        for(int i=0;i<pos.size();i++){
+            this.botones[pos.get(i)/10][pos.get(i)%10].setBackground(Color.green);
+        }
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
