@@ -56,11 +56,7 @@ public class TableroLuck extends javax.swing.JFrame implements Vista, Observador
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         if (control.disparable((Integer)((JButton)e.getSource()).getClientProperty("x"), (Integer)((JButton)e.getSource()).getClientProperty("y"))){
-                            if(control.generarDisparoJugador((Integer)((JButton)e.getSource()).getClientProperty("x"), (Integer)((JButton)e.getSource()).getClientProperty("y"))){
-                                btn_tablero.setBackground(Color.red);
-                            }else{
-                                btn_tablero.setBackground(Color.blue);
-                            }
+                            control.generarDisparoJugador((Integer)((JButton)e.getSource()).getClientProperty("x"), (Integer)((JButton)e.getSource()).getClientProperty("y"));                      
                             control.setArmaJugador();
                             revisarEstado();
                         } 
@@ -111,17 +107,26 @@ public class TableroLuck extends javax.swing.JFrame implements Vista, Observador
                 if(jugador.equals("Enemigo")){
                     this.posJug[x][y].setBackground(Color.blue);
                 }
+                if(jugador.equals("Jugador")){
+                    this.botones[x][y].setBackground(Color.blue);
+                }
                 break;
             case 1:
                 resultado = "AVERIADO";
                 if(jugador.equals("Enemigo")){
                     this.posJug[x][y].setBackground(Color.red);
                 }
+                if(jugador.equals("Jugador")){
+                    this.botones[x][y].setBackground(Color.red);
+                }
                 break;
             case 2:
                 resultado = "HUNDIDO";
                 if(jugador.equals("Enemigo")){
                     this.posJug[x][y].setBackground(Color.red);
+                }
+                if(jugador.equals("Jugador")){
+                    this.botones[x][y].setBackground(Color.red);
                 }
                 break;
         }
