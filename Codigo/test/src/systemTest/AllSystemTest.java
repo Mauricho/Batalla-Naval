@@ -6,7 +6,7 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses( {CaseButtonAcorazadoTest.class, CaseButtonCancelarTest.class, CaseButtonConfirmarTest.class, CaseButtonFragataTest.class, CaseButtonSubmarinoTest.class,
-        CaseButtonSalirTest.class, CaseButtonDestructorTest.class, CaseButtonGirarTest.class, CaseButtonIniciarPartidaTest.class, CaseButtonRendirseTest.class,
+        CaseButtonDestructorTest.class, CaseButtonGirarTest.class, CaseButtonIniciarPartidaTest.class,
         CaseButtonJugarModoLuckShotTest.class, CaseButtonJugarModoClasicoTest.class})
 public class AllSystemTest {
 
