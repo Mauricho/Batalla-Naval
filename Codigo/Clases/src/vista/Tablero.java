@@ -21,13 +21,11 @@ public class Tablero extends JFrame implements Vista, Observador {
 
     JButton[][] botones=new JButton[10][10];
     JButton posJug[][]=new JButton[10][10];
-    //private jugador player = new jugador();
     private static CtrJuegoNormal control;
-    //boolean result = false;
     private Sujeto sujeto;
-    int barcosEnemigo=10;
-    int barcosJugador=10;
-    String letras="ABCDEFGHIJ";
+    private int barcosEnemigo=10;
+    private int barcosJugador=10;
+    private String letras="ABCDEFGHIJ";
 
     public Tablero(Sujeto sujeto) {
         initComponents();
@@ -133,14 +131,7 @@ public class Tablero extends JFrame implements Vista, Observador {
             jTextArea1.append("\n");
         }
     }
-    
-    @Override
-    public void actualizar(int dx, int dy) {
-        
-    }
 
-  
-    
     public void revisarEstado() {
         if (control.estadoJuego(2)) {
             control.partidaGanada();
@@ -218,7 +209,7 @@ public class Tablero extends JFrame implements Vista, Observador {
         panel2.setLayout(panel2Layout);
         panel2Layout.setHorizontalGroup(
             panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 369, Short.MAX_VALUE)
+            .addGap(0, 458, Short.MAX_VALUE)
         );
         panel2Layout.setVerticalGroup(
             panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -234,7 +225,7 @@ public class Tablero extends JFrame implements Vista, Observador {
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel127Layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(513, 513, 513)))
+                    .addGap(424, 424, 424)))
         );
         jPanel127Layout.setVerticalGroup(
             jPanel127Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -255,7 +246,7 @@ public class Tablero extends JFrame implements Vista, Observador {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel127, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -279,8 +270,8 @@ public class Tablero extends JFrame implements Vista, Observador {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
