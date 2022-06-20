@@ -4,6 +4,7 @@
  */
 package src.controlador;
 
+import java.util.ArrayList;
 import src.modelo.Modelo;
 
 /**
@@ -57,6 +58,10 @@ public class CtrSeleccionDePosiciones implements Controlador{
     
     public void volverMenuPrincipal(){
         modelo.iniciarVistaMenuPrincipal();
+    }
+    
+    public ArrayList<Integer> getPosicionesActuales(){
+        return modelo.getPosicionesActuales();
     }
     
 }
