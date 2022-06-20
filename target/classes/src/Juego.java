@@ -17,6 +17,7 @@ public class Juego {
     private int cantSubmarinos; // submarinos = 3 casilleros
     private int cantAcorazados; // Acorazados = 4 casilleros
     private final ArrayList<Barco> flota = new ArrayList<>(10);
+    private ArrayList<Integer> posicionesActuales=new ArrayList<>();
 
     public static final int tamanio=10;
 
@@ -96,6 +97,7 @@ public class Juego {
                 for(int j=0;j<tamanio;j++){
                     if(this.barcoauxiliar.getPosicion(i,j)==1){
                         Tablero[i][j]=true;
+                        this.posicionesActuales.add(i*10+j);
                         System.out.print("("+i+","+j+")");
                     }
                 }
@@ -114,6 +116,10 @@ public class Juego {
         }
     }
 
+    public ArrayList<Integer> getPosicionesActuales(){
+        return this.posicionesActuales;
+    }
+    
     public void sumarBarco(){
         switch(this.barcoauxiliar.getTamanio()){
             case 1:

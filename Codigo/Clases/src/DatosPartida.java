@@ -289,6 +289,10 @@ public class DatosPartida {
     public void setArmaJugador() {
         player.setArma();
     }
+    
+    public ArrayList<Integer> getPosicionesActuales(){
+        return this.player.getPosicionesActuales();
+    }
     //-----------------------------------------------------------------------------
     //-----------------------------------------------------------------------------
     //-----------------------------------------------------------------------------
