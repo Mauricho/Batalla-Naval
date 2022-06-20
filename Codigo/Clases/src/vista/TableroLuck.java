@@ -8,6 +8,8 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.util.concurrent.TimeUnit;
 import javax.swing.JButton;
+
+import src.Barco;
 import src.Observador;
 import src.Sujeto;
 import src.controlador.CtrJuegoLuck;
@@ -138,7 +140,12 @@ public class TableroLuck extends javax.swing.JFrame implements Vista, Observador
             jTextArea1.append("\n");
         }
     }
-    
+
+    @Override
+    public void actualizar(Barco barco,boolean[][] tablero) {
+
+    }
+
     public void revisarEstado() {
         if (control.estadoJuego(2)) {
             control.partidaGanada();

@@ -7,6 +7,8 @@ public class Terminal implements Sujeto{
     private int dy;
     private int condicionActual;
     private String jugador;
+    private Barco barco;
+    private boolean[][] tablero;
     private ArrayList<Observador> observadores;
     public Terminal(){
         observadores = new ArrayList<>();
@@ -26,8 +28,11 @@ public class Terminal implements Sujeto{
     public void avisarObservadores() {
         for(int i=0;i< observadores.size();i++){
             observadores.get(i).actualizar(dx,dy,condicionActual,jugador);
+            observadores.get(i).actualizar(barco,tablero);
         }
     }
+
+    public void setBarco(Barco barco){this.barco=barco;}
 
     public void setDx(int dx){
         this.dx=dx;
@@ -43,11 +48,19 @@ public class Terminal implements Sujeto{
 
     public void setJugador(String jugador){this.jugador=jugador;}
 
+    public void setTablero(boolean [][] tablero){this.tablero=tablero;}
+
     public void actualizar(int dx, int dy, int condicion, String jugador){
         setDx(dx);
         setDy(dy);
         setCondicionActual(condicion);
         setJugador(jugador);
+        avisarObservadores();
+    }
+
+    public void actualizar(Barco barco, boolean[][] tablero){
+        setTablero(tablero);
+        setBarco(barco);
         avisarObservadores();
     }
 }

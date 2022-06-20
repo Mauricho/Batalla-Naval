@@ -62,7 +62,7 @@ public class Modelo {
     public void selectTab(int tipo){
         this.flag=tipo;
         vistaActual.hacerVisible(false);
-        vistaActual = (Vista) new SeleccionDePosiciones(flag);
+        vistaActual = (Vista) new SeleccionDePosiciones(flag, informacionDelJuego.terminal);
         vistaActual.hacerVisible(true);
     }
     
@@ -149,8 +149,8 @@ public class Modelo {
 
     public void iniciarSeleccionDePosiciones(int tipo) {
         vistaActual.hacerVisible(false);
-        vistaActual = new SeleccionDePosiciones(tipo);
         informacionDelJuego = new DatosPartida(tipo);
+        vistaActual = new SeleccionDePosiciones(tipo, informacionDelJuego.terminal);
         vistaActual.hacerVisible(true);
     }
 

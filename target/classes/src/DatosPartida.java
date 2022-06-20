@@ -243,7 +243,9 @@ public class DatosPartida {
     }
 
     public boolean isDisponible(int x, int y) {
-        return player.espacioDisponible(x, y);
+        boolean flag = player.espacioDisponible(x, y);
+        if (flag)terminal.actualizar(player.getBarcoauxiliar(), player.getTablero());
+        return flag;
     }
 
     public void setGirar() {

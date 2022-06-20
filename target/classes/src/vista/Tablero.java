@@ -8,6 +8,8 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.util.concurrent.TimeUnit;
 import javax.swing.JFrame;
+
+import src.Barco;
 import src.Observador;
 import src.Sujeto;
 import src.controlador.CtrJuegoNormal;
@@ -131,6 +133,11 @@ public class Tablero extends JFrame implements Vista, Observador {
         else{
             jTextArea1.append("\n");
         }
+    }
+
+    @Override
+    public void actualizar(Barco barco, boolean[][] tablero) {
+
     }
 
     public void revisarEstado() {

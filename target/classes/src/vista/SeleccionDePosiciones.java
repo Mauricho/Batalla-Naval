@@ -7,28 +7,38 @@ package src.vista;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JButton;
+
+import src.Barco;
+import src.Observador;
+import src.Sujeto;
 import src.controlador.CtrSeleccionDePosiciones;
 
 /**
  *
  * @author f_acu
  */
-public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista{
+public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista, Observador {
 
     /**
      * Creates new form SeleccionDePosiciones
      */
+    private Sujeto sujeto;
     private int flag;
     private CtrSeleccionDePosiciones control;
     JButton[][] botones=new JButton[10][10];
-    public SeleccionDePosiciones(int tipo) {
+    private final ArrayList<Integer> pintura = new ArrayList<>(4);
+    private ArrayList<Integer> aux = new ArrayList<>(4);
+
+    public SeleccionDePosiciones(int tipo, Sujeto sujeto) {
         initComponents();
         this.setLocationRelativeTo(null);
         this.flag=tipo;
         this.control = new CtrSeleccionDePosiciones();
         //cargarImagenes();
         crear_tablero();
+        sujeto.suscribirObservador(this);
     }
 
     public void crear_tablero(){
@@ -43,7 +53,7 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista{
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         control.posicionar((Integer)((JButton)e.getSource()).getClientProperty("x"), (Integer)((JButton)e.getSource()).getClientProperty("y"));
-                        btn_tablero.setBackground(Color.red);
+                        //btn_tablero.setBackground(Color.green);
                     }
                 });
                 
@@ -360,10 +370,10 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista{
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         control.confirmarPosicion();        // TODO add your handling code here:
-        ArrayList<Integer> pos=control.getPosicionesActuales();
+        /*ArrayList<Integer> pos=control.getPosicionesActuales();
         for(int i=0;i<pos.size();i++){
             this.botones[pos.get(i)/10][pos.get(i)%10].setBackground(Color.green);
-        }
+        }*/
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -379,7 +389,7 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista{
     }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
-     * @param args the command line arguments
+     * @param b the command line arguments
      */
 
     @Override
@@ -430,5 +440,52 @@ public class SeleccionDePosiciones extends javax.swing.JFrame implements Vista{
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel panel1;
+
+    @Override
+    public void actualizar(int dx, int dy, int condicion, String jugador) {
+    }
+
+    @Override
+    public void actualizar(Barco barco, boolean[][] tablero) {
+        int x=0;
+        int y=0;
+        int z=0;
+
+        if(pintura.isEmpty()){
+            for(int i=0;i< barco.getTamanio();i++){
+                pintura.add(barco.getCasilleros().get(i));
+                z = barco.getCasilleros().get(i);
+                x=z/10;
+                y=z%10;
+                botones[x][y].setBackground(Color.green);
+            }
+            System.out.println(pintura+" primer if");
+        }
+        else{
+            System.out.println(pintura);
+            for(int i=0;i<pintura.size();i++){
+                z = pintura.get(i);
+                x=z/10;
+                y=z%10;
+                botones[x][y].setBackground(Color.gray);
+            }
+            pintura.clear();
+            for(int i=0;i< barco.getTamanio();i++){
+                pintura.add(barco.getCasilleros().get(i));
+                z = barco.getCasilleros().get(i);
+                x=z/10;
+                y=z%10;
+                botones[x][y].setBackground(Color.green);
+            }
+
+        }
+
+        for(int i=0;i<10;i++){
+            for(int j=0;j<10;j++){
+                if(tablero[i][j]) botones[i][j].setBackground(Color.red);
+            }
+        }
+
+    }
     // End of variables declaration//GEN-END:variables
 }

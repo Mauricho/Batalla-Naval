@@ -97,6 +97,8 @@ public abstract class Barco {
         //printCasilleros();
     }
 
+    public ArrayList<Integer> getCasilleros(){return casilleros;}
+
     public void printCasilleros(){
         for(int x : casilleros){
             System.out.println("("+x/10+","+x%10+")");
