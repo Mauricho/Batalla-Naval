@@ -31,7 +31,7 @@ public class CtrSeleccionDePosiciones implements Controlador{
     public void salir() {}
 
     @Override
-    public void cerrarVentana() {}
+    public void cerrarVentana() {modelo.cerrarVentanaJuego();}
 
     @Override
     public void iniciar() {}

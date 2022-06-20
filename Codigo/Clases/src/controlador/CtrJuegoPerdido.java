@@ -37,7 +37,7 @@ public class CtrJuegoPerdido implements Controlador {
     @Override
     public void cerrarVentana() {
         // TODO Auto-generated method stub
-        modelo.cerrarVentanaJuegoPerdido();
+        modelo.cerrarVentanaJuego();
     }
 
     public void teclaPresionada(String l) {

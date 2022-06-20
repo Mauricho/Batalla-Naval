@@ -25,7 +25,7 @@ public class CtrJuegoGanado implements Controlador {
     @Override
     public void cerrarVentana() {
         // TODO Auto-generated method stub
-        modelo.cerrarVentanaJuegoGanado();
+        modelo.cerrarVentanaJuego();
     }
 
     @Override
@@ -38,10 +38,6 @@ public class CtrJuegoGanado implements Controlador {
     public void salir() {
         // TODO Auto-generated method stub
         this.modelo.salirJuego();
-    }
-
-    public void teclaPresionada(String l) {
-
     }
 
     @Override

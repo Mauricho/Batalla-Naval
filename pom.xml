@@ -54,9 +54,6 @@
                 <version>2.22.2</version>
                 <configuration>
                     <skipTests>true</skipTests>
-                    <systemPropertyVariables>
-                        <java.awt.headless>true</java.awt.headless>
-                    </systemPropertyVariables>
                 </configuration>
             </plugin>
 

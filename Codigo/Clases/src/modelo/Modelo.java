@@ -10,12 +10,8 @@ import src.vista.Tablero;
 import src.vista.Vista;
 import src.vista.VistaJuegoGanado;
 import src.vista.VistaJuegoPerdido;
-//import src.vista.VistaJuegoPerdido;
 import src.vista.VistaMenuPrincipal;
-
-import javax.swing.*;
 import src.vista.TableroLuck;
-//import src.vista.VistaPausa;
 
 /**
  *
@@ -47,17 +43,6 @@ public class Modelo {
 
     }
 
-    /*    public void iniciar() {
-        if (flag == 2) {
-            juegoActual = new JuegoRelax(palabrasJuegoRelax);
-        }
-        if (flag == 1) {
-            juegoActual = new JuegoNormal(palabrasJuegoNormal);
-        }
-
-        setInformacionDeJuego();
-    }
-     */
     public void iniciar() {
 
     }
@@ -109,36 +94,23 @@ public class Modelo {
     }
     
     public void iniciarJuegoLuck() {
-        /*
-        if(jugador.listo()) {
-            vistaActual.hacerVisible(false);
-            vistaActual = new Tablero(/*informacionDelJuego*//*);
-        informacionDelJuego = new DatosPartida();
-        vistaActual.hacerVisible(true);
-    }
-    */
+
         if(informacionDelJuego.isAllReady()) {
             vistaActual.hacerVisible(false);
             vistaActual = new TableroLuck(informacionDelJuego.terminal);
-            /*
-            informacionDelJuego = new DatosPartida();
-             */
             informacionDelJuego.setEnemigo();
             vistaActual.hacerVisible(true);
-            //vistaActual.jTextArea1.append("Holaaaa");
         }
         else{
             informacionDelJuego.getPlayer().printTablero();
         }
     }
 
-    public void cerrarVentanaJuegoPerdido() {
+    public void cerrarVentanaJuego() {
         iniciarVistaMenuPrincipal();
     }
 
-    public void cerrarVentanaJuegoGanado() {
-        iniciarVistaMenuPrincipal();
-    }
+
 
     public void verJuegoPerdido() {
         vistatercera = (Vista) new VistaJuegoPerdido();
