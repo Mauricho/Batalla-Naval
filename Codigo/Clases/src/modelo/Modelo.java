@@ -10,12 +10,10 @@ import src.vista.Tablero;
 import src.vista.Vista;
 import src.vista.VistaJuegoGanado;
 import src.vista.VistaJuegoPerdido;
-//import src.vista.VistaJuegoPerdido;
 import src.vista.VistaMenuPrincipal;
 
 import javax.swing.*;
 import src.vista.TableroLuck;
-//import src.vista.VistaPausa;
 
 /**
  *
@@ -44,20 +42,8 @@ public class Modelo {
         vistaAdicional = null;
         vistatercera = null;
         disponible=false;
-
     }
 
-    /*    public void iniciar() {
-        if (flag == 2) {
-            juegoActual = new JuegoRelax(palabrasJuegoRelax);
-        }
-        if (flag == 1) {
-            juegoActual = new JuegoNormal(palabrasJuegoNormal);
-        }
-
-        setInformacionDeJuego();
-    }
-     */
     public void iniciar() {
 
     }
@@ -79,14 +65,6 @@ public class Modelo {
         vistaActual = (Vista) new VistaMenuPrincipal();
         vistaActual.hacerVisible(true);
     }
-
-    /*   public void inciarJuegoLuck() {
-        flag = 2;
-        vistaActual.hacerVisible(false);
-        vistaActual = new VistaJuegoLuck(informacionDelJuego);
-        vistaActual.hacerVisible(true);
-    }
-     */
     
     public void selectTab(int tipo){
         this.flag=tipo;
@@ -109,14 +87,7 @@ public class Modelo {
     }
     
     public void iniciarJuegoLuck() {
-        /*
-        if(jugador.listo()) {
-            vistaActual.hacerVisible(false);
-            vistaActual = new Tablero(/*informacionDelJuego*//*);
-        informacionDelJuego = new DatosPartida();
-        vistaActual.hacerVisible(true);
-    }
-    */
+
         if(informacionDelJuego.isAllReady()) {
             vistaActual.hacerVisible(false);
             vistaActual = new TableroLuck(informacionDelJuego.terminal);
@@ -175,10 +146,6 @@ public class Modelo {
         modelo = null;
         System.exit(0);
     }
-
-    //public BatallaNaval getJuegoActual() {
-        //return juegoActual;
-    //}
 
     public Vista getVistaTercera() {
         return vistatercera;
