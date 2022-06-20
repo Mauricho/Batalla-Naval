@@ -65,7 +65,7 @@ public class DatosPartida {
                     condicionActual = 0;
                     System.out.println("Disparo al agua");
                 }
-                setTerminal(x,y,condicionActual,"Jugador");
+                setTerminal(x, y, condicionActual, "Jugador");
                 return this.enemigo.disparo(x, y);
             } else {
                 System.out.println("Ya disparaste aqui flaco busca otro");
@@ -75,10 +75,10 @@ public class DatosPartida {
 
         if (this.tipoJuego == 2) {
             ArrayList<Integer> disp = this.player.getDisparos(x, y);
-            int disparando = 0;
+            int disparando;
             int row,
                     col;
-            if (disparosJugador.contains(disparando)) {
+            //if (!disparosJugador.contains(x * 10 + y)) {
                 for (int w = 0; w < disp.size(); w++) {
                     disparando = disp.get(w);
                     row = disparando / 10;
@@ -99,76 +99,143 @@ public class DatosPartida {
                             condicionActual = 0;
                             System.out.println("Disparo al agua");
                         }
-                        setTerminal(row,col,condicionActual,"Jugador");
+                        setTerminal(row, col, condicionActual, "Jugador");
 
                     }
                 }
                 return this.enemigo.disparo(x, y);
-            } else {
-                System.out.println("Ya disparaste aqui flaco busca otro");
-                return false;
-            }
+            //} else {
+              //  System.out.println("Ya disparaste aqui flaco busca otro");
+                //return false;
+            //}
 
         }
         return false;
     }
 
     public boolean disparoE() {
-        if (!flag) {
-            int disparo = disparosEnemigos.get(0);
-            disparosEnemigos.remove(0);
-            int x = disparo / 10;
-            int y = disparo % 10;
-            System.out.println("El enemigo ha disparado en la posicion (" + x + "," + y + ")");
-            if (this.player.disparo(x, y)) {
-                Barco barco = this.player.getBarcoPosicion(x, y);
-                String estado = String.valueOf(barco.getCondicion());
-                if (Objects.equals(estado, "HUNDIDO")) {
-                    condicionActual = 2;
-                } else {
-                    condicionActual = 1;
+        if (this.tipoJuego == 2) {
+            if (!flag) {
+                int disparo = disparosEnemigos.get(0);
+                disparosEnemigos.remove(0);
+                int x = disparo / 10;
+                int y = disparo % 10;
+                ArrayList<Integer> disp = this.player.getDisparos(x, y);
+                int disparando = 0;
+                int row, col;
+                for (int w = 0; w < disp.size(); w++) {
+                    disparando=disp.get(w);
+                    row=disparando/10;
+                    col=disparando%10;
+                    System.out.println("El enemigo ha disparado en la posicion (" + row + "," + col + ")");
+                    if (this.player.disparo(row, col)) {
+                        Barco barco = this.player.getBarcoPosicion(row, col);
+                        String estado = String.valueOf(barco.getCondicion());
+                        if (Objects.equals(estado, "HUNDIDO")) {
+                            condicionActual = 2;
+                        } else {
+                            condicionActual = 1;
+                        }
+                        //System.out.println("Barco acertado. Estado: "+estado);
+                        if (barco.isAveriado()) {
+                            flag = true;
+                            buscarAlrededor(disparo);
+                        }
+                    } else {
+                        condicionActual = 0;
+                        //System.out.println("Disparo al agua");
+                    }
+                    setTerminal(row, col, condicionActual, "Enemigo");
                 }
-                //System.out.println("Barco acertado. Estado: "+estado);
-                if (barco.isAveriado()) {
-                    flag = true;
-                    buscarAlrededor(disparo);
-                }
+                return this.player.disparo(x, y);
             } else {
-                condicionActual = 0;
-                //System.out.println("Disparo al agua");
-            }
-            setTerminal(x,y,condicionActual,"Enemigo");
-            return this.player.disparo(x, y);
-        } else {
-            int disparo = alrededor.get(0);
-            disparosEnemigos.remove(alrededor.remove(0));
-            int x = disparo / 10;
-            int y = disparo % 10;
-            System.out.println("El enemigo ha disparado en la posicion (" + x + "," + y + ")");
-            if (this.player.disparo(x, y)) {
-                Barco barco = this.player.getBarcoPosicion(x, y);
-                String estado = String.valueOf(barco.getCondicion());
-                if (Objects.equals(estado, "HUNDIDO")) {
-                    condicionActual = 2;
+                int disparo = alrededor.get(0);
+                disparosEnemigos.remove(alrededor.remove(0));
+                int x = disparo / 10;
+                int y = disparo % 10;
+                System.out.println("El enemigo ha disparado en la posicion (" + x + "," + y + ")");
+                if (this.player.disparo(x, y)) {
+                    Barco barco = this.player.getBarcoPosicion(x, y);
+                    String estado = String.valueOf(barco.getCondicion());
+                    if (Objects.equals(estado, "HUNDIDO")) {
+                        condicionActual = 2;
+                    } else {
+                        condicionActual = 1;
+                    }
+                    //System.out.println("Barco acertado. Estado: "+estado);
+                    if (barco.isAveriado()) {
+                        flag = true;
+                        buscarAlrededor(disparo);
+                    }
+                    if (barco.isHundido()) {
+                        alrededor.clear();
+                        flag = false;
+                    }
                 } else {
-                    condicionActual = 1;
+                    condicionActual = 0;
+                    System.out.println("Disparo al agua");
                 }
-                //System.out.println("Barco acertado. Estado: "+estado);
-                if (barco.isAveriado()) {
-                    flag = true;
-                    buscarAlrededor(disparo);
-                }
-                if (barco.isHundido()) {
-                    alrededor.clear();
-                    flag = false;
-                }
-            } else {
-                condicionActual = 0;
-                System.out.println("Disparo al agua");
-            }
-            setTerminal(x,y,condicionActual,"Enemigo");
-            return this.player.disparo(x, y);
+                setTerminal(x, y, condicionActual, "Enemigo");
+                return this.player.disparo(x, y);
 
+            }
+        } else {
+            if (!flag) {
+                int disparo = disparosEnemigos.get(0);
+                disparosEnemigos.remove(0);
+                int x = disparo / 10;
+                int y = disparo % 10;
+                System.out.println("El enemigo ha disparado en la posicion (" + x + "," + y + ")");
+                if (this.player.disparo(x, y)) {
+                    Barco barco = this.player.getBarcoPosicion(x, y);
+                    String estado = String.valueOf(barco.getCondicion());
+                    if (Objects.equals(estado, "HUNDIDO")) {
+                        condicionActual = 2;
+                    } else {
+                        condicionActual = 1;
+                    }
+                    //System.out.println("Barco acertado. Estado: "+estado);
+                    if (barco.isAveriado()) {
+                        flag = true;
+                        buscarAlrededor(disparo);
+                    }
+                } else {
+                    condicionActual = 0;
+                    //System.out.println("Disparo al agua");
+                }
+                setTerminal(x, y, condicionActual, "Enemigo");
+                return this.player.disparo(x, y);
+            } else {
+                int disparo = alrededor.get(0);
+                disparosEnemigos.remove(alrededor.remove(0));
+                int x = disparo / 10;
+                int y = disparo % 10;
+                System.out.println("El enemigo ha disparado en la posicion (" + x + "," + y + ")");
+                if (this.player.disparo(x, y)) {
+                    Barco barco = this.player.getBarcoPosicion(x, y);
+                    String estado = String.valueOf(barco.getCondicion());
+                    if (Objects.equals(estado, "HUNDIDO")) {
+                        condicionActual = 2;
+                    } else {
+                        condicionActual = 1;
+                    }
+                    //System.out.println("Barco acertado. Estado: "+estado);
+                    if (barco.isAveriado()) {
+                        flag = true;
+                        buscarAlrededor(disparo);
+                    }
+                    if (barco.isHundido()) {
+                        alrededor.clear();
+                        flag = false;
+                    }
+                } else {
+                    condicionActual = 0;
+                    System.out.println("Disparo al agua");
+                }
+                setTerminal(x, y, condicionActual, "Enemigo");
+                return this.player.disparo(x, y);
+
+            }
         }
     }
 
@@ -266,8 +333,8 @@ public class DatosPartida {
         player.getAcorazado();
     }
 
-    public void setTerminal(int dx, int dy, int condicion, String jugador){
-        terminal.actualizar(dx,dy,condicion,jugador);
+    public void setTerminal(int dx, int dy, int condicion, String jugador) {
+        terminal.actualizar(dx, dy, condicion, jugador);
     }
 
     public boolean checkBarco(int x, int y) {
@@ -281,8 +348,8 @@ public class DatosPartida {
     public void setArmaJugador() {
         player.setArma();
     }
-    
-    public ArrayList<Integer> getPosicionesActuales(){
+
+    public ArrayList<Integer> getPosicionesActuales() {
         return this.player.getPosicionesActuales();
     }
     //-----------------------------------------------------------------------------
