@@ -4,8 +4,7 @@ import org.junit.Test;
 import src.modelo.Modelo;
 import src.vista.Vista;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.*;
 
 public class CaseButtonSalirTest {
     @Test
@@ -18,6 +17,6 @@ public class CaseButtonSalirTest {
 
         Vista vistaJuegoCerrado = modelo.getVistaActual();
 
-        assertEquals(null,vistaJuegoCerrado);
+        assertNull(vistaJuegoCerrado);
     }
 }
