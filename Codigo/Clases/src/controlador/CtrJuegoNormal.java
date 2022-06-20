@@ -73,4 +73,8 @@ public class CtrJuegoNormal implements Controlador {
     public boolean checkBarco(int x, int y){
         return modelo.checkBarco(x, y);
     }
+    
+    public void volverMenuPrincipal(){
+        modelo.iniciarVistaMenuPrincipal();
+    }
 }
