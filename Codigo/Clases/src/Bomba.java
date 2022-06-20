@@ -14,12 +14,11 @@ public class Bomba implements Arma{
     
     ArrayList<Integer> disparos;
     public Bomba(){
-        
+        disparos=new ArrayList();
     }
     
     @Override
     public ArrayList<Integer> disparos(int x, int y) {
-        disparos=new ArrayList();
         for (int i = x - 1; i < x + 1; i++) {
             for (int j = y - 1; j < y + 1; i++) {
                 if (i >= 0 && j >= 0 && i <= 9 && j <= 9) {

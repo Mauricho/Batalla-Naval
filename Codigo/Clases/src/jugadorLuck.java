@@ -16,6 +16,7 @@ public class jugadorLuck extends Juego{
     
     public jugadorLuck(){
         super();
+        armamento = null;
         this.setArma();
     }
     

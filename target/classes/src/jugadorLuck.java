@@ -16,6 +16,7 @@ public class jugadorLuck extends Juego{
     
     public jugadorLuck(){
         super();
+        armamento = null;
         this.setArma();
     }
     
@@ -26,6 +27,7 @@ public class jugadorLuck extends Juego{
     public void setArma() {
         Random rand = new Random();
         int ran = rand.nextInt(20);
+        System.out.println(ran);
         if (ran == 7 || ran == 9 || ran == 11 || ran == 13) {
             this.armamento=new AvionFurtivo();
             System.out.println("disparo Avion");
