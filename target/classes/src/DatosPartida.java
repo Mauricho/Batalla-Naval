@@ -43,8 +43,6 @@ public class DatosPartida {
             this.enemigo = new jugador();
         }
         flag = false;
-
-        /*observadores = new ArrayList<>();*/
     }
 
     //--------------------------------------------------------------------------
@@ -213,12 +211,6 @@ public class DatosPartida {
     }
 
     public boolean disparable(int x, int y) {
-        /*for(int disp: this.disparosJugador){
-            if(disp==(x*10+y)){
-                return false;
-            }
-        }
-        return true;*/
 
         if (disparosJugador.contains(x * 10 + y)) {
             return false;

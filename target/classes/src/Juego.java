@@ -11,7 +11,7 @@ import java.util.Collections;
  *
  * @author f_acu
  */
-public class Juego {
+public abstract class Juego {
     private int cantFragatas; // Fragatas = 1 casillero
     private int cantDestructores; // Destructores = 2 casilleros
     private int cantSubmarinos; // submarinos = 3 casilleros
