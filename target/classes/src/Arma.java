@@ -64,7 +64,7 @@ public class Arma {
                 }
             }
         }
-        res = null;
+        //res = null;
         return res;
     }
 
@@ -77,7 +77,7 @@ public class Arma {
                 res.add(i * 10 + y);
             }
         }
-        res = null;
+        //res = null;
         return res;
     }
 }

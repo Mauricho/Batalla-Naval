@@ -15,7 +15,6 @@ public class Modelo {
 
     private static Modelo modelo = null;
     private DatosPartida informacionDelJuego;
-    //private jugador player;
     private Vista vistaActual;
     private Vista vistaAdicional;
     private Vista vistatercera;
@@ -37,17 +36,6 @@ public class Modelo {
 
     }
 
-    /*    public void iniciar() {
-        if (flag == 2) {
-            juegoActual = new JuegoRelax(palabrasJuegoRelax);
-        }
-        if (flag == 1) {
-            juegoActual = new JuegoNormal(palabrasJuegoNormal);
-        }
-
-        setInformacionDeJuego();
-    }
-     */
     public void iniciar() {
 
     }
@@ -69,14 +57,6 @@ public class Modelo {
         vistaActual = (Vista) new VistaMenuPrincipal();
         vistaActual.hacerVisible(true);
     }
-
-    /*   public void inciarJuegoLuck() {
-        flag = 2;
-        vistaActual.hacerVisible(false);
-        vistaActual = new VistaJuegoLuck(informacionDelJuego);
-        vistaActual.hacerVisible(true);
-    }
-     */
     
     public void selectTab(int tipo){
         this.flag=tipo;
@@ -99,23 +79,11 @@ public class Modelo {
     }
     
     public void iniciarJuegoLuck() {
-        /*
-        if(jugador.listo()) {
-            vistaActual.hacerVisible(false);
-            vistaActual = new Tablero(/*informacionDelJuego*//*);
-        informacionDelJuego = new DatosPartida();
-        vistaActual.hacerVisible(true);
-    }
-    */
         if(informacionDelJuego.isAllReady()) {
             vistaActual.hacerVisible(false);
             vistaActual = new TableroLuck(informacionDelJuego.terminal);
-            /*
-            informacionDelJuego = new DatosPartida();
-             */
             informacionDelJuego.setEnemigo();
             vistaActual.hacerVisible(true);
-            //vistaActual.jTextArea1.append("Holaaaa");
         }
         else{
             informacionDelJuego.getPlayer().printTablero();
@@ -165,10 +133,6 @@ public class Modelo {
         modelo = null;
         System.exit(0);
     }
-
-    //public BatallaNaval getJuegoActual() {
-        //return juegoActual;
-    //}
 
     public Vista getVistaTercera() {
         return vistatercera;

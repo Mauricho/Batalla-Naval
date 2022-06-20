@@ -8,18 +8,6 @@ import static org.junit.Assert.*;
 
 public class jugadorTest {
 
-    /*@Test
-    public void generarFlota() {
-    }*/
-
-    @Test
-    public void disparo() {
-    }
-
-    @Test
-    public void disparoE() {
-    }
-
     @Test
     public void devolverBarco() {
         jugador test = new jugador();
