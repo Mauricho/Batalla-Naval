@@ -5,17 +5,7 @@
 package src.modelo;
 
 import src.*;
-import src.vista.SeleccionDePosiciones;
-import src.vista.Tablero;
-import src.vista.Vista;
-import src.vista.VistaJuegoGanado;
-import src.vista.VistaJuegoPerdido;
-//import src.vista.VistaJuegoPerdido;
-import src.vista.VistaMenuPrincipal;
-
-import javax.swing.*;
-import src.vista.TableroLuck;
-//import src.vista.VistaPausa;
+import src.vista.*;
 
 /**
  *

@@ -83,4 +83,8 @@ public class CtrJuegoLuck implements Controlador {
     public void setArmaJugador(){
         modelo.setArmaJugador();
     }
+    
+    public void volverMenuPrincipal(){
+        modelo.iniciarVistaMenuPrincipal();
+    }
 }
