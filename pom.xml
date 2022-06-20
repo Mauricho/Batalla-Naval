@@ -54,8 +54,12 @@
                 <version>2.22.2</version>
                 <configuration>
                     <skipTests>false</skipTests>
+                    <systemPropertyVariables>
+                        <java.awt.headless>true</java.awt.headless>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
+
         </plugins>
 
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
