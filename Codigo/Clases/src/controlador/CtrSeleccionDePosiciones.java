@@ -25,7 +25,9 @@ public class CtrSeleccionDePosiciones implements Controlador{
     }
 
     @Override
-    public void juegoLuck() {}
+    public void juegoLuck() {
+        modelo.iniciarJuegoLuck();
+    }
 
     @Override
     public void salir() {}
@@ -52,5 +54,9 @@ public class CtrSeleccionDePosiciones implements Controlador{
     public void cancelarPosicion(){modelo.cancelar();}
 
     public void girar(){modelo.girar();}
+    
+    public void volverMenuPrincipal(){
+        modelo.iniciarVistaMenuPrincipal();
+    }
     
 }
