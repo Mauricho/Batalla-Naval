@@ -155,16 +155,12 @@ public class TableroLuck extends javax.swing.JFrame implements Vista, Observador
         if (control.estadoJuego(2)) {
             control.partidaGanada();
         }
-        try{
-            TimeUnit.SECONDS.sleep(1);}
-        catch(InterruptedException e){
-            e.printStackTrace();
-        }
+
+        this.control.setArmaEnemigo();
         control.generarDisparoEnemigo();
         if (control.estadoJuego(1)) {
             control.partidaPerdida();
         }
-        this.control.setArmaEnemigo();
     }
 
     @Override

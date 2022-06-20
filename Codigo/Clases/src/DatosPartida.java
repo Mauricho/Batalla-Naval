@@ -78,7 +78,6 @@ public class DatosPartida {
             int disparando;
             int row,
                     col;
-            //if (!disparosJugador.contains(x * 10 + y)) {
                 for (int w = 0; w < disp.size(); w++) {
                     disparando = disp.get(w);
                     row = disparando / 10;

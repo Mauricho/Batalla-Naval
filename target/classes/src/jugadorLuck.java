@@ -27,16 +27,15 @@ public class jugadorLuck extends Juego{
     public void setArma() {
         Random rand = new Random();
         int ran = rand.nextInt(20);
-        System.out.println(ran);
         if (ran == 7 || ran == 9 || ran == 11 || ran == 13) {
             this.armamento=new AvionFurtivo();
             System.out.println("disparo Avion");
-        }/*else if(ran%2!=0){
-            this.tipoArma=1;
-        }*/ else if (ran == 13 || ran == 17 || ran == 19) {
+        }
+        else if (ran == 13 || ran == 17 || ran == 19) {
             this.armamento=new Bomba();
             System.out.println("disparo Bomba");
-        } else {
+        }
+        else {
             this.armamento=new Comun();
             System.out.println("disparo Comun");
         }

@@ -64,6 +64,7 @@ public abstract class Juego {
         System.out.println("Posicion cancelada");
     }
 
+    // verifica la posicion seleccionada
     public boolean espacioDisponible(int x, int y){
         boolean flag= true;
         try{
@@ -79,12 +80,12 @@ public abstract class Juego {
                         }
                     }
                 }
-                if(flag) System.out.println(barcoauxiliar.getNombre()+ " ha sido ubicado desde la posicion: ("+x+","+y+")");
-                else System.out.println("Ya hay uno aqui mi rey");
+                //if(flag) System.out.println(barcoauxiliar.getNombre()+ " ha sido ubicado desde la posicion: ("+x+","+y+")");
+                //else System.out.println("Ya hay uno aqui mi rey");
             }
         }
         catch (IndexOutOfBoundsException e){
-            System.out.println("No se puede mi rey");
+            //System.out.println("No se puede mi rey");
             flag=false;// Si esta fuera del tablero
         }
         return flag;
