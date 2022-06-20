@@ -6,7 +6,6 @@ public class Terminal implements Sujeto{
     private int dx;
     private int dy;
     private int condicionActual;
-    private String jugador;
     private ArrayList<Observador> observadores;
     public Terminal(){
         observadores = new ArrayList<>();
@@ -25,7 +24,7 @@ public class Terminal implements Sujeto{
     @Override
     public void avisarObservadores() {
         for(int i=0;i< observadores.size();i++){
-            observadores.get(i).actualizar(dx,dy,condicionActual,jugador);
+            observadores.get(i).actualizar(dx,dy,condicionActual);
         }
     }
 
@@ -40,14 +39,10 @@ public class Terminal implements Sujeto{
     public void setCondicionActual(int condicion){
         condicionActual=condicion;
     }
-
-    public void setJugador(String jugador){this.jugador=jugador;}
-
-    public void actualizar(int dx, int dy, int condicion, String jugador){
+    public void actualizar(int dx, int dy, int condicion){
         setDx(dx);
         setDy(dy);
         setCondicionActual(condicion);
-        setJugador(jugador);
         avisarObservadores();
     }
 }

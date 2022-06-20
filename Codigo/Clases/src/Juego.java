@@ -6,14 +6,12 @@ package src;
 
 import java.util.ArrayList;
 import java.util.Collections;
-//import java.util.Random;
 
 /**
  *
  * @author f_acu
  */
-public class jugador extends Juego{
-
+public class Juego {
     private int cantFragatas; // Fragatas = 1 casillero
     private int cantDestructores; // Destructores = 2 casilleros
     private int cantSubmarinos; // submarinos = 3 casilleros
@@ -27,7 +25,7 @@ public class jugador extends Juego{
 
     private final boolean[][] Tablero = new boolean[tamanio][tamanio];//Tablero para posicionar los barcos del jugador
     
-    public jugador(){
+    public Juego(){
         cleanTablero();
         cantFragatas=0;
         cantDestructores=0;
@@ -184,7 +182,7 @@ public class jugador extends Juego{
 
     public void getFragata(){
         if(getCantFragatas()<4){
-            this.barcoauxiliar = new Fragata();
+            this.barcoauxiliar = new Fragata(direccion);
             System.out.println(barcoauxiliar.getNombre()+" seleccionado");
         }
         else{
@@ -271,5 +269,13 @@ public class jugador extends Juego{
             }
             System.out.println();
         }
+    }
+
+    ArrayList<Integer> getDisparos(int x, int y) {
+        return null;
+    }
+    
+    public void setArma(){
+        
     }
 }

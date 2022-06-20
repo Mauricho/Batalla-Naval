@@ -14,6 +14,7 @@ import src.vista.VistaJuegoPerdido;
 import src.vista.VistaMenuPrincipal;
 
 import javax.swing.*;
+import src.vista.TableroLuck;
 //import src.vista.VistaPausa;
 
 /**
@@ -106,6 +107,30 @@ public class Modelo {
             informacionDelJuego.getPlayer().printTablero();
         }
     }
+    
+    public void iniciarJuegoLuck() {
+        /*
+        if(jugador.listo()) {
+            vistaActual.hacerVisible(false);
+            vistaActual = new Tablero(/*informacionDelJuego*//*);
+        informacionDelJuego = new DatosPartida();
+        vistaActual.hacerVisible(true);
+    }
+    */
+        if(informacionDelJuego.isAllReady()) {
+            vistaActual.hacerVisible(false);
+            vistaActual = new TableroLuck(informacionDelJuego.terminal);
+            /*
+            informacionDelJuego = new DatosPartida();
+             */
+            informacionDelJuego.setEnemigo();
+            vistaActual.hacerVisible(true);
+            //vistaActual.jTextArea1.append("Holaaaa");
+        }
+        else{
+            informacionDelJuego.getPlayer().printTablero();
+        }
+    }
 
     public void cerrarVentanaJuegoPerdido() {
         iniciarVistaMenuPrincipal();
@@ -170,7 +195,7 @@ public class Modelo {
     public void iniciarSeleccionDePosiciones(int tipo) {
         vistaActual.hacerVisible(false);
         vistaActual = new SeleccionDePosiciones(tipo);
-        informacionDelJuego = new DatosPartida();
+        informacionDelJuego = new DatosPartida(tipo);
         vistaActual.hacerVisible(true);
     }
 
@@ -222,5 +247,13 @@ public class Modelo {
     
     public boolean checkBarco(int x, int y){
         return this.informacionDelJuego.checkBarco(x, y);
+    }
+    
+    public void setArmaEnemigo(){
+        this.informacionDelJuego.setArmaEnemigo();
+    }
+    
+    public void setArmaJugador(){
+        this.informacionDelJuego.setArmaJugador();
     }
 }
