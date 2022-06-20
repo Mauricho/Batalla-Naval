@@ -148,7 +148,7 @@ public class Modelo {
         vistaAdicional = null;
         vistatercera = null;
         modelo = null;
-        System.exit(0);
+        //System.exit(0);
     }
 
     //public BatallaNaval getJuegoActual() {
